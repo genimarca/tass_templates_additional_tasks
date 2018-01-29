@@ -1,0 +1,439 @@
+/*
+CSS File for the web page TASS HOME PAGE
+*/
+
+
+* {
+	box-sizing:border-box;
+}
+
+html {
+	background-color:#fdfdfd;
+	font-family:Roboto, sans-serif;
+	letter-spacing:.02rem;
+	color:#333;
+}
+
+body{
+	margin:0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a.disable{
+	pointer-events: none;
+	background:#ddd;
+	color:#333;
+}
+
+h1, h2, h3, h4 {
+	color:#0070b8;
+}
+
+.page-wrapper {
+	/*width:80%;*/
+	margin: 0 auto;
+}
+
+.col-1 {width:8.33%;}
+.col-2 {width:16.66%;}
+.col-3 {width:25%;}
+.col-4 {width:33.33%;}
+.col-5 {width:41.66%;}
+.col-6 {width:50%;}
+.col-7 {width:58.33%;}
+.col-8 {width:66.66%;}
+.col-9 {width:75%;}
+.col-10 {width:83.33%;}
+.col-11 {width:91.66%;}
+.col-12 {width:100%;}
+
+[class*="col-"] {
+	float:left;
+	padding:15px;
+}
+
+.row{
+	vertical-align: middle;
+}
+
+.row::after{
+	content:"";
+	clear:both;
+	display:table;
+}
+
+
+.text_through {
+        text-decoration: line-through;
+}
+
+.header {
+	width:80%;
+	margin: 0 auto;
+}
+
+.head_title{
+	margin:0;
+	font-size: 2.25em;
+	vertical-align: middle;
+}
+
+.header_title_wrapper{
+	height: 6em;
+}
+
+.header_title_wrapper::before{
+	content: "";
+	display: block;
+	height: 1.5rem;
+}
+
+header a.logo::after{
+	background: url(../images/logoTASS.png) center no-repeat;
+	background-size: contain;
+}
+
+header a.logo{
+	display:block;
+	background: url(../images/logoTASS.png) center no-repeat;
+	background-size: contain;
+	width:100%;
+	height: 6em;
+	text-indent: 300%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+@media screen and (max-width:1050px){
+	.header {
+		width:90%;
+		margin: 0 auto;
+	}
+	
+	.header_title_wrapper::before{
+		content: "";
+		display: block;
+		height: 1rem;
+	}
+	.head_title{
+		margin:0;
+		font-size: 1.5em;
+		vertical-align: middle;
+	}
+	
+	.header_title_wrapper::before{
+		content: "";
+		display: block;
+		height: 0.75rem;
+	}
+	
+	header a.logo{
+		display:block;
+		background: url(../images/logoTASS.png) center no-repeat;
+		background-size: contain;
+		width:100%;
+		height: 5rem;
+		text-indent: 300%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+}
+
+
+nav.main_menu {
+	width:100%;
+	background:#0070b8;
+	color:#fff;
+}
+
+.main_menu_wrapper {
+	width:80%;
+	margin: 0 auto;
+}
+
+nav.main_menu .col-12{
+	padding-top:0px;
+	padding-bottom: 0px;
+}
+
+nav.main_menu ul {
+	display:table;
+	margin:0;
+	padding:0;
+	white-space:nowrap;
+	list-style: none;
+	font-size: 1.2em;
+}
+
+nav.main_menu ul li {
+	display:table-cell;
+}
+
+nav.main_menu ul li:first-child a {
+	border:0;
+}
+
+nav.main_menu ul li a {
+	display:table-cell;
+	padding: 0 .6rem;
+	height: 2em;
+	vertical-align:middle;
+	color:#fff;
+	border-left: 1px solid #fdfdfd;
+}
+
+nav.main_menu ul li a:hover {
+	background: #00568E;
+}
+
+@media screen and (max-width:1050px){
+	.main_menu_wrapper {
+		width:100%;
+		margin: 0 auto;
+	}
+	
+	.main_menu_wrapper .col-12 {
+		width: 100%;
+		padding: 0;
+	}
+	
+	nav.main_menu ul {
+		display: block;
+		font-size: 1em;
+	}
+	
+	nav.main_menu ul li {
+		display: block;
+	}
+	
+	nav.main_menu ul li a {
+		display: block;
+		width:100%;
+		text-align:center;
+		border-left: none;
+		border-top: 1px solid #fdfdfd;
+	}
+}
+
+.main {}
+
+main .main_content_wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+@media screen and (max-width:1050px){
+	main .main_content_wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+main p {
+	line-height: 160%;
+	margin-bottom: 1.5em;
+}
+
+main p:last-child {
+	margin-bottom:0;
+}
+
+main a {
+	color: #0070b8;
+}
+
+main a:hover {
+	background: #0070b8;
+	color:#fff;
+}
+
+main .strong{
+	font-weight: bold;
+	color:#000;
+}
+
+main li{
+	line-height: 160%;
+}
+
+main pre {
+	margin: 0;
+	padding: 1em 0 1em .5em;
+	white-space: pre-wrap;
+	color:#000;
+	background: #ddd;
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: 2px;
+	line-height: 160%;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 1.1em;
+	tab-size:2;
+	
+}
+
+@media screen and (max-width:1050px) {
+	main pre {
+	margin: 0;
+	padding: 1em 0 1em .5em;
+	white-space: pre-wrap;
+	color:#000;
+	background: #ddd;
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: 2px;
+	line-height: 160%;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 1em;
+	tab-size:2;
+	
+}
+}
+
+main pre code {
+	font-family: 'Roboto Mono', monospace;
+}
+
+main code.label {
+	padding: .2em .5em;
+	background: #ddd;
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: 2px;
+	font-family: 'Roboto Mono', monospace;
+	color:#FF4100;
+}
+
+.icon_password_protected{
+	display:inline-block;
+	width:1.25em;
+	text-align:center;
+}
+
+.icon_password_protected:before{
+	content:"\f023";
+	speak:none;
+}
+
+.important_dates .dark{
+	background: #dfdfdf;
+	border: 1px solid #f1f1f1;
+	border-radius:2px;
+	
+}
+
+.important_dates .row p{
+	margin:0;
+}
+
+.committees ul {
+	display:block;
+	list-style:none;
+	padding-left:0;
+}
+
+.committees ul li span {
+	padding: 3px 15px;
+}
+
+
+
+.img_organizers{
+	width:80%;
+	height: auto;
+	opacity:.65;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.img_organizers_wrapper{
+	text-align: center;
+}
+
+.img_organizers_wrapper a {
+	text-align: center;
+}
+
+.img_organizers_wrapper a:hover {
+	background: none;
+	text-align: center;
+}
+
+.img_organizers_resize{
+	padding:40px 0px;
+}
+
+.img_organizers:hover{
+	opacity:1;
+}
+
+
+.references ol {
+	margin:0;
+	list-style:none;
+	padding: 0;
+}
+
+.references ol > li::before{
+	content: "[" counter(list, decimal) "] ";
+	counter-increment: list;
+}
+
+footer{
+	height: 50px;
+}
+
+
+#prog_table{
+	border-collapse: collapse;
+	border: none;
+	width: 100%;
+	text-align: left;
+	overflow-x:auto;
+}
+
+#prog_table tr, td {
+	padding:15px;
+	line-height: 160%;
+	border: none; 
+}
+
+#prog_table tr:nth-child(even){
+	background-color: #dfdfdf;
+}
+
+#prog_table tr:nth-child(even) td {
+	border: 1px solid #f1f1f1;
+	border-style: hidden;
+}
+
+#prog_table tr:nth-child(even) td:first-child{
+	
+	border-top-left-radius:2px;
+}
+
+#prog_table tr:nth-child(even) td:last-child{
+	border-top-right-radius:2px;
+}
+
+#prog_table tr:nth-child(even) td:first-child{
+	border-bottom-left-radius:2px;
+}
+
+#prog_table tr:nth-child(even) td:last-child{
+	border-bottom-right-radius:2px;
+}
+
+#prog_table .prog_table_time_cell {
+	vertical-align: middle;
+	width: 20%;
+}
+
+
+
+#prog_table .prog_title_paper a.disable{
+	background: #ccc;
+}
+#prog_table .prog_authors_paper{
+	font-style: italic;
+}
