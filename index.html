@@ -63,27 +63,40 @@
           <div class="row">
             <div class="col-12">
               <h2>About</h2>
-              <p>
-                Natural Language Processing (NLP) methods are increasingly being used to mine knowledge from unstructured health texts. Recent
-                advances in health text processing techniques are encouraging researchers and medical domain experts to go
-                beyond just reading the information included in published texts (e.g. academic manuscripts, clinical reports,
-                etc.) and structured questionnaires, to discover new knowledge by mining health contents. This has allowed
-                other perspectives to surface that were not previously available.
+              <p class="c15">
+                <span class="c3">Natural Language Processing (NLP) methods are increasingly being used to mine knowledge from unstructured
+                  health texts. Recent advances in health text processing techniques are encouraging researchers and medical
+                  domain experts to go beyond &nbsp;just reading the information included in published texts (e.g. academic
+                  manuscripts, clinical reports, etc.) and structured questionnaires, to discover new knowledge by mining
+                  health contents. This has allowed other perspectives to surface that were not previously &nbsp;available.</span>
               </p>
-              <p>
-                Over the years many eHealth challenges have taken place, which have attempted to identify, classify, extract and link knowledge,
-                such as Semevals, CLEF campaigns and others [1].
+              <p class="c15">
+                <span class="c3">Over the years many eHealth challenges have taken place, which have attempted &nbsp;to identify, classify,
+                  extract and link knowledge, such &nbsp;as Semevals, CLEF campaigns and others [1]. </span>
               </p>
-              <p>
-                Inspired by previous NLP shared tasks like “Semeval-2017 Task 10: ScienceIE” and research lines like Teleologies [2], both
-                not specifically focussed on the health area, eHealth-KD proposes modelling the human language in a scenario
-                in which Spanish electronic health documents could be machine readable from a semantic point of view. With
-                this task, we expect to encourage the development of software technologies to automatically extract a large
-                variety of knowledge from eHealth documents written in the Spanish Language.
+              <p class="c15">
+                <span>Inspired by previous NLP shared tasks like &ldquo;</span>
+                <span class="c43">
+                  <a class="c14" href="http://alt.qcri.org/semeval2017/task10/">Semeval-2017 Task 10: ScienceIE</a>
+                </span>
+                <sup class="c27">
+                  <a href="#ftnt1" id="ftnt_ref1">[1]</a>
+                </sup>
+                <span>&rdquo; and &nbsp;research lines like </span>
+                <span class="c1">Teleologies</span>
+                <span class="c65 c1">&nbsp;</span>
+                <span class="c3">[2], both not specifically focussed on &nbsp;the health area, eHealth-KD proposes modelling the human language
+                  in a scenario in which Spanish electronic health documents could be machine readable from a semantic point
+                  of view. With this task, we expect to encourage the development of software technologies to automatically
+                  extract a large variety of knowledge from eHealth documents written in the Spanish Language.</span>
               </p>
-              <p>
-                The documents used as corpus have been taken from MedlinePlus and manually processed to make them fit for the task. Additional
-                details are provided at the end of this document.
+              <p class="c15">
+                <span>The documents used as corpus have been taken from </span>
+                <span class="c43">
+                  <a class="c14" href="https://medlineplus.gov/xml.html">MedlinePlus</a>
+                </span>
+                <span class="c3">&nbsp;and manually processed to make them fit for the task. Additional details are provided at the end of
+                  this document.</span>
               </p>
             </div>
           </div>
@@ -94,8 +107,53 @@
           <div class="row">
             <div class="col-12">
               <h2>Tasks</h2>
+              <p class="c24">
+                <span class="c3">To achieve this purpose, three subtasks are presented: </span>
+              </p>
+              <h3 class="c41" id="h.1fob9te">
+                <span class="c28 c7">Subtask A: Identification of keyphrases</span>
+              </h3>
+              <p class="c21 c6">
+                <span class="c3"></span>
+              </p>
+              <p class="c2">
+                <span class="c3">Given a list of eHealth documents written in Spanish, the goal of this subtask is to identify all the keyphrases
+                  per document.
+                </span>
+              </p>
               <p>
-                <i> Feel Free</i>
+                <a href="taskA.html">Read further details for Subtask A.</a>
+              </p>
+              <h3 class="c72" id="h.2et92p0">
+                <span class="c28 c7">Subtask B: Classification of key phrases</span>
+              </h3>
+              <p class="c2 c6">
+                <span class="c3"></span>
+              </p>
+              <p class="c2">
+                <span>Subtask B continues where Subtask A ends. Given an input file in plain text and the corresponding output
+                  from Subtask A, where the text spans that appear in the input have been identified, the purpose of Subtask
+                  B is to assign a label to each of these text spans.</span>
+              </p>
+              <p>
+                <a href="taskB.html">Read further details for Subtask B.</a>
+              </p>
+              <h3 class="c41" id="h.3dy6vkm">
+                <span class="c28 c7">Subtask C: Setting semantic relationships</span>
+              </h3>
+              <p class="c24 c6">
+                <span class="c3"></span>
+              </p>
+              <p class="c15">
+                <span>Subtask C continues from the output of Subtask B, by linking the entities detected and labelled in each document.
+                  Given an input file (i.e. </span>
+                <span class="c35">input_&lt;topic&gt;.txt</span>
+                <span>) and the outputs from both Subtasks A and B, the purpose of this Subtask is to recognize all relevant semantic
+                  relationships between the entities recognized. The semantic relationships found in the gold example of
+                  the previous sections are illustrated in the following figure:</span>
+              </p>
+              <p>
+                <a href="taskC.html">Read further details for Subtask C.</a>
               </p>
             </div>
           </div>
