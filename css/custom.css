@@ -77,7 +77,7 @@ table td, table th {
     background-color: #d9d9d9;
     border-left-style: solid;
     border-bottom-width: 1pt;
-    width: 435pt;
+    /* width: 435pt; */
     border-top-color: #999999;
     border-bottom-style: solid;
 }
