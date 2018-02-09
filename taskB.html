@@ -2,90 +2,675 @@
 <html>
 
 <head lang="en">
-    <title>TASS 2018 @SEPLN</title>
-    <meta charset="utf-8">
-    <meta name="description" content="Workshop TASS 2018">
-    <meta name="keywords" content="<FEEL FREE>">
+  <title>TASS 2018 @SEPLN</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Workshop TASS 2018">
+  <meta name="keywords" content="<FEEL FREE>">
 
-    <link rel="stylesheet" type="text/css" href="./css/tass_2017.css">
-    <link rel="stylesheet" type="text/css" href="./css/custom.css">
-    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" media="screen">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono">
+  <link rel="stylesheet" type="text/css" href="./css/tass_2017.css">
+  <link rel="stylesheet" type="text/css" href="./css/custom.css">
+  <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" media="screen">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono">
 </head>
 
 <body>
-    <div class="page-wrapper">
-        <header class="header">
-            <div class="row">
-                <div class="col-3 header_logo">
-                    <a class="logo" href="./">
-                        "TASS"
-                    </a>
-                </div>
-                <div class="col-9 header_title_wrapper">
-                    <h1 class="head_title">TASS-2018-Task 3. eHealth Knowledge Discovery</h1>
-                </div>
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="row">
+        <div class="col-3 header_logo">
+          <a class="logo" href="./">
+            "TASS"
+          </a>
+        </div>
+        <div class="col-9 header_title_wrapper">
+          <h1 class="head_title">TASS-2018-Task 3. eHealth Knowledge Discovery</h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <nav class="main_menu">
+        <div class="row main_menu_wrapper">
+          <div class="col-12">
+            <ul>
+              <li>
+                <a href="index.html#about">About</a>
+              </li>
+              <li>
+                <a href="#taskB">Subtask B</a>
+              </li>
+              <li>
+                <a href="#eval">Evaluation</a>
+              </li>
+              <li>
+                <a href="http://www.sepln.org/workshops/tass/2018">TASS-2018</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="main_content_wrapper">
+        <section>
+          <a name="about"></a>
+          <div class="row">
+            <div class="col-12">
+              <h2>Subtask B: Classification of key phrases</h2>
+              <p class="c2 c6">
+                <span class="c3"></span>
+              </p>
+              <p class="c2">
+                <span>Subtask B continues where Subtask A ends. Given an input file in plain text and the corresponding output
+                  from Subtask A, where the text spans that appear in the input have been identified, the purpose of Subtask
+                  B is to assign a label to each of these text spans. The labels considered have been inspired by the research
+                  in </span>
+                <span class="c1">Teleologies</span>
+                <span>, and can be </span>
+                <span class="c7">Concept</span>
+                <span>, or </span>
+                <span class="c7">Action</span>
+                <span>. The </span>
+                <span class="c7">dev output</span>
+                <span>&nbsp;file created per document is named </span>
+                <span class="c35 c7">output_&lt;team&gt;_B_&lt;topic&gt;.txt</span>
+                <span>. For example </span>
+                <span class="c35">output_teamX_B_asma.txt</span>
+                <span class="c3">.</span>
+              </p>
+              <p class="c2 c6">
+                <span class="c3"></span>
+              </p>
+              <p class="c2">
+                <span class="c3">The corresponding gold labels for the example document presented in the previous section are illustrated
+                  in the following figure:
+                </span>
+              </p>
+              <p class="c2 c6">
+                <span class="c3"></span>
+              </p>
+              <p class="c2">
+                <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 567.20px; height: 184.00px;">
+                  <img alt="" src="images/image17.png" style="width: 567.20px; height: 184.00px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title="">
+                </span>
+              </p>
+              <p class="c24 c6">
+                <span class="c3"></span>
+              </p>
+              <p class="c24">
+                <span class="c3">This illustration represents the following gold files:</span>
+              </p>
+              <ul class="c59 lst-kix_list_6-0">
+                <li class="c21 c11">
+                  <span class="c3">plain text: input_asma.txt</span>
+                </li>
+                <li class="c21 c11">
+                  <span class="c3">key phrases: output_A_asma.txt</span>
+                </li>
+                <li class="c21 c11">
+                  <span class="c3">labels: output_B_asma.txt</span>
+                </li>
+              </ul>
+              <p class="c2 c6">
+                <span class="c3"></span>
+              </p>
+              <p class="c2">
+                <span class="c3">A brief description of each label follows:</span>
+              </p>
+              <ul class="c59 lst-kix_list_4-0 start">
+                <li class="c2 c11">
+                  <span class="c7">Concept: </span>
+                  <span>the concepts are those key phrases that are</span>
+                  <span class="c7">&nbsp;</span>
+                  <span class="c3">able to represent objects and other entities presumed to be of interest for some particular purpose. It
+                    is possible to represent simple and complex concepts. Simple concepts just represent singular entries
+                    like &ldquo;asma&rdquo; or multi-words like &ldquo;v&iacute;as respiratorias&rdquo;, etc. Complex concepts
+                    are out scope for this Subtask B because they consist of a group of different concepts.</span>
+                </li>
+                <li class="c2 c11">
+                  <span class="c7">Action</span>
+                  <span>: is a type of </span>
+                  <span class="c7">Concept</span>
+                  <span>&nbsp;which provokes a modification of another </span>
+                  <span class="c7">Concept</span>
+                  <span>, commonly represented by verbs or phrases that include verbs, but in some cases it can be represented
+                    by a non-verb. This Subtask only requires &nbsp;the recognition of &nbsp;actions and it is not necessary
+                    to detect </span>
+                  <span>who performs the action</span>
+                  <span class="c3">. That problem is tackled in Subtask C.</span>
+                </li>
+              </ul>
+              <p class="c2">
+                <span>Continuing with the example from the previous section, the expected output for Subtask B is shown in the
+                  following fragment (file </span>
+                <span class="c35">example-gold/output_B_asma.txt</span>
+                <span class="c3">):</span>
+              </p>
+              <p class="c21 c6">
+                <span class="c8"></span>
+              </p>
+              <a id="t.70a6b57549239b4b87ddfd00542843c027592158"></a>
+              <a id="t.7"></a>
+              <table class="c20">
+                <tbody>
+                  <tr class="c19">
+                    <td class="c13" colspan="1" rowspan="1">
+                      <p class="c0">
+                        <span class="c9">ID &nbsp; &nbsp; LABEL</span>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="c19">
+                    <td class="c13" colspan="1" rowspan="1">
+                      <p class="c0">
+                        <span class="c9">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Action</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Action</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Action</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Action</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Action</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="c21 c6 c26">
+                <span class="c3"></span>
+              </p>
+              <p class="c2">
+                <span>For each keyphrase identified in Subtask A one of the aforementioned two labels is given. The format is one
+                  entry per line, consisting of a number and a label separated by a single whitespace (or tab). The number
+                  matches the
+                </span>
+                <span class="c7">ID </span>
+                <span>of one of the text spans identified in Subtask A. It is not necessary for the entries to appear in order,
+                  since the matching between a </span>
+                <span class="c7">LABEL </span>
+                <span>and the corresponding text is done by the </span>
+                <span class="c7">ID</span>
+                <span class="c3">&nbsp;field. </span>
+              </p>
             </div>
-        </header>
-        <main>
-            <nav class="main_menu">
-                <div class="row main_menu_wrapper">
-                    <div class="col-12">
-                        <ul>
-                            <li>
-                                <a href="index.html#about">About</a>
-                            </li>
-                            <li>
-                                <a href="index.html#tasks">Tasks</a>
-                            </li>
-                            <li>
-                                <a href="index.html#datasets">Datasets</a>
-                            </li>
-                            <li>
-                                <a href="index.html#shared_task">Shared Task</a>
-                            </li>
-                            <li>
-                                <a href="index.html#important_dates">Important dates</a>
-                            </li>
-                            <li>
-                                <a href="index.html#organization">Organization</a>
-                            </li>
-                            <li>
-                                <a href="http://www.sepln.org/workshops/tass/2018">TASS-2018</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div class="main_content_wrapper">
-                <section>
-                    <a name="about"></a>
-                    <div class="row">
-                        <div class="col-12">
-                            <h2>Subtask C: Setting semantic relationships</h2>
-                            <p>
-                                <i>Feel Free</i>
-                            </p>
-                        </div>
-                    </div>
-                </section>
+          </div>
+        </section>
 
-                <section>
-                    <a name="datasets"></a>
-                    <div class="row">
-                        <div class="col-12">
-                            <h2>Another section</h2>
-                            <p>
-                                <i> Feel Free</i>
-                            </p>
-                        </div>
-                    </div>
+        <section>
+          <a name="datasets"></a>
+          <div class="row">
+            <div class="col-12">
+              <h2>Development evaluation of Subtask B</h2>
+              <p class="c2">
+                <span>When the evaluation process is carried out the </span>
+                <span class="c7">gold </span>
+                <span>and </span>
+                <span class="c7">dev</span>
+                <span>&nbsp;files do not need to assign the same </span>
+                <span class="c7">ID</span>
+                <span>&nbsp;to the same text spans. When processing the Subtask A, the evaluator builds a mapping between the corresponding
+                </span>
+                <span class="c7">IDs</span>
+                <span>&nbsp;in each file, where matching </span>
+                <span class="c7">Correct </span>
+                <span>or </span>
+                <span class="c7">Partial </span>
+                <span>items are mapped together. The </span>
+                <span class="c7">LABEL </span>
+                <span class="c3">comparisons in Subtask B will use this mapping to find out the corresponding expected label for each text
+                  span.</span>
+              </p>
+              <p class="c2 c6">
+                <span class="c3"></span>
+              </p>
+              <p class="c2">
+                <span>The following figure is a development example output (ie. output_</span>
+                <span class="c7">teamX</span>
+                <span class="c3">_B_asma.txt) which includes some incorrect labelling of the &nbsp;input_asma.txt:</span>
+              </p>
+              <p class="c21 c6">
+                <span class="c8"></span>
+              </p>
+              <p class="c21">
+                <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 567.20px; height: 184.00px;">
+                  <img alt="" src="images/image19.png" style="width: 567.20px; height: 184.00px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title="">
+                </span>
+              </p>
+              <p class="c21 c6">
+                <span class="c39 c7"></span>
+              </p>
+              <p class="c21">
+                <span class="c7">dev file:</span>
+                <span class="c3">&nbsp;output_teamX_B_asma.txt</span>
+              </p>
+              <a id="t.85c8db5e46eb380ee3d396abedd1c866b9562a32"></a>
+              <a id="t.8"></a>
+              <table class="c20">
+                <tbody>
+                  <tr class="c19">
+                    <td class="c13" colspan="1" rowspan="1">
+                      <p class="c0">
+                        <span class="c9">ID &nbsp; &nbsp; LABEL</span>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="c19">
+                    <td class="c13" colspan="1" rowspan="1">
+                      <p class="c0">
+                        <span class="c9">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Action</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Action</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Action</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concept</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Action</span>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="c21 c6 c26">
+                <span class="c3"></span>
+              </p>
+              <p class="c21">
+                <span class="c3">The dev output for the evaluation script relevant for this Subtask is the following:</span>
+              </p>
+              <p class="c21 c6">
+                <span class="c8"></span>
+              </p>
+              <a id="t.be9ef29895ba01256d85888bccbdf790c31a323f"></a>
+              <a id="t.9"></a>
+              <table class="c20">
+                <tbody>
+                  <tr class="c19">
+                    <td class="c13" colspan="1" rowspan="1">
+                      <p class="c0">
+                        <span class="c9"># Subtask A (detecting phrases)</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">...</span>
+                      </p>
+                      <p class="c0 c6">
+                        <span class="c9"></span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9"># Taks B (labeling phrases)</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">&nbsp; input file: ../example-gold/input_asma.txt</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">&nbsp; gold file: &nbsp;../example-gold/output_B_asma.txt</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">&nbsp; dev file: &nbsp; ../example-dev/output_teamX_B_asma.txt</span>
+                      </p>
+                      <p class="c0 c6">
+                        <span class="c9"></span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">* Correct (15):</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">&nbsp; - Concept &quot;asma&quot; from 3 to 7.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">&nbsp; - Concept &quot;v&iacute;as respiratorias&quot; from 19 to 37.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">&nbsp; - Concept &quot;pulmones&quot; from 43 to 51.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">&nbsp; - Concept &quot;asma&quot; from 67 to 71.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">&nbsp; - Concept &quot;enfermedad&quot; from 79 to 89.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">&nbsp; - Concept &quot;ataque de asma&quot; from 94 to 108.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">&nbsp; - Action &quot;produce&quot; from 112 to 119.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">&nbsp; - Concept &quot;los s&iacute;ntomas&quot; from 127 to 139.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">&nbsp; - Action &quot;empeoran&quot; from 140 to 148.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">&nbsp; - Concept &quot;s&iacute;ntomas&quot; from 154 to 162.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">&nbsp; - Concept &quot;tratamiento&quot; from 168 to 179.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">&nbsp; - Action &quot;dependen&quot; from 180 to 188.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">&nbsp; - Concept &quot;tipo de c&aacute;ncer&quot; from 193 to 207.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">&nbsp; - Concept &quot;enfermedad&quot; from 237 to 247.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">&nbsp; - Concept &quot;avanzada&quot; from 216 to 224.</span>
+                      </p>
+                      <p class="c0 c6">
+                        <span class="c9"></span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">* Incorrect (0):</span>
+                      </p>
+                      <p class="c0 c6">
+                        <span class="c9"></span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">* Missing (3):</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">&nbsp; - Action &quot;afecta&quot; from 8 to 14.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">&nbsp; - Action &quot;hinchan&quot; from 55 to 62.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">&nbsp; - Concept &quot;c&aacute;ncer&quot; from 201 to 207.</span>
+                      </p>
+                      <p class="c0 c6">
+                        <span class="c9"></span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">* Spurious (1):</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">&nbsp; - Action &quot;est&eacute;&quot; from 229 to 233.</span>
+                      </p>
+                      <p class="c0 c6">
+                        <span class="c9"></span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">Micro-accuracy: 1.00</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">Macro-accuracy: 0.79</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">Precision: 0.94</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">Recall: 0.83</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">F1: 0.88</span>
+                      </p>
+                      <p class="c0 c6">
+                        <span class="c9"></span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">...</span>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="c21 c6 c26">
+                <span class="c3"></span>
+              </p>
+              <p class="c21">
+                <span>The script reports </span>
+                <span class="c7">Correct</span>
+                <span>, </span>
+                <span class="c7">Incorrect</span>
+                <span>, </span>
+                <span class="c7">Missing</span>
+                <span>, and </span>
+                <span class="c7">Spurious</span>
+                <span class="c3">&nbsp;labels:</span>
+              </p>
+              <ul class="c59 lst-kix_list_5-0 start">
+                <li class="c21 c11">
+                  <span class="c7">Correct</span>
+                  <span>&nbsp;are those phrases labelled with the same label in both the </span>
+                  <span class="c7">gold </span>
+                  <span>and the </span>
+                  <span class="c7">dev </span>
+                  <span>files. These are necessarily phrases which were either correctly or partially matched in Subtask A.</span>
+                </li>
+                <li class="c21 c11">
+                  <span class="c7">Incorrect </span>
+                  <span>are those with different labels. Also, these are phrases which were either correctly or partially matched
+                    in Subtask A.
+                  </span>
+                </li>
+                <li class="c21 c11">
+                  <span class="c7">Missing </span>
+                  <span>are the same as in Subtask A.</span>
+                </li>
+                <li class="c21 c11">
+                  <span class="c7">Spurious </span>
+                  <span>are the same as in Subtask A.</span>
+                </li>
+              </ul>
+              <p class="c21 c6">
+                <span class="c3"></span>
+              </p>
+              <p class="c2">
+                <span>The script reports two different </span>
+                <span class="c7">accuracy </span>
+                <span>metrics: </span>
+                <span class="c7">micro-accuracy,</span>
+                <span>&nbsp;which considers only the labels involving </span>
+                <span class="c7">correct </span>
+                <span>or</span>
+                <span class="c7">&nbsp;partial </span>
+                <span>matches in Subtask A; and, &nbsp;</span>
+                <span class="c7">macro-accuracy, </span>
+                <span>which considers</span>
+                <span class="c7">&nbsp;</span>
+                <span class="c3">all the elements:</span>
+              </p>
+              <p class="c2 c6">
+                <span class="c3"></span>
+              </p>
+              <a id="t.9521ebce3001b4e27856cad1ea9c654eedf16d04"></a>
+              <a id="t.10"></a>
+              <table class="c20">
+                <tbody>
+                  <tr class="c19">
+                    <td class="c86" colspan="1" rowspan="1">
+                      <p class="c30">
+                        <img src="images/image4.png">
+                      </p>
+                    </td>
+                    <td class="c82" colspan="1" rowspan="1">
+                      <p class="c30">
+                        <img src="images/image5.png">
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="c2 c6">
+                <span class="c3"></span>
+              </p>
+              <p class="c2">
+                <span>Hence, the </span>
+                <span class="c7">micro</span>
+                <span>&nbsp;accuracy is always greater or equal to the </span>
+                <span class="c7">macro</span>
+                <span>. The </span>
+                <span class="c7">micro</span>
+                <span>&nbsp;accuracy is a measure of the quality of Subtask B independent of mistakes made in Subtask A, while
+                  the </span>
+                <span class="c7">macro</span>
+                <span class="c3">&nbsp;accuracy is a measure of the quality of the whole process.</span>
+              </p>
+              <p class="c2 c6">
+                <span class="c3"></span>
+              </p>
+              <p class="c2">
+                <span>The script also reports standard </span>
+                <span class="c7">precision</span>
+                <span>, </span>
+                <span class="c7">recall</span>
+                <span>, and </span>
+                <span class="c7">F1</span>
+                <span class="c3">&nbsp;computed as follows:</span>
+              </p>
+              <p class="c2 c6">
+                <span class="c3"></span>
+              </p>
+              <a id="t.7546a570fbd82337fdacce25c4b9a3e2a0ff0ca8"></a>
+              <a id="t.11"></a>
+              <table class="c68">
+                <tbody>
+                  <tr class="c19">
+                    <td class="c25" colspan="1" rowspan="1">
+                      <p class="c30">
+                        <img src="images/image1.png">
+                      </p>
+                    </td>
+                    <td class="c69" colspan="1" rowspan="1">
+                      <p class="c30">
+                        <img src="images/image6.png">
+                      </p>
+                      <p class="c6 c56">
+                        <span class="c3"></span>
+                      </p>
+                      <p class="c30">
+                        <img src="images/image7.png">
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="c2 c6">
+                <span class="c39 c7"></span>
+              </p>
+              <a id="t.fffc1200b6428bfb36ec50b666022d841f68d204"></a>
+              <a id="t.12"></a>
+              <table class="c20">
+                <tbody>
+                  <tr class="c19">
+                    <td class="c58" colspan="1" rowspan="1">
+                      <p class="c2">
+                        <span class="c7">NOTE: </span>
+                        <span>These metrics are only reported for convenience here, to be used by the participants when developing
+                          their solutions. The actual score used for ranking participants will be presented later.</span>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="c2 c6">
+                <span class="c39 c7"></span>
+              </p>
+              <p class="c2 c6">
+                <span class="c39 c7"></span>
+              </p>
+              <p class="c2 c6">
+                <span class="c39 c7"></span>
+              </p>
+              <p class="c2 c6">
+                <span class="c39 c7"></span>
+              </p>
+              <p class="c2 c6">
+                <span class="c39 c7"></span>
+              </p>
+              <p class="c2 c6">
+                <span class="c39 c7"></span>
+              </p>
             </div>
-        </main>
-        <footer>
-        </footer>
-    </div>
+          </div>
+      </div>
+    </main>
+    <footer>
+    </footer>
+  </div>
 </body>
 
 </html>
