@@ -2,90 +2,745 @@
 <html>
 
 <head lang="en">
-    <title>TASS 2018 @SEPLN</title>
-    <meta charset="utf-8">
-    <meta name="description" content="Workshop TASS 2018">
-    <meta name="keywords" content="<FEEL FREE>">
+  <title>TASS 2018 @SEPLN</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Workshop TASS 2018">
+  <meta name="keywords" content="<FEEL FREE>">
 
-    <link rel="stylesheet" type="text/css" href="./css/tass_2017.css">
-    <link rel="stylesheet" type="text/css" href="./css/custom.css">
-    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" media="screen">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono">
+  <link rel="stylesheet" type="text/css" href="./css/tass_2017.css">
+  <link rel="stylesheet" type="text/css" href="./css/custom.css">
+  <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" media="screen">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono">
 </head>
 
 <body>
-    <div class="page-wrapper">
-        <header class="header">
-            <div class="row">
-                <div class="col-3 header_logo">
-                    <a class="logo" href="./">
-                        "TASS"
-                    </a>
-                </div>
-                <div class="col-9 header_title_wrapper">
-                    <h1 class="head_title">TASS-2018-Task 3. eHealth Knowledge Discovery</h1>
-                </div>
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="row">
+        <div class="col-3 header_logo">
+          <a class="logo" href="./">
+            "TASS"
+          </a>
+        </div>
+        <div class="col-9 header_title_wrapper">
+          <h1 class="head_title">TASS-2018-Task 3. eHealth Knowledge Discovery</h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <nav class="main_menu">
+        <div class="row main_menu_wrapper">
+          <div class="col-12">
+            <ul>
+              <li>
+                <a href="index.html">About</a>
+              </li>
+              <li>
+                <a href="taskA.html">Subtask A</a>
+              </li>
+              <li>
+                <a href="taskB.html">Subtask B</a>
+              </li>
+              <li>
+                <a href="taskC.html">Subtask C</a>
+              </li>
+              <li>
+                <a href="index.html#corpora">Corpora</a>
+              </li>
+              <li>
+                <a href="index.html#evaluation">Evaluation</a>
+              </li>
+              <li>
+                <a href="#important_dates">Important dates</a>
+              </li>
+              <li>
+                <a href="http://www.sepln.org/workshops/tass/2018">TASS-2018</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="main_content_wrapper">
+        <section>
+          <a name="taskC"></a>
+          <div class="row">
+            <div class="col-12">
+              <h2>Subtask C: Setting semantic relations</h2>
+              <p class="c24 c6">
+                <span class="c3"></span>
+              </p>
+              <p class="c15">
+                <span>Subtask C continues from the output of Subtask B, by linking the entities detected and labelled in each document.
+                  Given an input file (i.e. </span>
+                <span class="c35">input_&lt;topic&gt;.txt</span>
+                <span>) and the outputs from both Subtasks A and B, the purpose of this Subtask is to recognize all relevant semantic
+                  relationships between the entities recognized. The semantic relationships found in the gold example of
+                  the previous sections are illustrated in the following figure</span>
+                <span class="c16 c7">:</span>
+              </p>
+              <p class="c24">
+                <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 567.20px; height: 226.67px;">
+                  <img alt="" src="images/image20.png" style="width: 567.20px; height: 226.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title="">
+                </span>
+              </p>
+              <p class="c24">
+                <span class="c3">This illustration represents the following gold files:</span>
+              </p>
+              <ul class="c59 lst-kix_list_6-0">
+                <li class="c21 c11">
+                  <span>plain text: </span>
+                  <span class="c35">input_asma.txt</span>
+                </li>
+                <li class="c21 c11">
+                  <span>key phrases: </span>
+                  <span class="c35">output_A_asma.txt</span>
+                </li>
+                <li class="c21 c11">
+                  <span>labels: </span>
+                  <span class="c35">output_B_asma.txt</span>
+                </li>
+                <li class="c21 c11">
+                  <span>relationships: </span>
+                  <span class="c35">output_C_asma.txt</span>
+                </li>
+              </ul>
+              <p class="c24">
+                <span> </span>
+              </p>
+              <p class="c24">
+                <span class="c1">In this subtask </span>
+                <span>six</span>
+                <span class="c3">types of relationships are defined:</span>
+              </p>
+              <ol class="c59 lst-kix_list_12-0 start" start="1">
+                <li class="c21 c11">
+                  <span>Relationships between </span>
+                  <span class="c7">Concepts</span>
+                  <span class="c3">:</span>
+                </li>
+              </ol>
+              <ul class="c59 lst-kix_list_12-1 start">
+                <li class="c21 c36">
+                  <span class="c7">is-a</span>
+                  <span>: indicating that the first</span>
+                  <span class="c7">Concept</span>
+                  <span>is a subtype, or more concrete expression of the second </span>
+                  <span class="c7">Concept.</span>
+                  <span>For example &ldquo;asma&rdquo; </span>
+                  <span class="c7">is-a </span>
+                  <span>&ldquo;enfermedad&rdquo;.</span>
+                </li>
+                <li class="c21 c36">
+                  <span class="c7">part-of</span>
+                  <span>: indicating that the first </span>
+                  <span class="c7">Concept</span>
+                  <span>is a constituent part or component of the second </span>
+                  <span class="c7">Concept</span>
+                  <span>, such as in &ldquo;pulmones&rdquo; </span>
+                  <span class="c7">part-of</span>
+                  <span>&ldquo;cuerpo humano&rdquo;. </span>
+                </li>
+                <li class="c21 c36">
+                  <span class="c7">property-of</span>
+                  <span>: indicating that the first </span>
+                  <span class="c7">Concept </span>
+                  <span>defines any property or variable characteristic of the second </span>
+                  <span class="c7">Concept</span>
+                  <span>, such as in &ldquo;avanzada&rdquo; </span>
+                  <span class="c7">property-of &ldquo;</span>
+                  <span class="c3">enfermedad&rdquo;.</span>
+                </li>
+                <li class="c21 c36">
+                  <span class="c7">same-as</span>
+                  <span>: for indicating a concept is </span>
+                  <span>unambiguously the same as another concept. For example, in &ldquo;</span>
+                  <span>El Instituto Nacional de Alergias y Enfermedades Infecciosas (NIH)</span>
+                  <span>apoya las investigaciones destinadas a desarrollar mejores formas de diagnosticar, tratar y prevenir
+                    las infecciones, enfermedades del sistema inmune y las alergias.</span>
+                  <span>&rdquo;, the </span>
+                  <span class="c7">Concept </span>
+                  <span>&ldquo;Instituto Nacional de Alergias y Enfermedades Infecciosas&rdquo; is the </span>
+                  <span class="c7">same-as</span>
+                  <span class="c3">&ldquo;NIH&rdquo;.</span>
+                </li>
+              </ul>
+              <p class="c21 c6 c26">
+                <span class="c3"></span>
+              </p>
+              <p class="c15 c26">
+                <span>Notice that these relationships are hinted at by some of the words that appear in the sentence, but it is
+                  not necessary for these words to be reported for the purpose of the evaluation. For example, the expression
+                  &ldquo;es una&rdquo; can be a hint to recognize the relation
+                </span>
+                <span class="c7">is-a </span>
+                <span class="c3">between &ldquo;asma&rdquo; and &ldquo;enfermedad&rdquo;, but this fragment of text is not identified or labelled.</span>
+              </p>
+              <ol class="c59 lst-kix_list_10-0 start" start="2">
+                <li class="c2 c11">
+                  <span>Relationships between </span>
+                  <span class="c7">Actions </span>
+                  <span>and </span>
+                  <span class="c7">Concepts </span>
+                  <span>or between </span>
+                  <span class="c7">Actions </span>
+                  <span class="c3">themselves:</span>
+                </li>
+              </ol>
+              <ul class="c59 lst-kix_list_10-1 start">
+                <li class="c2 c36">
+                  <span class="c7">subject</span>
+                  <span>: identifies the actor that performs the indicated action. For example in &ldquo;el asma afecta las v&iacute;as
+                    respiratorias&rdquo;, the </span>
+                  <span class="c7">Concept </span>
+                  <span>&ldquo;asma&rdquo; is who performs the action &ldquo;afecta&rdquo;. It can be said a subject plays the
+                    producer/actor role by establishing this relationship.</span>
+                </li>
+                <li class="c2 c36">
+                  <span class="c7">target</span>
+                  <span>: identifies the actor who receives the effect of the indicated action. For example in &ldquo;el asma afecta
+                    las v&iacute;as respiratorias&rdquo;, the </span>
+                  <span class="c7">Concept </span>
+                  <span>&ldquo;v&iacute;as respiratorias&rdquo; receives the effect of the action &ldquo;afecta&rdquo;.</span>
+                  <span></span>
+                  <span>It can be said a target plays the consumer role by establishing this relationship.</span>
+                </li>
+              </ul>
+              <p class="c2 c6 c26">
+                <span class="c3"></span>
+              </p>
+              <p class="c15 c60">
+                <span>Notice that </span>
+                <span class="c7">Actions</span>
+                <span>can have both a </span>
+                <span class="c7">Subject </span>
+                <span>and a </span>
+                <span class="c7">Target</span>
+                <span>. However, sometimes the </span>
+                <span class="c7">subject</span>
+                <span>of an action is hidden, or non-existent, such as in the case of actions represented by infinitive verbs,
+                  for example in the sentence &ldquo;Diagnosticar el c&aacute;ncer es dif&iacute;cil&rdquo;. In this example
+                  the </span>
+                <span class="c7">Action</span>
+                <span>&ldquo;Diagnosticar&rdquo; only has a </span>
+                <span class="c7">target</span>
+                <span>, the </span>
+                <span class="c7">Concept</span>
+                <span class="c3">&ldquo;c&aacute;ncer&rdquo;, since it is not stated who performs the action.</span>
+              </p>
+              <p class="c15 c60">
+                <span>In other examples, the </span>
+                <span class="c7">target</span>
+                <span>can either be missing, or be the same as the </span>
+                <span class="c7">subject</span>
+                <span>, such as in the case of actions represented by reflexive verbs, for example in the phrase &ldquo;...los
+                  pulmones se hinchan&rdquo;. In this example the </span>
+                <span class="c7">Action</span>
+                <span>&ldquo;hinchan&rdquo; has the same </span>
+                <span class="c7">subject</span>
+                <span>and </span>
+                <span class="c7">target</span>
+                <span>, the </span>
+                <span class="c7">Concept &ldquo;</span>
+                <span>pulmones&rdquo;.</span>
+                <span>This means that the subject and the target refer both to same concept.</span>
+              </p>
+              <p class="c15 c60">
+                <span>As observed in the gold example, an </span>
+                <span class="c7">Action</span>
+                <span>can have more than one </span>
+                <span class="c7">Subject </span>
+                <span>and/or </span>
+                <span class="c7">Target</span>
+                <span class="c3">, if the same fragment of text is used to denote multiple occurrences of said action.</span>
+              </p>
+              <p class="c15 c60">
+                <span>Complex concepts can be represented by tuples, e.g &lt;</span>
+                <span class="c7">Subject,Action,Target&gt;</span>
+                <span>(or any variant where </span>
+                <span class="c7">target </span>
+                <span>or</span>
+                <span class="c7">subject </span>
+                <span>can be missing), in which the </span>
+                <span class="c7">Action </span>
+                <span>constitutes its core. Therefore, in Subtask C sometimes the </span>
+                <span class="c7">subject </span>
+                <span>or </span>
+                <span class="c7">target </span>
+                <span>can be another type of </span>
+                <span class="c7">Action, </span>
+                <span>which represents a complex concept. For example, in the sentence &ldquo;</span>
+                <span class="c35">Un ataque de asma se produce cuando los s&iacute;ntomas empeoran</span>
+                <span>&rdquo;, a complex concept is &ldquo;</span>
+                <span class="c35">s&iacute;ntomas empeoran</span>
+                <span>&rdquo; where &ldquo;</span>
+                <span class="c35">s&iacute;ntomas</span>
+                <span>&rdquo; is a </span>
+                <span class="c7">Concept</span>
+                <span>and &ldquo;</span>
+                <span class="c35">empeoran</span>
+                <span>&rdquo; is an </span>
+                <span class="c7">Action</span>
+                <span>; &ldquo;</span>
+                <span class="c35">s&iacute;ntomas empeoran</span>
+                <span>&rdquo; is the act of symptoms getting worse. Therefore, &ldquo;</span>
+                <span class="c35">s&iacute;ntomas empeoran</span>
+                <span>&rdquo; can be linked to the </span>
+                <span class="c7">Action </span>
+                <span>&ldquo;</span>
+                <span class="c35">produce</span>
+                <span>&rdquo;. The </span>
+                <span class="c7">Action </span>
+                <span>&ldquo;</span>
+                <span class="c35">produce</span>
+                <span class="c3">&rdquo; in this sentence is performed by this complex concept, i.e., it is not the symptoms that cause the
+                  asthma attack, but rather it is the act of the symptoms getting worse that causes the asthma attack.</span>
+              </p>
+              <p class="c15">
+                <span>The gold output for this Subtask is another file </span>
+                <span class="c35">output_C_&lt;topic&gt;.txt</span>
+                <span>with a similar format as before, one entry per line, each entry containing a </span>
+                <span class="c7">LABEL</span>
+                <span>, a</span>
+                <span class="c7">SOURCE </span>
+                <span>and a </span>
+                <span class="c7">DESTINATION</span>
+                <span class="c3">.</span>
+              </p>
+              <p class="c15">
+                <span>The expected output of the previous example is:</span>
+              </p>
+              <a id="t.c4ad4c15ee0a7a749cb3656fc7ec0217f8eab705"></a>
+              <a id="t.13"></a>
+              <table class="c20">
+                <tbody>
+                  <tr class="c19">
+                    <td class="c13" colspan="1" rowspan="1">
+                      <p class="c0">
+                        <span class="c9">LABELSOURCE
+                          DESTINATION
+                        </span>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="c19">
+                    <td class="c13" colspan="1" rowspan="1">
+                      <p class="c0">
+                        <span class="c9">is-a57</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">property-of1716</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">property-of1518</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">subject21</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">target23</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">subject64</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">target64</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">subject911</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">target98</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">target1110</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">subject1412</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">target1415</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">target1417</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">subject1413</span>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="c21 c6 c26">
+                <span class="c3"></span>
+              </p>
+              <p class="c15">
+                <span>The label is one of the following linking axioms: </span>
+                <span class="c7">is-a</span>
+                <span>, </span>
+                <span class="c7">part-of</span>
+                <span>, </span>
+                <span class="c7">property-of</span>
+                <span>, </span>
+                <span class="c7">subject</span>
+                <span>,</span>
+                <span class="c7">target</span>
+                <span>. The </span>
+                <span class="c7">SOURCE </span>
+                <span>and </span>
+                <span class="c7">DESTINATION </span>
+                <span>are the corresponding </span>
+                <span class="c7">ID values </span>
+                <span class="c3">for the key phrases that participate in each relationship. They are defined as follows:</span>
+              </p>
+              <ul class="c59 lst-kix_list_7-0 start">
+                <li class="c2 c11">
+                  <span>If the </span>
+                  <span class="c7">LABEL</span>
+                  <span>is one of </span>
+                  <span class="c7">is-a</span>
+                  <span>, </span>
+                  <span class="c7">part-of</span>
+                  <span>, or </span>
+                  <span class="c7">property-of</span>
+                  <span>, then the </span>
+                  <span class="c7">SOURCE</span>
+                  <span>and </span>
+                  <span class="c7">DESTINATION&mdash;</span>
+                  <span>two numbers separated by a single whitespace (or tab)&mdash;are the </span>
+                  <span class="c7">source ID </span>
+                  <span>and the </span>
+                  <span class="c7">destination ID</span>
+                  <span>of the concepts that participate in the relationship, respectively. For example, in the relationship
+                    &ldquo;asma&rdquo;
+                  </span>
+                  <span class="c7">is-a</span>
+                  <span>&ldquo;enfermedad&rdquo;, the </span>
+                  <span class="c7">source ID </span>
+                  <span>is 5, which refers to the key phrase &ldquo;asma&rdquo; and the </span>
+                  <span class="c7">destination ID </span>
+                  <span class="c3">is 7 which refers to the key phrase &ldquo;enfermedad&rdquo; in Subtask A example output.</span>
+                </li>
+                <li class="c15 c11">
+                  <span>If the </span>
+                  <span class="c7">LABEL </span>
+                  <span>is </span>
+                  <span class="c7">subject </span>
+                  <span>or </span>
+                  <span class="c7">target</span>
+                  <span>, then the </span>
+                  <span class="c7">SOURCE</span>
+                  <span>is the </span>
+                  <span class="c7">ID</span>
+                  <span>of the corresponding </span>
+                  <span class="c7">Action</span>
+                  <span>, while </span>
+                  <span class="c7">DESTINATION</span>
+                  <span>is the </span>
+                  <span class="c7">ID</span>
+                  <span>of the corresponding </span>
+                  <span class="c7">Concept </span>
+                  <span>or </span>
+                  <span class="c7">Action</span>
+                  <span>that performs the given role. For example, in the triplet [&ldquo;asma&rdquo;, &ldquo;afecta&rdquo;,
+                    &ldquo;v&iacute;as respiratorias&rdquo;], the </span>
+                  <span class="c7">Action ID</span>
+                  <span>is 2 which points to the text span &ldquo;afecta&rdquo;, the </span>
+                  <span class="c7">Subject ID</span>
+                  <span>is 1 which points to the text span &ldquo;asma&rdquo; and the </span>
+                  <span class="c7">Target ID </span>
+                  <span>is 3 which points to the text span &ldquo;v&iacute;as respiratorias&rdquo; in Subtask A example output.
+                    Hence, for this action we obtain two different entries, one labelled as </span>
+                  <span class="c7 c45">subject 2 1</span>
+                  <span>, and the other as </span>
+                  <span class="c7 c45">target 2 3</span>
+                  <span class="c62 c45">.</span>
+                </li>
+              </ul>
             </div>
-        </header>
-        <main>
-            <nav class="main_menu">
-                <div class="row main_menu_wrapper">
-                    <div class="col-12">
-                        <ul>
-                            <li>
-                                <a href="index.html#about">About</a>
-                            </li>
-                            <li>
-                                <a href="index.html#tasks">Tasks</a>
-                            </li>
-                            <li>
-                                <a href="index.html#datasets">Datasets</a>
-                            </li>
-                            <li>
-                                <a href="index.html#shared_task">Shared Task</a>
-                            </li>
-                            <li>
-                                <a href="index.html#important_dates">Important dates</a>
-                            </li>
-                            <li>
-                                <a href="index.html#organization">Organization</a>
-                            </li>
-                            <li>
-                                <a href="http://www.sepln.org/workshops/tass/2018">TASS-2018</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div class="main_content_wrapper">
-                <section>
-                    <a name="about"></a>
-                    <div class="row">
-                        <div class="col-12">
-                            <h2>Subtask C: Classification of Key Phrases</h2>
-                            <p>
-                                <i>Feel Free</i>
-                            </p>
-                        </div>
-                    </div>
-                </section>
+          </div>
+        </section>
 
-                <section>
-                    <a name="datasets"></a>
-                    <div class="row">
-                        <div class="col-12">
-                            <h2>Another section</h2>
-                            <p>
-                                <i> Feel Free</i>
-                            </p>
-                        </div>
-                    </div>
+        <section>
+          <a name="eval"></a>
+          <div class="row">
+            <div class="col-12">
+              <h2>Development evaluation of Subtask C</h2>
+              <p class="c24">
+                <span>An example of an incorrectly linked document could be as follows:</span>
+              </p>
+              <p class="c24">
+                <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 567.20px; height: 206.67px;">
+                  <img alt="" src="images/image21.png" style="width: 567.20px; height: 206.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title="">
+                </span>
+              </p>
+              <a id="t.c24ffb0c834233311e473641ea90ff613bb628f6"></a>
+              <a id="t.14"></a>
+              <table class="c20">
+                <tbody>
+                  <tr class="c19">
+                    <td class="c13" colspan="1" rowspan="1">
+                      <p class="c0">
+                        <span class="c9">LABELSOURCE
+                          DEST
+                        </span>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="c19">
+                    <td class="c13" colspan="1" rowspan="1">
+                      <p class="c0">
+                        <span class="c9">part-of13</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">subject911</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">target98</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">subject1110</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">subject1412</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">target1415</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">subject1413</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">target1417</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">subject1916</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">target1917</span>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="c21 c6 c26">
+                <span class="c3"></span>
+              </p>
+              <p class="c24">
+                <span>Running the evaluation script produces the following output (showing only the relevant part for this Subtask):</span>
+              </p>
+              <a id="t.b38b0df686f05c8f65a9ccda9ecf96ed58336817"></a>
+              <a id="t.15"></a>
+              <table class="c20">
+                <tbody>
+                  <tr class="c19">
+                    <td class="c13" colspan="1" rowspan="1">
+                      <p class="c0">
+                        <span class="c9"># Taks C (linking)</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9"> gold file: ../example-gold/output_C_asma.txt</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9"> dev file: ../example-dev/output_teamX_C_asma.txt</span>
+                      </p>
+                      <p class="c0 c6">
+                        <span class="c9"></span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">* Correct (6):</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9"> - subject involving &quot;produce&quot; and &quot;empeoran&quot;.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9"> - target involving &quot;produce&quot; and &quot;ataque de asma&quot;.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9"> - subject involving &quot;dependen&quot; and &quot;s&iacute;ntomas&quot;.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9"> - target involving &quot;dependen&quot; and &quot;tipo&quot;.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9"> - target involving &quot;dependen&quot; and &quot;avanzada&quot;.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9"> - subject involving &quot;dependen&quot; and &quot;tratamiento&quot;.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">* Missing (8):</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9"> - is-a involving &quot;asma&quot; and &quot;enfermedad&quot;.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9"> - property-of involving &quot;avanzada&quot; and &quot;enfermedad&quot;.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9"> - property-of involving &quot;tipo&quot; and &quot;c&aacute;ncer&quot;.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9"> - subject involving &quot;afecta&quot; and &quot;asma&quot;.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9"> - target involving &quot;afecta&quot; and &quot;v&iacute;as respiratorias&quot;.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9"> - subject involving &quot;hinchan&quot; and &quot;pulmones&quot;.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9"> - target involving &quot;hinchan&quot; and &quot;pulmones&quot;.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9"> - target involving &quot;empeoran&quot; and &quot;s&iacute;ntomas&quot;.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">* Spurious (4):</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9"> - part-of involving &quot;asma&quot; and &quot;v&iacute;as respiratorias&quot;.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9"> - subject involving &quot;empeoran&quot; and &quot;los s&iacute;ntomas&quot;.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9"> - subject involving &quot;est&eacute;&quot; and &quot;enfermedad&quot;.</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9"> - target involving &quot;est&eacute;&quot; and &quot;avanzada&quot;.</span>
+                      </p>
+                      <p class="c0 c6">
+                        <span class="c9"></span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">Precision: 0.60</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">Recall: 0.43</span>
+                      </p>
+                      <p class="c0">
+                        <span class="c9">F1: 0.50</span>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="c21 c6 c26">
+                <span class="c3"></span>
+              </p>
+              <p class="c24">
+                <span class="c3">The script reports the correct, missing and spurious items, defined as follows:</span>
+              </p>
+              <ul class="c59 lst-kix_list_8-0 start">
+                <li class="c11 c21">
+                  <span class="c7">Correct</span>
+                  <span>: relationships that matched exactly to the </span>
+                  <span class="c7">gold </span>
+                  <span>file, including the </span>
+                  <span class="c7">LABEL </span>
+                  <span>and the corresponding </span>
+                  <span class="c7">ID</span>
+                  <span>s for each of the participants.</span>
+                  <span class="c39 c7"></span>
+                </li>
+                <li class="c21 c11">
+                  <span class="c7">Missing</span>
+                  <span>: relationships that are in the </span>
+                  <span class="c7">gold</span>
+                  <span>file but not in the </span>
+                  <span class="c7">dev </span>
+                  <span>file, either because the </span>
+                  <span class="c7">LABEL </span>
+                  <span>is wrong, or because one of the </span>
+                  <span class="c7">ID</span>
+                  <span>s didn&rsquo;t match.</span>
+                </li>
+                <li class="c21 c11">
+                  <span class="c7">Spurious</span>
+                  <span>: relationships that are in the </span>
+                  <span class="c7">dev </span>
+                  <span>file but not in the </span>
+                  <span class="c7">gold </span>
+                  <span>file, either because the </span>
+                  <span class="c7">LABEL </span>
+                  <span>is wrong, or because one of the </span>
+                  <span class="c7">ID</span>
+                  <span class="c3">s didn&rsquo;t match.</span>
+                </li>
+              </ul>
+              <p class="c21 c6">
+                <span class="c3"></span>
+              </p>
+              <p class="c6 c24">
+                <span class="c3"></span>
+              </p>
+              <p class="c24 c6">
+                <span class="c3"></span>
+              </p>
+              <p class="c24">
+                <span>The script also reports standard </span>
+                <span class="c7">precision</span>
+                <span>, </span>
+                <span class="c7">recall</span>
+                <span>and </span>
+                <span class="c7">F1</span>
+                <span class="c3">metrics calculated as follows:</span>
+              </p>
+              <p class="c2 c6">
+                <span class="c3"></span>
+              </p>
+              <a id="t.75c1348bd3f3957c1b7c03b0caf69aeb0e11385e"></a>
+              <a id="t.16"></a>
+              <table class="c68">
+                <tbody>
+                  <tr class="c19">
+                    <td class="c25" colspan="1" rowspan="1">
+                      <p class="c30">
+                        <img src="images/image1.png">
+                      </p>
+                    </td>
+                    <td class="c69" colspan="1" rowspan="1">
+                      <p class="c30">
+                        <img src="images/image8.png">
+                      </p>
+                      <p class="c56 c6">
+                        <span class="c3"></span>
+                      </p>
+                      <p class="c30">
+                        <img src="images/image9.png">
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="c2 c6">
+                <span class="c39 c7"></span>
+              </p>
+              <a id="t.fffc1200b6428bfb36ec50b666022d841f68d204"></a>
+              <a id="t.17"></a>
+              <table class="c20">
+                <tbody>
+                  <tr class="c19">
+                    <td class="c58" colspan="1" rowspan="1">
+                      <p class="c2">
+                        <span class="c7">NOTE: </span>
+                        <span>These metrics are only reported for convenience here, to be used by the participants when developing
+                          their solutions. The actual score used for ranking participants will be presented later.</span>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-        </main>
-        <footer>
-        </footer>
-    </div>
+          </div>
+      </div>
+    </main>
+    <footer>
+    </footer>
+  </div>
 </body>
 
 </html>

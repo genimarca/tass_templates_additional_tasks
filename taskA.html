@@ -34,13 +34,25 @@
           <div class="col-12">
             <ul>
               <li>
-                <a href="index.html#about">About</a>
+                <a href="index.html">About</a>
               </li>
               <li>
-                <a href="#taskA">Subtask A</a>
+                <a href="taskA.html">Subtask A</a>
               </li>
               <li>
-                <a href="#eval">Evaluation</a>
+                <a href="taskB.html">Subtask B</a>
+              </li>
+              <li>
+                <a href="taskC.html">Subtask C</a>
+              </li>
+              <li>
+                <a href="index.html#corpora">Corpora</a>
+              </li>
+              <li>
+                <a href="index.html#evaluation">Evaluation</a>
+              </li>
+              <li>
+                <a href="#important_dates">Important dates</a>
               </li>
               <li>
                 <a href="http://www.sepln.org/workshops/tass/2018">TASS-2018</a>
@@ -68,12 +80,12 @@
               </p>
               <p class="c2">
                 <span class="c7">Input:</span>
-                <span>&nbsp;a list of documents in plain text is given. Each document is named </span>
+                <span>a list of documents in plain text is given. Each document is named </span>
                 <span class="c35 c7">input_&lt;topic&gt;.txt</span>
-                <span class="c7">&nbsp;</span>
+                <span class="c7"></span>
                 <span>where </span>
                 <span class="c35">topic</span>
-                <span class="c3">&nbsp;is a keyword such as &ldquo;asma&rdquo;, &ldquo;cancer&rdquo;, etc., related to the topic of the document.
+                <span class="c3">is a keyword such as &ldquo;asma&rdquo;, &ldquo;cancer&rdquo;, etc., related to the topic of the document.
                   These topic labels are only used in this subtask to relate input files to output files. A description document
                   for the corpus is provided which explains the source of each of the input files.</span>
               </p>
@@ -82,7 +94,7 @@
               </p>
               <p class="c2">
                 <span class="c3 c1">An example input file containing plain text is given below. No preprocessing&mdash; tokenizing or splitting
-                  into sentences&mdash; is performed on the text. All &nbsp;inputs are encoded into UTF-8.</span>
+                  into sentences&mdash; is performed on the text. All inputs are encoded into UTF-8.</span>
               </p>
               <p class="c2 c6">
                 <span class="c3 c1"></span>
@@ -95,7 +107,7 @@
               </p>
               <ul class="c59 lst-kix_list_3-0 start">
                 <li class="c2 c11">
-                  <span class="c1">plain text document: &nbsp;file </span>
+                  <span class="c1">plain text document: file </span>
                   <span class="c35 c1">input_asma.txt</span>
                 </li>
               </ul>
@@ -132,9 +144,9 @@
                 <span class="c35">&lt;topic&gt; </span>
                 <span>matches with the corresponding input file. The </span>
                 <span class="c35">A</span>
-                <span>&nbsp;refers to subtask A applied and </span>
+                <span>refers to subtask A applied and </span>
                 <span class="c35">team</span>
-                <span>&nbsp;refers to the participant team.</span>
+                <span>refers to the participant team.</span>
               </p>
               <p class="c2 c6">
                 <span class="c3"></span>
@@ -147,16 +159,16 @@
                 <span>, and should be an auto incremented integer that will be used in later subtasks to reference the corresponding
                   text span. The second number is an integer indicating the </span>
                 <span class="c7">START</span>
-                <span>&nbsp;of the text span, that is, the </span>
+                <span>of the text span, that is, the </span>
                 <span class="c7">zero-based index</span>
-                <span>&nbsp;with respect to the whole document of the first character of the text span. The third number is an
+                <span>with respect to the whole document of the first character of the text span. The third number is an
                   integer that indicates the </span>
                 <span class="c7">END </span>
                 <span>of the text phrase, that is, the </span>
                 <span class="c7">zero-based index </span>
                 <span>with respect to the whole document of the first character after the span. This means that </span>
                 <span class="c7">END minus START</span>
-                <span class="c3">&nbsp;is equal to the length in characters of the text span.</span>
+                <span class="c3">is equal to the length in characters of the text span.</span>
               </p>
               <p class="c2 c6">
                 <span class="c3"></span>
@@ -196,7 +208,7 @@
                 <span class="c1">The following fragment shows the expected gold output for the previous input file, that exactly matches what
                   the sample figure shows. Notice that the first entry is identified with </span>
                 <span class="c7 c1">ID=1</span>
-                <span class="c1">&nbsp;and </span>
+                <span class="c1">and </span>
                 <span class="c7 c1">START=3, END=7</span>
                 <span class="c1">. It represents the phrase &ldquo;asma&rdquo; seen in the first sentence, which spans from character </span>
                 <span class="c7 c1">3 </span>
@@ -215,13 +227,13 @@
                 <span class="c3 c1"></span>
               </p>
               <p class="c2">
-                <span class="c1">Subtask A &nbsp;</span>
+                <span class="c1">Subtask A </span>
                 <span class="c7 c1">gold output</span>
-                <span class="c3 c1">&nbsp;example:</span>
+                <span class="c3 c1">example:</span>
               </p>
               <ul class="c59 lst-kix_list_3-0">
                 <li class="c2 c11">
-                  <span class="c1">structured data regarding the key phrases&rsquo; offsets: &nbsp;file </span>
+                  <span class="c1">structured data regarding the key phrases&rsquo; offsets: file </span>
                   <span class="c35 c1">output_A_asma.txt</span>
                 </li>
               </ul>
@@ -235,72 +247,72 @@
                   <tr class="c19">
                     <td class="c87" colspan="1" rowspan="1">
                       <p class="c0">
-                        <span class="c9">ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;START&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;END</span>
+                        <span class="c9">IDSTARTEND</span>
                       </p>
                     </td>
                   </tr>
                   <tr class="c19">
                     <td class="c87" colspan="1" rowspan="1">
                       <p class="c0">
-                        <span class="c9">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7</span>
+                        <span class="c9">137</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;14</span>
+                        <span class="c9">2814</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;37</span>
+                        <span class="c9">31937</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;51</span>
+                        <span class="c9">44351</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;67&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;71</span>
+                        <span class="c9">56771</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;55&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;62</span>
+                        <span class="c9">65562</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;79&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;89</span>
+                        <span class="c9">77989</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;94&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;108</span>
+                        <span class="c9">894108</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;112&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;119</span>
+                        <span class="c9">9112119</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;131&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;139</span>
+                        <span class="c9">10131139</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;140&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;148</span>
+                        <span class="c9">11140148</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;154&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;162</span>
+                        <span class="c9">12154162</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;168&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;179</span>
+                        <span class="c9">13168179</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;180&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;188</span>
+                        <span class="c9">14180188</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;193&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;197</span>
+                        <span class="c9">15193197</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;237&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;247</span>
+                        <span class="c9">16237247</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;216&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;224</span>
+                        <span class="c9">17216224</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;201&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;207</span>
+                        <span class="c9">18201207</span>
                       </p>
                     </td>
                   </tr>
                 </tbody>
               </table>
               <p class="c21">
-                <span class="c8">&nbsp;</span>
+                <span class="c8"></span>
               </p>
               <a id="t.402afcc44b51361a7cc03be7f44c0734363e4672"></a>
               <a id="t.2"></a>
@@ -334,11 +346,11 @@
               <p class="c2">
                 <span>There are different issues to deal with in terms of evaluation when the </span>
                 <span class="c7">dev output</span>
-                <span>&nbsp;files are processed. To illustrate some of them the following fragment shows another possible output
+                <span>files are processed. To illustrate some of them the following fragment shows another possible output
                   simulating a participant team (e.g. teamX), but this time some mistakes have been introduced. There are
                   </span>
                 <span class="c7">some entries missing</span>
-                <span>&nbsp;while other </span>
+                <span>while other </span>
                 <span class="c7">entries have been incorrectly added</span>
                 <span class="c3">, in contrast to the gold file.</span>
               </p>
@@ -346,9 +358,9 @@
                 <span class="c3"></span>
               </p>
               <p class="c2">
-                <span>example &nbsp;</span>
+                <span>example </span>
                 <span class="c7">dev file</span>
-                <span>&nbsp;</span>
+                <span></span>
                 <span class="c35">output_</span>
                 <span class="c1 c5">teamX_</span>
                 <span class="c35">A_asma.txt</span>
@@ -360,59 +372,59 @@
                   <tr class="c19">
                     <td class="c13" colspan="1" rowspan="1">
                       <p class="c0">
-                        <span class="c9">ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;START&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;END</span>
+                        <span class="c9">IDSTARTEND</span>
                       </p>
                     </td>
                   </tr>
                   <tr class="c19">
                     <td class="c13" colspan="1" rowspan="1">
                       <p class="c0">
-                        <span class="c9">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7</span>
+                        <span class="c9">137</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;37</span>
+                        <span class="c9">31937</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;51</span>
+                        <span class="c9">44351</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;67&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;71</span>
+                        <span class="c9">56771</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;79&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;89</span>
+                        <span class="c9">77989</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;94&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;108</span>
+                        <span class="c9">894108</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;112&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;119</span>
+                        <span class="c9">9112119</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;127&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;139</span>
+                        <span class="c9">10127139</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;140&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;148</span>
+                        <span class="c9">11140148</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;154&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;162</span>
+                        <span class="c9">12154162</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;168&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;179</span>
+                        <span class="c9">13168179</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;180&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;188</span>
+                        <span class="c9">14180188</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;237&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;247</span>
+                        <span class="c9">16237247</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;216&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;224</span>
+                        <span class="c9">17216224</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;193&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;207</span>
+                        <span class="c9">15193207</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;229&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;233</span>
+                        <span class="c9">19229233</span>
                       </p>
                     </td>
                   </tr>
@@ -438,17 +450,17 @@
                 <span>) is provided to help participants to easily detect mistakes. The evaluation script receives two arguments,
                   the path of the </span>
                 <span class="c7">gold</span>
-                <span>&nbsp;</span>
+                <span></span>
                 <span class="c7">folder </span>
                 <span>and the path of the </span>
                 <span class="c7">dev</span>
-                <span>&nbsp;folder. The </span>
+                <span>folder. The </span>
                 <span class="c7">gold folder </span>
                 <span>contains the input files (</span>
                 <span class="c35">input_&lt;topic&gt;.txt</span>
                 <span>) and the expected </span>
                 <span class="c7">gold output</span>
-                <span>&nbsp;files (for Subtask A these are the files called </span>
+                <span>files (for Subtask A these are the files called </span>
                 <span class="c35">output_A_&lt;topic&gt;.txt</span>
                 <span>), and the </span>
                 <span class="c7">dev folder </span>
@@ -466,7 +478,7 @@
                 <span class="c35">example-gold </span>
                 <span>and </span>
                 <span class="c35">example-dev</span>
-                <span class="c3">&nbsp;are provided with the previous examples, to illustrate how to use the evaluation script. Running this
+                <span class="c3">are provided with the previous examples, to illustrate how to use the evaluation script. Running this
                   script using these example folders produces the following result (only showing output that is relevant
                   for the Subtask A):
                 </span>
@@ -484,13 +496,13 @@
                         <span class="c9"># Subtask A (detecting phrases)</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">&nbsp; input file: ../example-gold/input_asma.txt</span>
+                        <span class="c9"> input file: ../example-gold/input_asma.txt</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">&nbsp; gold file: &nbsp;../example-gold/output_A_asma.txt</span>
+                        <span class="c9"> gold file: ../example-gold/output_A_asma.txt</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">&nbsp; dev file: &nbsp; ../example-dev/output_teamX_A_asma.txt</span>
+                        <span class="c9"> dev file:  ../example-dev/output_teamX_A_asma.txt</span>
                       </p>
                       <p class="c0 c6">
                         <span class="c9"></span>
@@ -499,71 +511,71 @@
                         <span class="c9">* Correct (13):</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">&nbsp; - &quot;asma&quot; from 3 to 7.</span>
+                        <span class="c9"> - &quot;asma&quot; from 3 to 7.</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">&nbsp; - &quot;v&iacute;as respiratorias&quot; from 19 to 37.</span>
+                        <span class="c9"> - &quot;v&iacute;as respiratorias&quot; from 19 to 37.</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">&nbsp; - &quot;pulmones&quot; from 43 to 51.</span>
+                        <span class="c9"> - &quot;pulmones&quot; from 43 to 51.</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">&nbsp; - &quot;asma&quot; from 67 to 71.</span>
+                        <span class="c9"> - &quot;asma&quot; from 67 to 71.</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">&nbsp; - &quot;enfermedad&quot; from 79 to 89.</span>
+                        <span class="c9"> - &quot;enfermedad&quot; from 79 to 89.</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">&nbsp; - &quot;ataque de asma&quot; from 94 to 108.</span>
+                        <span class="c9"> - &quot;ataque de asma&quot; from 94 to 108.</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">&nbsp; - &quot;produce&quot; from 112 to 119.</span>
+                        <span class="c9"> - &quot;produce&quot; from 112 to 119.</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">&nbsp; - &quot;empeoran&quot; from 140 to 148.</span>
+                        <span class="c9"> - &quot;empeoran&quot; from 140 to 148.</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">&nbsp; - &quot;s&iacute;ntomas&quot; from 154 to 162.</span>
+                        <span class="c9"> - &quot;s&iacute;ntomas&quot; from 154 to 162.</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">&nbsp; - &quot;tratamiento&quot; from 168 to 179.</span>
+                        <span class="c9"> - &quot;tratamiento&quot; from 168 to 179.</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">&nbsp; - &quot;dependen&quot; from 180 to 188.</span>
+                        <span class="c9"> - &quot;dependen&quot; from 180 to 188.</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">&nbsp; - &quot;avanzada&quot; from 216 to 224.</span>
+                        <span class="c9"> - &quot;avanzada&quot; from 216 to 224.</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">&nbsp; - &quot;enfermedad&quot; from 237 to 247.</span>
+                        <span class="c9"> - &quot;enfermedad&quot; from 237 to 247.</span>
                       </p>
                       <p class="c0">
                         <span class="c9">* Partial (2):</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">&nbsp; - &quot;s&iacute;ntomas&quot; from 131 to 139 vs &quot;los s&iacute;ntomas&quot; from 127
+                        <span class="c9"> - &quot;s&iacute;ntomas&quot; from 131 to 139 vs &quot;los s&iacute;ntomas&quot; from 127
                           to 139.</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">&nbsp; - &quot;tipo&quot; from 193 to 197 vs &quot;tipo de c&aacute;ncer&quot; from 193 to 207.</span>
+                        <span class="c9"> - &quot;tipo&quot; from 193 to 197 vs &quot;tipo de c&aacute;ncer&quot; from 193 to 207.</span>
                       </p>
                       <p class="c0">
                         <span class="c9">* Missing (3):</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">&nbsp; - &quot;afecta&quot; from 8 to 14.</span>
+                        <span class="c9"> - &quot;afecta&quot; from 8 to 14.</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">&nbsp; - &quot;hinchan&quot; from 55 to 62.</span>
+                        <span class="c9"> - &quot;hinchan&quot; from 55 to 62.</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">&nbsp; - &quot;c&aacute;ncer&quot; from 201 to 207.</span>
+                        <span class="c9"> - &quot;c&aacute;ncer&quot; from 201 to 207.</span>
                       </p>
                       <p class="c0">
                         <span class="c9">* Spurious (1):</span>
                       </p>
                       <p class="c0">
-                        <span class="c9">&nbsp; - &quot;est&eacute;&quot; from 229 to 233.</span>
+                        <span class="c9"> - &quot;est&eacute;&quot; from 229 to 233.</span>
                       </p>
                       <p class="c0 c6">
                         <span class="c9"></span>
@@ -598,11 +610,11 @@
                 <span class="c7">spurious </span>
                 <span>matches. The expected and actual output files do not need to agree on the </span>
                 <span class="c7">ID</span>
-                <span>&nbsp;for each phrase, nor on their order. The evaluator matches are based on the </span>
+                <span>for each phrase, nor on their order. The evaluator matches are based on the </span>
                 <span class="c7">START</span>
-                <span>&nbsp;and </span>
+                <span>and </span>
                 <span class="c7">END</span>
-                <span>&nbsp;values. However, it is important to pay attention to the </span>
+                <span>values. However, it is important to pay attention to the </span>
                 <span class="c7">ID</span>
                 <span class="c3">s which will be used in the following Subtasks B and C.</span>
               </p>
@@ -618,9 +630,9 @@
               <ul class="c59 lst-kix_list_1-0 start">
                 <li class="c2 c11">
                   <span class="c7">Correct</span>
-                  <span>&nbsp;matches are reported when a text in the </span>
+                  <span>matches are reported when a text in the </span>
                   <span class="c7">dev</span>
-                  <span>&nbsp;file matches exactly with a corresponding text span in the </span>
+                  <span>file matches exactly with a corresponding text span in the </span>
                   <span class="c7">gold </span>
                   <span>file in </span>
                   <span class="c7">START </span>
@@ -628,7 +640,7 @@
                   <span class="c7">END </span>
                   <span>values. Only one correct match per entry in the </span>
                   <span class="c7">gold</span>
-                  <span>&nbsp;file can be matched. Hence, duplicated entries will count as </span>
+                  <span>file can be matched. Hence, duplicated entries will count as </span>
                   <span class="c7">Spurious</span>
                   <span class="c3">.</span>
                 </li>
@@ -636,7 +648,7 @@
                   <span class="c7">Partial </span>
                   <span>matches are reported when two intervals </span>
                   <span class="c7">[START, END]</span>
-                  <span>&nbsp;have a non-empty intersection, such as the case of &ldquo;s&iacute;ntomas&rdquo; and &ldquo;los s&iacute;ntomas&rdquo;
+                  <span>have a non-empty intersection, such as the case of &ldquo;s&iacute;ntomas&rdquo; and &ldquo;los s&iacute;ntomas&rdquo;
                     in the previous example. Notice that a partial phrase will only be matched against a single correct phrase.
                     For example, &ldquo;tipo de c&aacute;ncer&rdquo; could be a partial match for both &ldquo;tipo&rdquo;
                     and &ldquo;c&aacute;ncer&rdquo;, but it is only counted once as a partial match with the word &ldquo;tipo&rdquo;.
@@ -672,7 +684,7 @@
                 <span class="c7">recall</span>
                 <span>, and a standard </span>
                 <span class="c7">F1</span>
-                <span class="c3">&nbsp;measure, calculated as follows:</span>
+                <span class="c3">measure, calculated as follows:</span>
               </p>
               <a id="t.40e72fd7799fe1566e4dc9bf8929d567b31393f2"></a>
               <a id="t.5"></a>

@@ -34,22 +34,25 @@
           <div class="col-12">
             <ul>
               <li>
-                <a href="#about">About</a>
+                <a href="index.html">About</a>
               </li>
               <li>
-                <a href="#tasks">Tasks</a>
+                <a href="taskA.html">Subtask A</a>
               </li>
               <li>
-                <a href="#datasets">Datasets</a>
+                <a href="taskB.html">Subtask B</a>
               </li>
               <li>
-                <a href="#shared_task">Shared Task</a>
+                <a href="taskC.html">Subtask C</a>
+              </li>
+              <li>
+                <a href="index.html#corpora">Corpora</a>
+              </li>
+              <li>
+                <a href="index.html#evaluation">Evaluation</a>
               </li>
               <li>
                 <a href="#important_dates">Important dates</a>
-              </li>
-              <li>
-                <a href="#organization">Organization</a>
               </li>
               <li>
                 <a href="http://www.sepln.org/workshops/tass/2018">TASS-2018</a>
@@ -67,13 +70,13 @@
               <p class="c15">
                 <span class="c3">Natural Language Processing (NLP) methods are increasingly being used to mine knowledge from unstructured
                   health texts. Recent advances in health text processing techniques are encouraging researchers and medical
-                  domain experts to go beyond &nbsp;just reading the information included in published texts (e.g. academic
+                  domain experts to go beyond just reading the information included in published texts (e.g. academic
                   manuscripts, clinical reports, etc.) and structured questionnaires, to discover new knowledge by mining
-                  health contents. This has allowed other perspectives to surface that were not previously &nbsp;available.</span>
+                  health contents. This has allowed other perspectives to surface that were not previously available.</span>
               </p>
               <p class="c15">
-                <span class="c3">Over the years many eHealth challenges have taken place, which have attempted &nbsp;to identify, classify,
-                  extract and link knowledge, such &nbsp;as Semevals, CLEF campaigns and others [1]. </span>
+                <span class="c3">Over the years many eHealth challenges have taken place, which have attempted to identify, classify,
+                  extract and link knowledge, such as Semevals, CLEF campaigns and others [1]. </span>
               </p>
               <p class="c15">
                 <span>Inspired by previous NLP shared tasks like &ldquo;</span>
@@ -83,10 +86,10 @@
                 <sup class="c27">
                   <a href="#ftnt1" id="ftnt_ref1">[1]</a>
                 </sup>
-                <span>&rdquo; and &nbsp;research lines like </span>
+                <span>&rdquo; and research lines like </span>
                 <span class="c1">Teleologies</span>
-                <span class="c65 c1">&nbsp;</span>
-                <span class="c3">[2], both not specifically focussed on &nbsp;the health area, eHealth-KD proposes modelling the human language
+                <span class="c65 c1"></span>
+                <span class="c3">[2], both not specifically focussed on the health area, eHealth-KD proposes modelling the human language
                   in a scenario in which Spanish electronic health documents could be machine readable from a semantic point
                   of view. With this task, we expect to encourage the development of software technologies to automatically
                   extract a large variety of knowledge from eHealth documents written in the Spanish Language.</span>
@@ -96,7 +99,7 @@
                 <span class="c43">
                   <a class="c14" href="https://medlineplus.gov/xml.html">MedlinePlus</a>
                 </span>
-                <span class="c3">&nbsp;and manually processed to make them fit for the task. Additional details are provided at the end of
+                <span class="c3">and manually processed to make them fit for the task. Additional details are provided at the end of
                   this document.</span>
               </p>
             </div>
@@ -174,9 +177,7 @@
           <a name="shared_task"></a>
           <div class="row">
             <div class="col-12">
-              <h2>Shared Task</h2>
-
-              <h2 class="c32" id="h.4d34og8">
+              <h2 class="c32" id="corpora">
                 <span class="c28 c7">Corpora description</span>
             </h2>
             <p class="c31">
@@ -184,7 +185,7 @@
                     Produced by the National Library of Medicine, the world&rsquo;s largest medical library, it brings you information
                     about diseases, conditions, and wellness issues in language you can understand. MedlinePlus offers reliable,
                     up-to-date health information, anytime, anywhere, for free.&rdquo; [3] This platform freely provides large health
-                    textual data from which we have made a &nbsp;selection for constituting the eHealth-KD corpus. T</span>
+                    textual data from which we have made a selection for constituting the eHealth-KD corpus. T</span>
                 <span
                     class="c1">he selection has been made by sampling specific XML files from the collection available in </span>
                     <span class="c1 c43">
@@ -199,7 +200,7 @@
                 <span class="c3 c1">These files contain several entries related to health and medicine topics and have been processed to remove all XML
                     markup to extract the textual content. Only Spanish language items were considered. Once cleaned, each individual
                     item was converted to a plain text document, and some further post-processing is applied to remove unwanted sentences,
-                    such as headers, footers and similar elements, &nbsp;and to flatten HTML lists into plain sentences. The final
+                    such as headers, footers and similar elements, and to flatten HTML lists into plain sentences. The final
                     documents are manually tagged using Brat by a group of annotators. After tagging, a post-processing was applied
                     to Brat&rsquo;s output files (ANN format) to obtain the output files in the formats described in this document.</span>
             </p>
@@ -254,9 +255,9 @@
                         time of submission (e.g., WordNet, other corpora, software libraries). However, participants are </span>
                     <span
                         class="c7">not allowed</span>
-                        <span>&nbsp;to manually annotate the test data prior to submission.</span>
+                        <span>to manually annotate the test data prior to submission.</span>
             </p>
-            <h2 class="c29" id="h.17dp8vu">
+            <h2 class="c29" id="evaluation">
                 <span class="c28 c7">Overall evaluation </span>
             </h2>
             <p class="c52">
@@ -276,43 +277,30 @@
             <p class="c34">
                 <span>Systems will be ranked according to an aggregated </span>
                 <span class="c7">F1</span>
-                <span>&nbsp;metric computed on the three tasks, by considering </span>
+                <span>metric computed on the three tasks, by considering </span>
                 <span class="c7">precision</span>
-                <span>&nbsp;and </span>
+                <span>and </span>
                 <span class="c7">recall</span>
-                <span class="c3">&nbsp;as follows:</span>
+                <span class="c3">as follows:</span>
             </p>
             <p class="c30">
                 <img src="images/image10.png">
             </p>
-            <p class="c2 c6">
-                <span class="c4"></span>
-            </p>
             <p class="c30">
                 <img src="images/image11.png">
-            </p>
-            <p class="c2 c6">
-                <span class="c4"></span>
             </p>
             <p class="c30">
                 <img src="images/image1.png">
             </p>
-            <p class="c2 c6">
-                <span class="c3"></span>
-            </p>
+
             <p class="c2">
                 <span class="c3">Besides this aggregated F1 score, individual F1 scores for each of the subtasks will also be reported.</span>
             </p>
-            <p class="c2 c6">
-                <span class="c3"></span>
-            </p>
+
             <h3 class="c23" id="h.26in1rg">
                 <span>Scenario 2: </span>
                 <span class="c44">Plain text and manually annotated key phrase boundaries are given (Subtasks B, C).</span>
             </h3>
-            <p class="c2 c6">
-                <span class="c4"></span>
-            </p>
             <p class="c2">
                 <span>In this second scenario participants will perform tasks B and C sequentially, and provide the corresponding output
                     files. As input, they receive both plain text files (</span>
@@ -322,32 +310,20 @@
                 <span>). The purpose of this scenario is to evaluate the quality of tasks B and C independently from task A. As in the
                     previous scenario, an aggregated </span>
                 <span class="c7">F1</span>
-                <span>&nbsp;metric is reported, based on the following </span>
+                <span>metric is reported, based on the following </span>
                 <span class="c7">precision</span>
-                <span>&nbsp;and </span>
+                <span>and </span>
                 <span class="c7">recall</span>
                 <span class="c3">:</span>
-            </p>
-            <p class="c2 c6">
-                <span class="c4"></span>
             </p>
             <p class="c30">
                 <img src="images/image12.png">
             </p>
-            <p class="c2 c6">
-                <span class="c4"></span>
-            </p>
             <p class="c30">
                 <img src="images/image13.png">
             </p>
-            <p class="c2 c6">
-                <span class="c4"></span>
-            </p>
             <p class="c30">
                 <img src="images/image1.png">
-            </p>
-            <p class="c2 c6">
-                <span class="c4"></span>
             </p>
             <p class="c34">
                 <span class="c3">Besides the aggregated F1 metric, individual scores of F1 for each of the subtasks are also reported.</span>
@@ -356,44 +332,33 @@
                 <span>Scenario 3: </span>
                 <span class="c44">Plain text with manually annotated key phrases and their types are given (Subtask C).</span>
             </h3>
-            <p class="c2 c6">
-                <span class="c3"></span>
-            </p>
+
             <p class="c34">
                 <span>In this scenario both the gold outputs for task A and task B are provided, and the participants must only perform
                     the process to obtain task C output files. The purpose of this scenario is to evaluate only the quality of task
                     C independently of the complexity of task A and B. As before, an aggregated F1 metric is reported, based on the
                     following </span>
                 <span class="c7">precision</span>
-                <span>&nbsp;and </span>
+                <span>and </span>
                 <span class="c7">recall</span>
                 <span class="c3">:</span>
             </p>
             <p class="c30">
                 <img src="images/image14.png">
             </p>
-            <p class="c2 c6">
-                <span class="c4"></span>
-            </p>
             <p class="c30">
                 <img src="images/image15.png">
-            </p>
-            <p class="c2 c6">
-                <span class="c4"></span>
             </p>
             <p class="c30">
                 <img src="images/image1.png">
             </p>
-            <p class="c2 c6">
-                <span class="c4"></span>
-            </p>
-            <h2 class="c29" id="h.35nkun2">
+            <!-- <h2 class="c29" id="h.35nkun2">
                 <span class="c28 c7">Submission</span>
             </h2>
             <p class="c15">
                 <span>Each participant team must submit its results per scenario in a single &lt;team&gt;_&lt;run#&gt;</span>
                 <span class="c7 c45">.zip</span>
-                <span class="c3">&nbsp;file following this folder structure including in each folder the respective task development outputs:</span>
+                <span class="c3">file following this folder structure including in each folder the respective task development outputs:</span>
             </p>
             <p class="c0">
                 <span class="c48 c45">&lt;scenario1&gt;_/</span>
@@ -510,10 +475,10 @@
             </p>
             <p class="c2 c6 c61">
                 <span class="c3"></span>
-            </p>
-            <p class="c2 c61">
+            </p> -->
+            <h3>
                 <span class="c7 c33">Discussion group</span>
-            </p>
+            </h3>
             <p class="c2 c61">
                 <span>A Google Group has been set up for this TASS &ldquo; eHealth Shared Task&rdquo; where announcements will be made.
                     Do send your questions and feedback to (</span>
@@ -536,7 +501,7 @@
             </h2>
             <p class="c42">
                 <span class="c3">This research task is partially funded by the University of Alicante, Generalitat Valenciana, Spanish Government
-                    (&ldquo;Ministerio de Econom&iacute;a y Competitividad&rdquo;) &nbsp;through the projects REDES (TIN2015-65136-
+                    (&ldquo;Ministerio de Econom&iacute;a y Competitividad&rdquo;) through the projects REDES (TIN2015-65136-
                     C2-2-R) and &ldquo;Plataforma inteligente para recuperaci&oacute;n, an&aacute;lisis y representaci&oacute;n de
                     la informaci&oacute;n generada por usuarios en Internet&rdquo; (GRE16-01).</span>
             </p>
@@ -555,14 +520,14 @@
                     26(01), p 214--227. 2017</span>
             </p>
             <p class="c52">
-                <span class="c65 c1">[2] &nbsp; Giunchiglia, F., &amp; Fumagalli, M. (2017, November). Teleologies: Objects, Actions and Functions. In
+                <span class="c65 c1">[2]  Giunchiglia, F., &amp; Fumagalli, M. (2017, November). Teleologies: Objects, Actions and Functions. In
                     </span>
                 <span class="c35 c65 c1">International Conference on Conceptual Modeling</span>
-                <span class="c48 c1 c63">&nbsp;(pp. 520-534). Springer, Cham.</span>
+                <span class="c48 c1 c63">(pp. 520-534). Springer, Cham.</span>
             </p>
             <p class="c52">
                 <span class="c1 c65">[3]</span>
-                <span class="c1 c57">&nbsp; &nbsp;</span>
+                <span class="c1 c57"> </span>
                 <span class="c1 c71">MedlinePlus [Internet]. Bethesda (MD): National Library of Medicine (US). Available from: </span>
                 <span class="c43 c71 c1">
                     <a class="c14" href="https://www.google.com/url?q=https://medlineplus.gov/&amp;sa=D&amp;ust=1518162663881000&amp;usg=AFQjCNHl4UM4g4glSYzxvg2LW_Y_QbGdkg">https://medlineplus.gov/</a>

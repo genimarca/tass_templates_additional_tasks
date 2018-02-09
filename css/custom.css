@@ -456,10 +456,10 @@ table td, table th {
 .c21 {
     padding-top: 0pt;
     padding-bottom: 0pt;
-    line-height: 1.0791666666666666;
+    /* line-height: 1.0791666666666666; */
     orphans: 2;
     widows: 2;
-    text-align: left
+    text-align: left;
 }
 
 .c47 {
