@@ -116,6 +116,407 @@
           <div class="row">
             <div class="col-12">
               <h2>Shared Task</h2>
+
+              <h2 class="c32" id="h.4d34og8">
+                <span class="c28 c7">Corpora description</span>
+            </h2>
+            <p class="c31">
+                <span class="c1">&ldquo;MedlinePlus is the National Institutes of Health&#39;s Website for patients and their families and friends.
+                    Produced by the National Library of Medicine, the world&rsquo;s largest medical library, it brings you information
+                    about diseases, conditions, and wellness issues in language you can understand. MedlinePlus offers reliable,
+                    up-to-date health information, anytime, anywhere, for free.&rdquo; [3] This platform freely provides large health
+                    textual data from which we have made a &nbsp;selection for constituting the eHealth-KD corpus. T</span>
+                <span
+                    class="c1">he selection has been made by sampling specific XML files from the collection available in </span>
+                    <span class="c1 c43">
+                        <a class="c14" href="https://www.google.com/url?q=https://medlineplus.gov/xml.html&amp;sa=D&amp;ust=1518162663857000&amp;usg=AFQjCNE0yCrh2v6xamY9ND9ot3-bVB2cEQ">https://medlineplus.gov/xml.html</a>
+                    </span>
+                    <span class="c3 c1">.</span>
+            </p>
+            <p class="c38 c6">
+                <span class="c3 c1"></span>
+            </p>
+            <p class="c31">
+                <span class="c3 c1">These files contain several entries related to health and medicine topics and have been processed to remove all XML
+                    markup to extract the textual content. Only Spanish language items were considered. Once cleaned, each individual
+                    item was converted to a plain text document, and some further post-processing is applied to remove unwanted sentences,
+                    such as headers, footers and similar elements, &nbsp;and to flatten HTML lists into plain sentences. The final
+                    documents are manually tagged using Brat by a group of annotators. After tagging, a post-processing was applied
+                    to Brat&rsquo;s output files (ANN format) to obtain the output files in the formats described in this document.</span>
+            </p>
+            <p class="c31 c6">
+                <span class="c3 c1"></span>
+            </p>
+            <p class="c31">
+                <span class="c3 c1">The resulting documents and output files are distributed along with the Task. There is no need for participants to
+                    download extra data from MedlinePlus servers, since all the input is already distributed. </span>
+            </p>
+            <p class="c31 c6">
+                <span class="c3 c1"></span>
+            </p>
+            <h3 class="c92">
+                <span class="c7 c54">Test data</span>
+            </h3>
+            <p class="c31">
+                <span class="c1">The corpus is split into two sets, one is distributed for the purpose of </span>
+                <span class="c7 c1">training </span>
+                <span class="c1">and </span>
+                <span class="c7 c1">development </span>
+                <span class="c1">and the remaining documents are kept for blind evaluation (</span>
+                <span class="c7 c1">test</span>
+                <span class="c3 c1">). This test evaluation set is further divided into three sets, one for each of the evaluation scenarios described
+                    below. Of these sets, only input files and the relevant output files are distributed (see below) and the rest
+                    of the output files are kept for evaluating participant&rsquo;s submissions.</span>
+            </p>
+            <p class="c31 c6">
+                <span class="c3 c1"></span>
+            </p>
+            <p class="c31">
+                <span class="c3 c1">After the test evaluation is completed and results are disclosed, the full corpus will be provided, along with all
+                    the configuration files and utility scripts used to create the corpus and perform the annotation, to encourage
+                    future researchers to build upon these resources.</span>
+            </p>
+            <p class="c6 c31">
+                <span class="c3 c1"></span>
+            </p>
+            <h2 class="c74" id="h.2s8eyo1">
+                <span class="c28 c7">Additional Resources</span>
+            </h2>
+            <p class="c24 c6">
+                <span class="c3"></span>
+            </p>
+            <p class="c15">
+                <span>Besides the training data, some additional resources will be provided, such as the evaluation script (i.e. </span>
+                <span
+                    class="c62 c45">evaluateTask.py</span>
+                    <span>) and the example files (ie. </span>
+                    <span class="c7">trial</span>
+                    <span>) shown in this document. Participants may use any other external resources as long as they are declared at the
+                        time of submission (e.g., WordNet, other corpora, software libraries). However, participants are </span>
+                    <span
+                        class="c7">not allowed</span>
+                        <span>&nbsp;to manually annotate the test data prior to submission.</span>
+            </p>
+            <h2 class="c29" id="h.17dp8vu">
+                <span class="c28 c7">Overall evaluation </span>
+            </h2>
+            <p class="c52">
+                <span class="c51">There </span>
+                <span class="c3">will be three evaluation scenarios:</span>
+            </p>
+            <h3 class="c32" id="h.3rdcrjn">
+                <span>Scenario 1: </span>
+                <span class="c44">Only plain text is given (Subtasks A, B, C).</span>
+            </h3>
+            <p class="c34">
+                <span>In this first scenario, the participants will perform the three subtasks consecutively and provide the corresponding
+                    development output files. The only input provided are plain text files </span>
+                <span class="c35">input_&lt;topic&gt;.txt </span>
+                <span class="c3">for a particular list of topics that were not released with the training data.</span>
+            </p>
+            <p class="c34">
+                <span>Systems will be ranked according to an aggregated </span>
+                <span class="c7">F1</span>
+                <span>&nbsp;metric computed on the three tasks, by considering </span>
+                <span class="c7">precision</span>
+                <span>&nbsp;and </span>
+                <span class="c7">recall</span>
+                <span class="c3">&nbsp;as follows:</span>
+            </p>
+            <p class="c30">
+                <img src="images/image10.png">
+            </p>
+            <p class="c2 c6">
+                <span class="c4"></span>
+            </p>
+            <p class="c30">
+                <img src="images/image11.png">
+            </p>
+            <p class="c2 c6">
+                <span class="c4"></span>
+            </p>
+            <p class="c30">
+                <img src="images/image1.png">
+            </p>
+            <p class="c2 c6">
+                <span class="c3"></span>
+            </p>
+            <p class="c2">
+                <span class="c3">Besides this aggregated F1 score, individual F1 scores for each of the subtasks will also be reported.</span>
+            </p>
+            <p class="c2 c6">
+                <span class="c3"></span>
+            </p>
+            <h3 class="c23" id="h.26in1rg">
+                <span>Scenario 2: </span>
+                <span class="c44">Plain text and manually annotated key phrase boundaries are given (Subtasks B, C).</span>
+            </h3>
+            <p class="c2 c6">
+                <span class="c4"></span>
+            </p>
+            <p class="c2">
+                <span>In this second scenario participants will perform tasks B and C sequentially, and provide the corresponding output
+                    files. As input, they receive both plain text files (</span>
+                <span class="c35">input_&lt;topic&gt;.txt</span>
+                <span>), and the corresponding gold files for the task A (</span>
+                <span class="c35">output_A_&lt;topic&gt;.txt</span>
+                <span>). The purpose of this scenario is to evaluate the quality of tasks B and C independently from task A. As in the
+                    previous scenario, an aggregated </span>
+                <span class="c7">F1</span>
+                <span>&nbsp;metric is reported, based on the following </span>
+                <span class="c7">precision</span>
+                <span>&nbsp;and </span>
+                <span class="c7">recall</span>
+                <span class="c3">:</span>
+            </p>
+            <p class="c2 c6">
+                <span class="c4"></span>
+            </p>
+            <p class="c30">
+                <img src="images/image12.png">
+            </p>
+            <p class="c2 c6">
+                <span class="c4"></span>
+            </p>
+            <p class="c30">
+                <img src="images/image13.png">
+            </p>
+            <p class="c2 c6">
+                <span class="c4"></span>
+            </p>
+            <p class="c30">
+                <img src="images/image1.png">
+            </p>
+            <p class="c2 c6">
+                <span class="c4"></span>
+            </p>
+            <p class="c34">
+                <span class="c3">Besides the aggregated F1 metric, individual scores of F1 for each of the subtasks are also reported.</span>
+            </p>
+            <h3 class="c23" id="h.lnxbz9">
+                <span>Scenario 3: </span>
+                <span class="c44">Plain text with manually annotated key phrases and their types are given (Subtask C).</span>
+            </h3>
+            <p class="c2 c6">
+                <span class="c3"></span>
+            </p>
+            <p class="c34">
+                <span>In this scenario both the gold outputs for task A and task B are provided, and the participants must only perform
+                    the process to obtain task C output files. The purpose of this scenario is to evaluate only the quality of task
+                    C independently of the complexity of task A and B. As before, an aggregated F1 metric is reported, based on the
+                    following </span>
+                <span class="c7">precision</span>
+                <span>&nbsp;and </span>
+                <span class="c7">recall</span>
+                <span class="c3">:</span>
+            </p>
+            <p class="c30">
+                <img src="images/image14.png">
+            </p>
+            <p class="c2 c6">
+                <span class="c4"></span>
+            </p>
+            <p class="c30">
+                <img src="images/image15.png">
+            </p>
+            <p class="c2 c6">
+                <span class="c4"></span>
+            </p>
+            <p class="c30">
+                <img src="images/image1.png">
+            </p>
+            <p class="c2 c6">
+                <span class="c4"></span>
+            </p>
+            <h2 class="c29" id="h.35nkun2">
+                <span class="c28 c7">Submission</span>
+            </h2>
+            <p class="c15">
+                <span>Each participant team must submit its results per scenario in a single &lt;team&gt;_&lt;run#&gt;</span>
+                <span class="c7 c45">.zip</span>
+                <span class="c3">&nbsp;file following this folder structure including in each folder the respective task development outputs:</span>
+            </p>
+            <p class="c0">
+                <span class="c48 c45">&lt;scenario1&gt;_/</span>
+            </p>
+            <p class="c0 c49">
+                <span class="c48 c45">&lt;subtaskA&gt;/</span>
+            </p>
+            <p class="c0 c49">
+                <span class="c48 c45">&lt;subtaskB&gt;/</span>
+            </p>
+            <p class="c0 c49">
+                <span class="c48 c45">&lt;subtaskC&gt;/</span>
+            </p>
+            <p class="c0">
+                <span class="c48 c45">&lt;scenario2&gt;_/</span>
+            </p>
+            <p class="c0 c49">
+                <span class="c48 c45">&lt;subtaskB&gt;/</span>
+            </p>
+            <p class="c0 c49">
+                <span class="c48 c45">&lt;subtaskC&gt;/</span>
+            </p>
+            <p class="c0">
+                <span class="c48 c45">&lt;scenario3&gt;_/</span>
+            </p>
+            <p class="c0 c49">
+                <span class="c45 c48">&lt;subtaskC&gt;/</span>
+            </p>
+            <p class="c0 c6 c49">
+                <span class="c22"></span>
+            </p>
+            <p class="c0 c6">
+                <span class="c3"></span>
+            </p>
+            <p class="c0 c6">
+                <span class="c3"></span>
+            </p>
+            <p class="c0 c6">
+                <span class="c3"></span>
+            </p>
+            <p class="c0 c6">
+                <span class="c3"></span>
+            </p>
+            <p class="c0 c6">
+                <span class="c3"></span>
+            </p>
+            <p class="c0">
+                <span class="c3">In addition, it is needed filling a txt filling the following slots:</span>
+            </p>
+            <p class="c0 c6">
+                <span class="c3"></span>
+            </p>
+            <a id="t.d57f6bd12726f38a94c165e1664f2bde7aae2052"></a>
+            <a id="t.18"></a>
+            <table class="c83">
+                <tbody>
+                    <tr class="c19">
+                        <td class="c77" colspan="1" rowspan="1">
+                            <ul class="c59 lst-kix_list_13-0 start">
+                                <li class="c21 c11 c66">
+                                    <span class="c3">Team Name</span>
+                                </li>
+                                <li class="c21 c11 c66">
+                                    <span class="c3">Run number</span>
+                                </li>
+                                <li class="c21 c11 c66">
+                                    <span class="c3">Summary</span>
+                                </li>
+                                <li class="c24 c11 c61">
+                                    <span class="c3">Technique Type: refers the type of techniques used</span>
+                                </li>
+                            </ul>
+                            <ul class="c59 lst-kix_list_13-1 start">
+                                <li class="c10">
+                                    <span class="c3">KB: knowledge-based</span>
+                                </li>
+                                <li class="c10">
+                                    <span class="c3">S: Supervised</span>
+                                </li>
+                                <li class="c10">
+                                    <span class="c3">WS: Weak Supervised</span>
+                                </li>
+                                <li class="c10">
+                                    <span class="c3">U: Unsupervised</span>
+                                </li>
+                                <li class="c10">
+                                    <span class="c3">H: Hybrid (in this case other techniques are added using a dash as a separator &ldquo;-&rdquo;,
+                                        ie. H-KB-S)</span>
+                                </li>
+                            </ul>
+                            <ul class="c59 lst-kix_list_13-0">
+                                <li class="c38 c11 c66">
+                                    <span class="c3">Resources</span>
+                                </li>
+                                <li class="c24 c11 c66">
+                                    <span class="c3">Authors, Institutions and Emails</span>
+                                </li>
+                            </ul>
+                            <p class="c38 c6 c61">
+                                <span class="c3"></span>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="c0 c6">
+                <span class="c3"></span>
+            </p>
+            <p class="c2 c61">
+                <span class="c3">Up to three runs (i.e. approaches) can be submitted which can be updated while the evaluation period is active. </span>
+            </p>
+            <p class="c0">
+                <span>An example folder structure for submission will be released.</span>
+            </p>
+            <p class="c2 c6 c61">
+                <span class="c3"></span>
+            </p>
+            <p class="c2 c61">
+                <span class="c7 c33">Discussion group</span>
+            </p>
+            <p class="c2 c61">
+                <span>A Google Group has been set up for this TASS &ldquo; eHealth Shared Task&rdquo; where announcements will be made.
+                    Do send your questions and feedback to (</span>
+                <span class="c43">
+                    <a class="c14" href="mailto:tass2018_ehealth-kd@googlegroups.com">tass2018_ehealth-kd@googlegroups.com</a>
+                </span>
+                <span class="c3">). </span>
+            </p>
+            <p class="c2 c6 c61">
+                <span class="c3"></span>
+            </p>
+            <h2 class="c29" id="h.z337ya">
+                <span class="c28 c7">Contact person</span>
+            </h2>
+            <p class="c38">
+                <span class="c3">Yoan Guti&eacute;rrez V&aacute;zquez (ygutierrez@dlsi.ua.es)</span>
+            </p>
+            <h2 class="c70" id="h.3j2qqm3">
+                <span class="c28 c7">Acknowledgments</span>
+            </h2>
+            <p class="c42">
+                <span class="c3">This research task is partially funded by the University of Alicante, Generalitat Valenciana, Spanish Government
+                    (&ldquo;Ministerio de Econom&iacute;a y Competitividad&rdquo;) &nbsp;through the projects REDES (TIN2015-65136-
+                    C2-2-R) and &ldquo;Plataforma inteligente para recuperaci&oacute;n, an&aacute;lisis y representaci&oacute;n de
+                    la informaci&oacute;n generada por usuarios en Internet&rdquo; (GRE16-01).</span>
+            </p>
+            <p class="c42">
+                <span class="c3">Both projects have partially designed their evaluation stages over this shared task. </span>
+            </p>
+            <p class="c6 c52">
+                <span class="c4"></span>
+            </p>
+            <h2 class="c29" id="h.1y810tw">
+                <span class="c7 c28">References</span>
+            </h2>
+            <p class="c52">
+                <span class="c47 c62 c1">[1] Gonzalez-Hernandez, G. and Sarker, A. and O&rsquo;Connor, K. and Savova, G. Capturing the Patient&rsquo;s Perspective:
+                    a Review of Advances in Natural Language Processing of Health-Related Text. Yearbook of medical informatics;
+                    26(01), p 214--227. 2017</span>
+            </p>
+            <p class="c52">
+                <span class="c65 c1">[2] &nbsp; Giunchiglia, F., &amp; Fumagalli, M. (2017, November). Teleologies: Objects, Actions and Functions. In
+                    </span>
+                <span class="c35 c65 c1">International Conference on Conceptual Modeling</span>
+                <span class="c48 c1 c63">&nbsp;(pp. 520-534). Springer, Cham.</span>
+            </p>
+            <p class="c52">
+                <span class="c1 c65">[3]</span>
+                <span class="c1 c57">&nbsp; &nbsp;</span>
+                <span class="c1 c71">MedlinePlus [Internet]. Bethesda (MD): National Library of Medicine (US). Available from: </span>
+                <span class="c43 c71 c1">
+                    <a class="c14" href="https://www.google.com/url?q=https://medlineplus.gov/&amp;sa=D&amp;ust=1518162663881000&amp;usg=AFQjCNHl4UM4g4glSYzxvg2LW_Y_QbGdkg">https://medlineplus.gov/</a>
+                </span>
+                <span class="c47 c62 c1">.</span>
+            </p>
+            <p class="c52 c6">
+                <span class="c47 c7 c1"></span>
+            </p>
+            <p class="c52 c6">
+                <span class="c7 c1 c47"></span>
+            </p>
+
               <h3>Registration</h3>
               <p>
                 <i> Feel Free</i>
@@ -133,9 +534,9 @@
                 <i> To be announced. </i>
               </p>
               <p>
-                The Organization Committee of XXXX encourages participants to submit a description paper of their systems. Submitted papers
+                The Organization Committee of eHealth-KD encourages participants to submit a description paper of their systems. Submitted papers
                 will be reviewed by a scientific committee, and only accepted papers will be published at CEUR. The proceedings
-                of XXXX will be jointly published with the proceedings of all the tasks of TASS-2018.
+                of eHealth-KD will be jointly published with the proceedings of all the tasks of TASS-2018.
               </p>
               <p>
                 The manuscripts must satisfy the following rules:
@@ -181,24 +582,120 @@
                 <div class="row dark">
                   <div class="col-6">
                     <p>
-                      Item
+                      Trial data ready
                     </p>
                   </div>
                   <div class="col-6">
                     <p>
-                      Date
+                      12 Feb 2018
                     </p>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-6">
                     <p>
-                      Item
+                      Training and development data ready
                     </p>
                   </div>
                   <div class="col-6">
                     <p>
-                      Date
+                      02 Apr 2018
+                    </p>
+                  </div>
+                </div>
+                <div class="row dark">
+                  <div class="col-6">
+                    <p>
+                      Registration deadline due by 23:59 GMT -12:00
+                    </p>
+                  </div>
+                  <div class="col-6">
+                    <p>
+                      06 May 2018
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <p>
+                      Evaluation start* - Test data released
+                    </p>
+                  </div>
+                  <div class="col-6">
+                    <p>
+                      07 May 2018
+                    </p>
+                  </div>
+                </div>
+                <div class="row dark">
+                  <div class="col-6">
+                    <p>
+                      Evaluation end* - due by 23:59 GMT -12:00
+                    </p>
+                  </div>
+                  <div class="col-6">
+                    <p>
+                      21 May 2018
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <p>
+                      Results posted
+                    </p>
+                  </div>
+                  <div class="col-6">
+                    <p>
+                      28 May 2018
+                    </p>
+                  </div>
+                </div>
+                <div class="row dark">
+                  <div class="col-6">
+                    <p>
+                      System description paper submissions due by 23:59 GMT -12:00
+                    </p>
+                  </div>
+                  <div class="col-6">
+                    <p>
+                      02 Jul 2018
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <p>
+                      Paper reviews due
+                    </p>
+                  </div>
+                  <div class="col-6">
+                    <p>
+                      23 Jul 2018
+                    </p>
+                  </div>
+                </div>
+                <div class="row dark">
+                  <div class="col-6">
+                    <p>
+                      Author notifications
+                    </p>
+                  </div>
+                  <div class="col-6">
+                    <p>
+                      31 Jul 2018
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <p>
+                      Camera ready submissions due
+                    </p>
+                  </div>
+                  <div class="col-6">
+                    <p>
+                      31 Aug 2018
                     </p>
                   </div>
                 </div>
@@ -218,50 +715,60 @@
               <li>
                 <div class="row">
                   <span class="col-6">
-                    <a href="" target="_blank">YYYY</a>
+                    <a href="mailto:ygutierrez@dlsi.ua.es">Yoan Guti&eacute;rrez V&aacute;zquez</a>
                   </span>
                   <span class="col-6">
-                    <a href="" target="_blank">Institution</a>, Country
-                  </span>
-                </div>
-              </li>
-              <li>
-                <div class="row">
-                  <span class="col-6">
-                    <a href="" target="_blank">YYYY</a>
-                  </span>
-                  <span class="col-6">
-                    <a href="" target="_blank">Institution</a>, Country
+                    <a href="" target="_blank">University of Alicante</a>, Spain
                   </span>
                 </div>
               </li>
               <li>
                 <div class="row">
                   <span class="col-6">
-                    <a href="" target="_blank">YYYY</a>
+                    <a href="mailto:sestevez@matcom.uh.cu" target="_blank">Suilan Est&eacute;vez Velarde</a>
                   </span>
                   <span class="col-6">
-                    <a href="" target="_blank">Institution</a>, Country
-                  </span>
-                </div>
-              </li>
-              <li>
-                <div class="row">
-                  <span class="col-6">
-                    <a href="" target="_blank">YYYY</a>
-                  </span>
-                  <span class="col-6">
-                    <a href="" target="_blank">Institution</a>, Country
+                    <a href="" target="_blank">University of Havana</a>, Cuba
                   </span>
                 </div>
               </li>
               <li>
                 <div class="row">
                   <span class="col-6">
-                    <a href="" target="_blank">YYYY</a>
+                    <a href="mailto:yudy@matcom.uh.cu" target="_blank">Yudivi&aacute;n Almeida Cruz</a>
                   </span>
                   <span class="col-6">
-                    <a href="" target="_blank">Institution</a>, Country
+                    <a href="" target="_blank">University of Havana</a>, Cuba
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="row">
+                  <span class="col-6">
+                    <a href="mailto:apiad@matcom.uh.cu" target="_blank">Alejandro Piad Morffis</a>
+                  </span>
+                  <span class="col-6">
+                    <a href="" target="_blank">University of Havana</a>, Cuba
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="row">
+                  <span class="col-6">
+                    <a href="mailto:montoyo@dlsi.ua.es" target="_blank">Andr&eacute;s Montoyo Guijarro</a>
+                  </span>
+                  <span class="col-6">
+                    <a href="" target="_blank">University of Alicante</a>, Spain
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="row">
+                  <span class="col-6">
+                    <a href="mailto:rafael@dlsi.ua.es" target="_blank">Rafael Mu&ntilde;oz Guillena</a>
+                  </span>
+                  <span class="col-6">
+                    <a href="" target="_blank">University of Alicante</a>, Spain
                   </span>
                 </div>
               </li>
