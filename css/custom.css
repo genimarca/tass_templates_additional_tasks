@@ -329,7 +329,7 @@ table td, table th {
 }
 
 .c4 {
-    color: #000000;
+    /* color: #000000; */
     font-weight: 400;
     text-decoration: none;
     vertical-align: baseline;
@@ -339,7 +339,7 @@ table td, table th {
 }
 
 .c46 {
-    color: #000000;
+    /* color: #000000; */
     font-weight: 400;
     text-decoration: none;
     vertical-align: baseline;
@@ -359,17 +359,17 @@ table td, table th {
 }
 
 .c3 {
-    color: #000000;
+    /* color: #000000; */
     font-weight: 400;
     text-decoration: none;
     vertical-align: baseline;
     /* font-size: 11pt; */
     /* font-family: "Calibri"; */
-    font-style: normal
+    font-style: normal;
 }
 
 .c44 {
-    color: #000000;
+    /* color: #000000; */
     font-weight: 400;
     text-decoration: none;
     vertical-align: baseline;
@@ -379,7 +379,7 @@ table td, table th {
 }
 
 .c8 {
-    color: #000000;
+    /* color: #000000; */
     font-weight: 400;
     text-decoration: none;
     vertical-align: baseline;
@@ -389,7 +389,7 @@ table td, table th {
 }
 
 .c9 {
-    color: #000000;
+    /* color: #000000; */
     font-weight: 400;
     text-decoration: none;
     vertical-align: baseline;
@@ -399,7 +399,7 @@ table td, table th {
 }
 
 .c22 {
-    color: #000000;
+    /* color: #000000; */
     font-weight: 400;
     text-decoration: none;
     vertical-align: baseline;
@@ -463,7 +463,7 @@ table td, table th {
 }
 
 .c47 {
-    color: #000000;
+    /* color: #000000; */
     text-decoration: none;
     vertical-align: baseline;
     /* font-size: 10.5pt; */
@@ -490,7 +490,7 @@ table td, table th {
 }
 
 .c16 {
-    color: #000000;
+    /* color: #000000; */
     text-decoration: none;
     vertical-align: baseline;
     /* font-size: 11pt; */
@@ -553,7 +553,7 @@ table td, table th {
 }
 
 .c48 {
-    color: #000000;
+    /* color: #000000; */
     font-weight: 400;
     text-decoration: none;
     vertical-align: baseline;
@@ -598,7 +598,7 @@ table td, table th {
 }
 
 .c39 {
-    color: #000000;
+    /* color: #000000; */
     text-decoration: none;
     vertical-align: baseline;
     /* font-size: 11pt; */
@@ -607,7 +607,7 @@ table td, table th {
 }
 
 .c84 {
-    color: #000000;
+    /* color: #000000; */
     text-decoration: none;
     vertical-align: baseline;
     /* font-size: 11pt; */
@@ -639,7 +639,7 @@ table td, table th {
 }
 
 .c88 {
-    color: #000000;
+    /* color: #000000; */
     text-decoration: none;
     vertical-align: super;
     /* font-size: 11pt; */
@@ -863,7 +863,7 @@ font-style: italic }
 /*
 .title {
     padding-top: 24pt;
-    color: #000000;
+    /* color: #000000; */
     font-weight: 700;
     /* font-size: 36pt; */
 padding-bottom: 6pt; /* font-family: "Calibri"; */
@@ -884,13 +884,13 @@ line-height: 1.0791666666666666; page-break-after: avoid; orphans: 2; widows: 2;
 }
 
 */ /* li {
-    color: #000000;
+    /* color: #000000; */
     /* font-size: 11pt; */
 font-family: "Calibri" }
 
 p {
     margin: 0;
-    color: #000000;
+    /* color: #000000; */
     /* font-size: 11pt; */
     font-family: "Calibri"
 }
@@ -906,7 +906,7 @@ line-height: 1.0791666666666666; page-break-after: avoid; orphans: 2; widows: 2;
 
 h2 {
     padding-top: 18pt;
-    color: #000000;
+    /* color: #000000; */
     font-weight: 700;
     /* font-size: 18pt; */
     padding-bottom: 4pt;
@@ -934,7 +934,7 @@ h3 {
 
 h4 {
     padding-top: 12pt;
-    color: #000000;
+    /* color: #000000; */
     font-weight: 700;
     /* font-size: 12pt; */
     padding-bottom: 2pt;
@@ -948,7 +948,7 @@ h4 {
 
 h5 {
     padding-top: 11pt;
-    color: #000000;
+    /* color: #000000; */
     font-weight: 700;
     /* font-size: 11pt; */
     padding-bottom: 2pt;
@@ -962,7 +962,7 @@ h5 {
 
 h6 {
     padding-top: 10pt;
-    color: #000000;
+    /* color: #000000; */
     font-weight: 700;
     /* font-size: 10pt; */
     padding-bottom: 2pt;
