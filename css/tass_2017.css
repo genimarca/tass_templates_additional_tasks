@@ -233,8 +233,8 @@ main .main_content_wrapper {
 }
 
 main p {
-	line-height: 160%;
-	margin-bottom: 1.5em;
+	/* line-height: 160%; */
+	/* margin-bottom: 1.5em; */
 }
 
 main p:last-child {
@@ -395,7 +395,7 @@ footer{
 #prog_table tr, td {
 	padding:15px;
 	line-height: 160%;
-	border: none; 
+	border: none;
 }
 
 #prog_table tr:nth-child(even){

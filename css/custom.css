@@ -1,11 +1,8 @@
-
 /* ol {
     margin: 0;
     padding: 0
 } */
-
-table td,
-table th {
+table td, table th {
     padding: 0
 }
 
@@ -82,7 +79,7 @@ table th {
     border-bottom-width: 1pt;
     width: 435pt;
     border-top-color: #999999;
-    border-bottom-style: solid
+    border-bottom-style: solid;
 }
 
 .c86 {
@@ -412,12 +409,12 @@ table th {
 }
 
 .c28 {
-    color: #000000;
+    /* color: #000000; */
     text-decoration: none;
     vertical-align: baseline;
     /* font-size: 18pt; */
     font-family: "Arial";
-    font-style: normal
+    font-style: normal;
 }
 
 .c30 {
@@ -475,21 +472,21 @@ table th {
 }
 
 .c54 {
-    color: #000000;
+    /* color: #000000; */
     text-decoration: none;
     vertical-align: baseline;
     /* font-size: 14pt; */
     font-family: "Arial";
-    font-style: normal
+    font-style: normal;
 }
 
 .c15 {
     padding-top: 0pt;
     padding-bottom: 8pt;
-    line-height: 1.0791666666666666;
+    /* line-height: 1.0791666666666666; */
     orphans: 2;
     widows: 2;
-    text-align: justify
+    text-align: justify;
 }
 
 .c16 {
@@ -540,19 +537,19 @@ table th {
 .c31 {
     padding-top: 0pt;
     padding-bottom: 0pt;
-    line-height: 1.0;
+    /* line-height: 2; */
     orphans: 2;
     widows: 2;
-    text-align: justify
+    text-align: justify;
 }
 
 .c2 {
     padding-top: 0pt;
     padding-bottom: 0pt;
-    line-height: 1.0791666666666666;
+    /* line-height: 1.0791666666666666; */
     orphans: 2;
     widows: 2;
-    text-align: justify
+    text-align: justify;
 }
 
 .c48 {
@@ -585,10 +582,10 @@ table th {
 .c52 {
     padding-top: 0pt;
     padding-bottom: 14pt;
-    line-height: 1.0;
+    /* line-height: 1.0; */
     orphans: 2;
     widows: 2;
-    text-align: left
+    text-align: left;
 }
 
 .c42 {
@@ -771,10 +768,9 @@ table th {
 
 /* .c5 {
     /* font-size: 10.5pt; */
-    font-style: italic
-} */
+font-style: italic }
 
-.c93 {
+*/ .c93 {
     max-width: 425.2pt;
     padding: 70.8pt 85pt 70.8pt 85pt
 }
@@ -806,17 +802,17 @@ table th {
 
 .c33 {
     /* font-size: 18pt */
-} */
+}
 
-.c49 {
+*/ .c49 {
     text-indent: 36pt
 }
 
 /* .c65 {
     /* font-size: 10pt */
-} */
+}
 
-.c76 {
+*/ .c76 {
     height: 18pt
 }
 
@@ -835,12 +831,13 @@ table th {
 .c61 {
     margin-right: -2.7pt
 }
+
 /*
 .c51 {
     /* font-size: 12pt */
-} */
+}
 
-.c45 {
+*/ .c45 {
     font-family: "Consolas"
 }
 
@@ -869,14 +866,8 @@ table th {
     color: #000000;
     font-weight: 700;
     /* font-size: 36pt; */
-    padding-bottom: 6pt;
-    /* font-family: "Calibri"; */
-    line-height: 1.0791666666666666;
-    page-break-after: avoid;
-    orphans: 2;
-    widows: 2;
-    text-align: left
-}
+padding-bottom: 6pt; /* font-family: "Calibri"; */
+line-height: 1.0791666666666666; page-break-after: avoid; orphans: 2; widows: 2; text-align: left }
 
 .subtitle {
     padding-top: 18pt;
@@ -890,34 +881,28 @@ table th {
     orphans: 2;
     widows: 2;
     text-align: left
-} */
+}
 
-/* li {
+*/ /* li {
     color: #000000;
     /* font-size: 11pt; */
-    font-family: "Calibri"
-}
+font-family: "Calibri" }
 
 p {
     margin: 0;
     color: #000000;
     /* font-size: 11pt; */
     font-family: "Calibri"
-} */
-/*
+}
+
+*/ /*
 
 h1 {
     padding-top: 12pt;
     color: #2f5496;
     /* font-size: 16pt; */
-    padding-bottom: 0pt;
-    /* font-family: "Calibri"; */
-    line-height: 1.0791666666666666;
-    page-break-after: avoid;
-    orphans: 2;
-    widows: 2;
-    text-align: left
-}
+padding-bottom: 0pt; /* font-family: "Calibri"; */
+line-height: 1.0791666666666666; page-break-after: avoid; orphans: 2; widows: 2; text-align: left }
 
 h2 {
     padding-top: 18pt;
@@ -935,7 +920,7 @@ h2 {
 
 h3 {
     padding-top: 14pt;
-    color: #000000;
+    /* color: #000000; */
     font-weight: 700;
     /* font-size: 14pt; */
     padding-bottom: 4pt;
@@ -944,7 +929,7 @@ h3 {
     page-break-after: avoid;
     orphans: 2;
     widows: 2;
-    text-align: left
+    text-align: left;
 }
 
 h4 {
@@ -987,4 +972,6 @@ h6 {
     orphans: 2;
     widows: 2;
     text-align: left
-} */
+}
+
+*/
