@@ -125,105 +125,142 @@
                 <span class="c3">Given a list of eHealth documents written in Spanish, the goal of this subtask is to identify all the keyphrases
                   per document.
                 </span>
-
-                <p>
-                  <a href="taskA.html">Read further details for Subtask A.</a>
-                </p>
-
-                <div class="row">
-                  <div class="col-6">
-                    <h4>Example input document:</h4>
-                    <table class="c20">
-                      <tbody>
-                        <tr class="c19">
-                          <td class="c13" colspan="1" rowspan="1">
-                            <p class="c0">
-                              <span class="c45 c50">El asma afecta las v&iacute;as respiratorias. Los pulmones se hinchan. El asma es una enfermedad.
-                                Un ataque de asma se produce cuando los s&iacute;ntomas empeoran. Los s&iacute;ntomas y el
-                                tratamiento dependen del tipo de c&aacute;ncer y de lo avanzada que est&eacute; la enfermedad.</span>
-                            </p>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                    <h4>Visual representation of the output:</h4>
-                    <img alt="" src="images/image16.png" style="width: 100%;" title="">
-                  </div>
-                  <div class="col-6">
-                    <h4>Example output document:</h4>
-                    <table class="c85">
-                      <tbody>
-                        <tr class="c19">
-                          <td class="c87" colspan="1" rowspan="1">
-                            <span class="c9">ID</span>
-                          </td>
-                          <td class="c87" colspan="1" rowspan="1">
-                            <span class="c9">START</span>
-                          </td>
-                          <td class="c87" colspan="1" rowspan="1">
-                            <span class="c9">END</span>
-                          </td>
-                        </tr>
-                        <tr class="c19">
-                          <td  class="c87">1</td> <td  class="c87">3</td> <td  class="c87">7</td>
-                        </tr>
-                        <tr class="c19">
-                          <td  class="c87">2</td> <td  class="c87">8</td> <td  class="c87">14</td>
-                        </tr>
-                        <tr class="c19">
-                          <td  class="c87">3</td> <td  class="c87">19</td> <td  class="c87">37</td>
-                        </tr>
-                        <tr class="c19">
-                          <td  class="c87">4</td> <td  class="c87">43</td> <td  class="c87">51</td>
-                        </tr>
-                        <tr class="c19">
-                          <td  class="c87">5</td> <td  class="c87">67</td> <td  class="c87">71</td>
-                        </tr>
-                        <tr class="c19">
-                          <td  class="c87">6</td> <td  class="c87">55</td> <td  class="c87">62</td>
-                        </tr>
-                        <tr class="c19">
-                          <td  class="c87">7</td> <td  class="c87">79</td> <td  class="c87">89</td>
-                        </tr>
-                        <tr class="c19">
-                          <td  class="c87">8</td> <td  class="c87">94</td> <td  class="c87">108</td>
-                        </tr>
-                        <tr class="c19">
-                          <td  class="c87">9</td> <td  class="c87">112</td> <td  class="c87">119</td>
-                        </tr>
-                        <tr class="c19">
-                          <td  class="c87">10</td> <td  class="c87">131</td> <td  class="c87">139</td>
-                        </tr>
-                        <tr class="c19">
-                          <td  class="c87">11</td> <td  class="c87">140</td> <td  class="c87">148</td>
-                        </tr>
-                        <tr class="c19">
-                          <td  class="c87">12</td> <td  class="c87">154</td> <td  class="c87">162</td>
-                        </tr>
-                        <tr class="c19">
-                          <td  class="c87">13</td> <td  class="c87">168</td> <td  class="c87">179</td>
-                        </tr>
-                        <tr class="c19">
-                          <td  class="c87">14</td> <td  class="c87">180</td> <td  class="c87">188</td>
-                        </tr>
-                        <tr class="c19">
-                          <td  class="c87">15</td> <td  class="c87">193</td> <td  class="c87">197</td>
-                        </tr>
-                        <tr class="c19">
-                          <td  class="c87">16</td> <td  class="c87">237</td> <td  class="c87">247</td>
-                        </tr>
-                        <tr class="c19">
-                          <td  class="c87">17</td> <td  class="c87">216</td> <td  class="c87">224</td>
-                        </tr>
-                        <tr class="c19">
-                          <td  class="c87">18</td> <td  class="c87">201</td> <td  class="c87">207</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
               </p>
+
+              <p>
+                <a href="taskA.html">Read further details for Subtask A.</a>
+              </p>
+
+              <div class="row">
+                <div class="col-6">
+                  <h4>Example input document:</h4>
+                  <table class="c20">
+                    <tbody>
+                      <tr class="c19">
+                        <td class="c13" colspan="1" rowspan="1">
+                          <p class="c0">
+                            <span class="c45 c50">El asma afecta las v&iacute;as respiratorias. Los pulmones se hinchan. El asma es una enfermedad.
+                              Un ataque de asma se produce cuando los s&iacute;ntomas empeoran. Los s&iacute;ntomas y el
+                              tratamiento dependen del tipo de c&aacute;ncer y de lo avanzada que est&eacute; la enfermedad.</span>
+                          </p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <h4>Visual representation of the output:</h4>
+                  <img alt="" src="images/image16.png" style="width: 100%;" title="">
+                </div>
+                <div class="col-6">
+                  <h4>Example output document:</h4>
+                  <table class="c85">
+                    <tbody>
+                      <tr class="c19">
+                        <td class="c87" colspan="1" rowspan="1">
+                          <span class="c9">ID</span>
+                        </td>
+                        <td class="c87" colspan="1" rowspan="1">
+                          <span class="c9">START</span>
+                        </td>
+                        <td class="c87" colspan="1" rowspan="1">
+                          <span class="c9">END</span>
+                        </td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">1</td>
+                        <td class="c87">3</td>
+                        <td class="c87">7</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">2</td>
+                        <td class="c87">8</td>
+                        <td class="c87">14</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">3</td>
+                        <td class="c87">19</td>
+                        <td class="c87">37</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">4</td>
+                        <td class="c87">43</td>
+                        <td class="c87">51</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">5</td>
+                        <td class="c87">67</td>
+                        <td class="c87">71</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">6</td>
+                        <td class="c87">55</td>
+                        <td class="c87">62</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">7</td>
+                        <td class="c87">79</td>
+                        <td class="c87">89</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">8</td>
+                        <td class="c87">94</td>
+                        <td class="c87">108</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">9</td>
+                        <td class="c87">112</td>
+                        <td class="c87">119</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">10</td>
+                        <td class="c87">131</td>
+                        <td class="c87">139</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">11</td>
+                        <td class="c87">140</td>
+                        <td class="c87">148</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">12</td>
+                        <td class="c87">154</td>
+                        <td class="c87">162</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">13</td>
+                        <td class="c87">168</td>
+                        <td class="c87">179</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">14</td>
+                        <td class="c87">180</td>
+                        <td class="c87">188</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">15</td>
+                        <td class="c87">193</td>
+                        <td class="c87">197</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">16</td>
+                        <td class="c87">237</td>
+                        <td class="c87">247</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">17</td>
+                        <td class="c87">216</td>
+                        <td class="c87">224</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">18</td>
+                        <td class="c87">201</td>
+                        <td class="c87">207</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
               <h3 class="c72" id="h.2et92p0">
                 <span class="c28 c7">Subtask B: Classification of key phrases</span>
               </h3>
@@ -238,6 +275,97 @@
               <p>
                 <a href="taskB.html">Read further details for Subtask B.</a>
               </p>
+
+              <div class="row">
+                <div class="col-6">
+                  <h4>Visual representation of the output:</h4>
+                  <img alt="" src="images/image19.png" style="width: 100%;" title="">
+                </div>
+                <div class="col-6">
+                  <h4>Example output document:</h4>
+                  <table class="c20">
+                    <tbody>
+                      <tr class="c19">
+                        <td class="c13">ID</td>
+                        <td class="c13">LABEL</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">1</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">2</td>
+                        <td class="c13">Action</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">3</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">4</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">6</td>
+                        <td class="c13">Action</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">5</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">7</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">8</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">9</td>
+                        <td class="c13">Action</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">10</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">11</td>
+                        <td class="c13">Action</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">12</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">13</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">14</td>
+                        <td class="c13">Action</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">16</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">17</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">15</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">18</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
               <h3 class="c41" id="h.3dy6vkm">
                 <span class="c28 c7">Subtask C: Setting semantic relationships</span>
               </h3>
@@ -255,6 +383,95 @@
               <p>
                 <a href="taskC.html">Read further details for Subtask C.</a>
               </p>
+
+              <div class="row">
+                <div class="col-6">
+                  <h4>Visual representation of the output:</h4>
+                  <img alt="" src="images/image20.png" style="width: 100%;" title="">
+                </div>
+                <div class="col-6">
+                  <h4>Example output document:</h4>
+                  <table class="c20">
+                    <tbody>
+                      <tr class="c19">
+                        <td class="c13">LABEL</td>
+                        <td class="c13">SOURCE</td>
+                        <td class="c13">DESTINATION</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">is-a</td>
+                        <td class="c13">5</td>
+                        <td class="c13">7</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">property-of</td>
+                        <td class="c13">17</td>
+                        <td class="c13">16</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">property-of</td>
+                        <td class="c13">15</td>
+                        <td class="c13">18</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">subject</td>
+                        <td class="c13">2</td>
+                        <td class="c13">1</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">target</td>
+                        <td class="c13">2</td>
+                        <td class="c13">3</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">subject</td>
+                        <td class="c13">6</td>
+                        <td class="c13">4</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">target</td>
+                        <td class="c13">6</td>
+                        <td class="c13">4</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">subject</td>
+                        <td class="c13">9</td>
+                        <td class="c13">11</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">target</td>
+                        <td class="c13">9</td>
+                        <td class="c13">8</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">target</td>
+                        <td class="c13">11</td>
+                        <td class="c13">10</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">subject</td>
+                        <td class="c13">14</td>
+                        <td class="c13">12</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">target</td>
+                        <td class="c13">14</td>
+                        <td class="c13">15</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">target</td>
+                        <td class="c13">14</td>
+                        <td class="c13">17</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">subject</td>
+                        <td class="c13">14</td>
+                        <td class="c13">13</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
         </section>
