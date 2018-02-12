@@ -1,11 +1,3 @@
-/* ol {
-    margin: 0;
-    padding: 0
-} */
-table td, table th {
-    padding: 0
-}
-
 .c87 {
     padding: 2pt 2pt 2pt 2pt;
     border-bottom-color: #999999;
@@ -19,10 +11,6 @@ table td, table th {
     border-bottom-width: 1pt;
     width: 433.5pt;
     border-top-color: #999999;
-    /* border-right-style: solid; */
-    /* border-top-style: solid; */
-    /* border-left-style: solid; */
-    /* border-bottom-style: solid */
 }
 
 .c81 {
@@ -39,7 +27,6 @@ table td, table th {
     background-color: #e6b8af;
     border-left-style: solid;
     border-bottom-width: 1pt;
-    /* width: 425.2pt; */
     border-top-color: #000000;
     border-bottom-style: solid;
 }
@@ -58,7 +45,6 @@ table td, table th {
     background-color: #fff2cc;
     border-left-style: solid;
     border-bottom-width: 1pt;
-    /* width: 425.2pt; */
     border-top-color: #000000;
     border-bottom-style: solid;
 }
@@ -77,7 +63,7 @@ table td, table th {
     background-color: #d9d9d9;
     border-left-style: solid;
     border-bottom-width: 1pt;
-    /* width: 435pt; */
+    /* width: 500px; */
     border-top-color: #999999;
     border-bottom-style: solid;
 }
@@ -321,7 +307,6 @@ table td, table th {
     padding-top: 0pt;
     padding-left: 0pt;
     padding-bottom: 0pt;
-    /* line-height: 1.0; */
     orphans: 2;
     widows: 2;
     text-align: left;
@@ -329,98 +314,74 @@ table td, table th {
 }
 
 .c4 {
-    /* color: #000000; */
     font-weight: 400;
     text-decoration: none;
     vertical-align: baseline;
-    /* font-size: 12pt; */
-    /* font-family: "Calibri"; */
     font-style: normal
 }
 
 .c46 {
-    /* color: #000000; */
     font-weight: 400;
     text-decoration: none;
     vertical-align: baseline;
-    /* font-size: 12pt; */
-    /* font-family: "Cambria"; */
     font-style: normal
 }
 
 .c0 {
     padding-top: 0pt;
     padding-bottom: 0pt;
-    /* line-height: 1.0791666666666666; */
     orphans: 2;
     widows: 2;
     text-align: left;
-    margin-right: -2.7pt
+    margin-right: -2.7pt;
 }
 
 .c3 {
-    /* color: #000000; */
     font-weight: 400;
     text-decoration: none;
     vertical-align: baseline;
-    /* font-size: 11pt; */
-    /* font-family: "Calibri"; */
     font-style: normal;
 }
 
 .c44 {
-    /* color: #000000; */
     font-weight: 400;
     text-decoration: none;
     vertical-align: baseline;
-    /* font-size: 14pt; */
-    /* font-family: "Arial"; */
     font-style: normal
 }
 
 .c8 {
-    /* color: #000000; */
     font-weight: 400;
     text-decoration: none;
     vertical-align: baseline;
-    /* font-size: 11pt; */
-    /* font-family: "Arial"; */
     font-style: normal
 }
 
 .c9 {
-    /* color: #000000; */
     font-weight: 400;
     text-decoration: none;
     vertical-align: baseline;
-    /* font-size: 9pt; */
-    font-family: "Consolas";
-    font-style: normal
+    font-family: monospace;
+    font-style: normal;
 }
 
 .c22 {
-    /* color: #000000; */
     font-weight: 400;
     text-decoration: none;
     vertical-align: baseline;
-    /* font-size: 11pt; */
     font-family: "Consolas";
     font-style: normal
 }
 
 .c28 {
-    /* color: #000000; */
     text-decoration: none;
     vertical-align: baseline;
-    /* font-size: 18pt; */
-    /* font-family: "Arial"; */
     font-style: normal;
 }
 
 .c30 {
     padding-top: 0pt;
     padding-bottom: 8pt;
-    /* line-height: 1.0791666666666666; */
     orphans: 2;
     widows: 2;
     text-align: center
@@ -429,7 +390,6 @@ table td, table th {
 .c56 {
     padding-top: 0pt;
     padding-bottom: 0pt;
-    /* line-height: 1.0791666666666666; */
     orphans: 2;
     widows: 2;
     text-align: center
@@ -438,7 +398,6 @@ table td, table th {
 .c38 {
     padding-top: 0pt;
     padding-bottom: 0pt;
-    /* line-height: 1.0; */
     orphans: 2;
     widows: 2;
     text-align: left
@@ -447,7 +406,6 @@ table td, table th {
 .c34 {
     padding-top: 0pt;
     padding-bottom: 14pt;
-    /* line-height: 1.0; */
     orphans: 2;
     widows: 2;
     text-align: justify;
@@ -456,45 +414,34 @@ table td, table th {
 .c21 {
     padding-top: 0pt;
     padding-bottom: 0pt;
-    /* line-height: 1.0791666666666666; */
     orphans: 2;
     widows: 2;
     text-align: left;
 }
 
 .c47 {
-    /* color: #000000; */
     text-decoration: none;
     vertical-align: baseline;
-    /* font-size: 10.5pt; */
-    /* font-family: "Calibri"; */
     font-style: normal
 }
 
 .c54 {
-    /* color: #000000; */
     text-decoration: none;
     vertical-align: baseline;
-    /* font-size: 14pt; */
-    /* font-family: "Arial"; */
     font-style: normal;
 }
 
 .c15 {
     padding-top: 0pt;
     padding-bottom: 8pt;
-    /* line-height: 1.0791666666666666; */
     orphans: 2;
     widows: 2;
     text-align: justify;
 }
 
 .c16 {
-    /* color: #000000; */
     text-decoration: none;
     vertical-align: baseline;
-    /* font-size: 11pt; */
-    /* font-family: "Arial"; */
     font-style: normal
 }
 
@@ -502,15 +449,12 @@ table td, table th {
     color: #2f5496;
     text-decoration: none;
     vertical-align: baseline;
-    /* font-size: 16pt; */
-    /* font-family: "Arial"; */
     font-style: normal
 }
 
 .c67 {
     padding-top: 0.5pt;
     padding-bottom: 0pt;
-    /* line-height: 1.0; */
     orphans: 2;
     widows: 2;
     text-align: justify
@@ -519,7 +463,6 @@ table td, table th {
 .c79 {
     padding-top: 14pt;
     padding-bottom: 14pt;
-    /* line-height: 1.0; */
     orphans: 2;
     widows: 2;
     text-align: left
@@ -528,7 +471,6 @@ table td, table th {
 .c24 {
     padding-top: 0pt;
     padding-bottom: 8pt;
-    /* line-height: 1.0791666666666666; */
     orphans: 2;
     widows: 2;
     text-align: left
@@ -537,7 +479,6 @@ table td, table th {
 .c31 {
     padding-top: 0pt;
     padding-bottom: 0pt;
-    /* line-height: 2; */
     orphans: 2;
     widows: 2;
     text-align: justify;
@@ -546,25 +487,21 @@ table td, table th {
 .c2 {
     padding-top: 0pt;
     padding-bottom: 0pt;
-    /* line-height: 1.0791666666666666; */
     orphans: 2;
     widows: 2;
     text-align: justify;
 }
 
 .c48 {
-    /* color: #000000; */
     font-weight: 400;
     text-decoration: none;
     vertical-align: baseline;
-    /* font-size: 10pt; */
     font-style: normal
 }
 
 .c53 {
     padding-top: 0.5pt;
     padding-bottom: 0pt;
-    /* line-height: 1.0; */
     orphans: 2;
     widows: 2;
     text-align: right
@@ -573,7 +510,6 @@ table td, table th {
 .c55 {
     padding-top: 0.5pt;
     padding-bottom: 0pt;
-    /* line-height: 1.0; */
     orphans: 2;
     widows: 2;
     text-align: left
@@ -582,7 +518,6 @@ table td, table th {
 .c52 {
     padding-top: 0pt;
     padding-bottom: 14pt;
-    /* line-height: 1.0; */
     orphans: 2;
     widows: 2;
     text-align: left;
@@ -591,33 +526,26 @@ table td, table th {
 .c42 {
     padding-top: 0pt;
     padding-bottom: 0pt;
-    /* line-height: 1.2; */
     orphans: 2;
     widows: 2;
     text-align: justify;
 }
 
 .c39 {
-    /* color: #000000; */
     text-decoration: none;
     vertical-align: baseline;
-    /* font-size: 11pt; */
-    /* font-family: "Calibri"; */
     font-style: normal
 }
 
 .c84 {
-    /* color: #000000; */
     text-decoration: none;
     vertical-align: baseline;
-    /* font-size: 11pt; */
     font-family: "Arial"
 }
 
 .c91 {
     padding-top: 12pt;
     padding-bottom: 0pt;
-    /* line-height: 1.15; */
     page-break-after: avoid;
     text-align: left
 }
@@ -625,7 +553,6 @@ table td, table th {
 .c41 {
     padding-top: 18pt;
     padding-bottom: 0pt;
-    /* line-height: 1.15; */
     page-break-after: avoid;
     text-align: left
 }
@@ -633,23 +560,19 @@ table td, table th {
 .c32 {
     padding-top: 14pt;
     padding-bottom: 14pt;
-    /* line-height: 1.0; */
     page-break-after: avoid;
     text-align: left
 }
 
 .c88 {
-    /* color: #000000; */
     text-decoration: none;
     vertical-align: super;
-    /* font-size: 11pt; */
     font-style: normal
 }
 
 .c72 {
     padding-top: 18pt;
     padding-bottom: 0pt;
-    /* line-height: 1.15; */
     page-break-after: avoid;
     text-align: justify
 }
@@ -657,7 +580,6 @@ table td, table th {
 .c74 {
     padding-top: 18pt;
     padding-bottom: 0pt;
-    /* line-height: 1.0; */
     page-break-after: avoid;
     text-align: justify
 }
@@ -665,7 +587,6 @@ table td, table th {
 .c92 {
     padding-top: 14pt;
     padding-bottom: 4pt;
-    /* line-height: 1.15; */
     page-break-after: avoid;
     text-align: justify
 }
@@ -673,7 +594,6 @@ table td, table th {
 .c29 {
     padding-top: 18pt;
     padding-bottom: 14pt;
-    /* line-height: 1.0; */
     page-break-after: avoid;
     text-align: left
 }
@@ -681,7 +601,6 @@ table td, table th {
 .c23 {
     padding-top: 14pt;
     padding-bottom: 0pt;
-    /* line-height: 1.15; */
     page-break-after: avoid;
     text-align: justify
 }
@@ -689,7 +608,6 @@ table td, table th {
 .c70 {
     padding-top: 18pt;
     padding-bottom: 0pt;
-    /* line-height: 1.2; */
     page-break-after: avoid;
     text-align: left
 }
@@ -728,6 +646,7 @@ table td, table th {
     border-spacing: 0;
     border-collapse: collapse;
     margin-right: auto;
+    font-family: monospace;
     width: 400px;
 }
 
@@ -744,12 +663,10 @@ table td, table th {
 }
 
 .c50 {
-    /* font-size: 9pt; */
     font-weight: 400
 }
 
 .c57 {
-    /* font-size: 10pt; */
     color: #222222
 }
 
@@ -767,10 +684,6 @@ table td, table th {
     padding: 0;
     margin: 0
 }
-
-/* .c5 {
-    /* font-size: 10.5pt; */
-/* font-style: italic } */
 
 */ .c93 {
     max-width: 425.2pt;
@@ -798,21 +711,11 @@ table td, table th {
     font-style: italic
 }
 
-/* .c71 {
-    /* font-size: 10.5pt */
-/* } */
-
-.c33 {
-    /* font-size: 18pt */
-}
+.c33 {}
 
 */ .c49 {
     text-indent: 36pt
 }
-
-/* .c65 {
-    /* font-size: 10pt */
-/* } */
 
 */ .c76 {
     height: 18pt
@@ -834,21 +737,8 @@ table td, table th {
     margin-right: -2.7pt
 }
 
-/*
-.c51 {
-    /* font-size: 12pt */
-/* } */
-
-*/ .c45 {
-    font-family: "Consolas"
-}
-
 .c1 {
     background-color: #ffffff
-}
-
-/* .c63 {
-    font-family: "Calibri"
 }
 
 .c89 {
@@ -861,117 +751,4 @@ table td, table th {
 
 .c75 {
     height: 23pt
-} */
-/*
-.title {
-    padding-top: 24pt;
-    /* color: #000000; */
-    /* font-weight: 700; */
-    /* font-size: 36pt; */
-/* padding-bottom: 6pt; font-family: "Calibri"; */
-/* line-height: 1.0791666666666666; page-break-after: avoid; orphans: 2; widows: 2; text-align: left } */
-
-.subtitle {
-    padding-top: 18pt;
-    color: #666666;
-    /* font-size: 24pt; */
-    padding-bottom: 4pt;
-    font-family: "Georgia";
-    /* line-height: 1.0791666666666666; */
-    page-break-after: avoid;
-    font-style: italic;
-    orphans: 2;
-    widows: 2;
-    text-align: left
-}
-
-*/ /* li {
-    /* color: #000000; */
-    /* font-size: 11pt; */
-/* font-family: "Calibri" } */
-
-p {
-    margin: 0;
-    /* color: #000000; */
-    /* font-size: 11pt; */
-    font-family: "Calibri"
-}
-
-*/ /*
-
-h1 {
-    padding-top: 12pt;
-    color: #2f5496;
-    /* font-size: 16pt; */
-/* padding-bottom: 0pt; font-family: "Calibri"; */
-/* line-height: 1.0791666666666666; page-break-after: avoid; orphans: 2; widows: 2; text-align: left } */
-
-h2 {
-    padding-top: 18pt;
-    /* color: #000000; */
-    font-weight: 700;
-    /* font-size: 18pt; */
-    padding-bottom: 4pt;
-    /* font-family: "Calibri"; */
-    /* line-height: 1.0791666666666666; */
-    page-break-after: avoid;
-    orphans: 2;
-    widows: 2;
-    text-align: left
-}
-
-h3 {
-    padding-top: 14pt;
-    /* color: #000000; */
-    font-weight: 700;
-    /* font-size: 14pt; */
-    padding-bottom: 4pt;
-    /* font-family: "Calibri"; */
-    /* line-height: 1.0791666666666666; */
-    page-break-after: avoid;
-    orphans: 2;
-    widows: 2;
-    text-align: left;
-}
-
-h4 {
-    padding-top: 12pt;
-    /* color: #000000; */
-    font-weight: 700;
-    /* font-size: 12pt; */
-    padding-bottom: 2pt;
-    /* font-family: "Calibri"; */
-    /* line-height: 1.0791666666666666; */
-    page-break-after: avoid;
-    orphans: 2;
-    widows: 2;
-    text-align: left
-}
-
-h5 {
-    padding-top: 11pt;
-    /* color: #000000; */
-    font-weight: 700;
-    /* font-size: 11pt; */
-    padding-bottom: 2pt;
-    /* font-family: "Calibri"; */
-    /* line-height: 1.0791666666666666; */
-    page-break-after: avoid;
-    orphans: 2;
-    widows: 2;
-    text-align: left
-}
-
-h6 {
-    padding-top: 10pt;
-    /* color: #000000; */
-    font-weight: 700;
-    /* font-size: 10pt; */
-    padding-bottom: 2pt;
-    /* font-family: "Calibri"; */
-    /* line-height: 1.0791666666666666; */
-    page-break-after: avoid;
-    orphans: 2;
-    widows: 2;
-    text-align: left
 }

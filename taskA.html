@@ -67,16 +67,10 @@
           <div class="row">
             <div class="col-12">
               <h2>Subtask A: Identification of Key Phrases</h2>
-              <p class="c21 c6">
-                <span class="c3"></span>
-              </p>
               <p class="c2">
                 <span class="c3">Given a list of eHealth documents written in Spanish, the goal of this subtask is to identify all the keyphrases
                   per document.
                 </span>
-              </p>
-              <p class="c21 c6 c26">
-                <span class="c3"></span>
               </p>
               <p class="c2">
                 <span class="c7">Input:</span>
@@ -89,18 +83,9 @@
                   These topic labels are only used in this subtask to relate input files to output files. A description document
                   for the corpus is provided which explains the source of each of the input files.</span>
               </p>
-              <p class="c21 c6">
-                <span class="c47 c62 c1"></span>
-              </p>
               <p class="c2">
                 <span class="c3 c1">An example input file containing plain text is given below. No preprocessing&mdash; tokenizing or splitting
                   into sentences&mdash; is performed on the text. All inputs are encoded into UTF-8.</span>
-              </p>
-              <p class="c2 c6">
-                <span class="c3 c1"></span>
-              </p>
-              <p class="c2 c6">
-                <span class="c3 c1"></span>
               </p>
               <p class="c2">
                 <span class="c3 c1">Subtask A input example:</span>
@@ -111,8 +96,6 @@
                   <span class="c35 c1">input_asma.txt</span>
                 </li>
               </ul>
-              <a id="t.9d646846ed5df0e35268dd57e5ed5806ea5febd9"></a>
-              <a id="t.0"></a>
               <table class="c20">
                 <tbody>
                   <tr class="c19">
@@ -126,9 +109,6 @@
                   </tr>
                 </tbody>
               </table>
-              <p class="c21 c6 c26">
-                <span class="c3"></span>
-              </p>
               <p class="c2">
                 <span class="c7">Output</span>
                 <span>: a list of documents, corresponding to the input files, in the following format: [auto-increment identifier(</span>
@@ -148,9 +128,6 @@
                 <span class="c35">team</span>
                 <span>refers to the participant team.</span>
               </p>
-              <p class="c2 c6">
-                <span class="c3"></span>
-              </p>
               <p class="c2">
                 <span>Each output document regarding the Subtask A will contain a line per entry. Each entry represents a span
                   of text that has been identified, i.e. a key phrase. Each entry contains three numbers separated by a single
@@ -161,8 +138,8 @@
                 <span class="c7">START</span>
                 <span>of the text span, that is, the </span>
                 <span class="c7">zero-based index</span>
-                <span>with respect to the whole document of the first character of the text span. The third number is an
-                  integer that indicates the </span>
+                <span>with respect to the whole document of the first character of the text span. The third number is an integer
+                  that indicates the </span>
                 <span class="c7">END </span>
                 <span>of the text phrase, that is, the </span>
                 <span class="c7">zero-based index </span>
@@ -170,25 +147,16 @@
                 <span class="c7">END minus START</span>
                 <span class="c3">is equal to the length in characters of the text span.</span>
               </p>
-              <p class="c2 c6">
-                <span class="c3"></span>
-              </p>
               <p class="c2">
                 <span class="c3">For example, the following figure shows the annotation of the previous example (as seen in the Brat annotation
                   tool). In this first subtask it is only important to detect the key phrases, i.e., the fragments of the
                   text that are highlighted in light blue.</span>
-              </p>
-              <p class="c21 c6 c26">
-                <span class="c8"></span>
               </p>
               <p class="c21">
                 <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 567.20px; height: 184.00px;">
                   <img alt="" src="images/image16.png" style="width: 567.20px; height: 184.00px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
                     title="">
                 </span>
-              </p>
-              <p class="c21 c6">
-                <span class="c8"></span>
               </p>
               <p class="c24">
                 <span class="c3">This illustration represents the following gold files:</span>
@@ -201,9 +169,6 @@
                   <span class="c3">key phrases: output_A_asma.txt</span>
                 </li>
               </ul>
-              <p class="c2 c6">
-                <span class="c47 c62 c1"></span>
-              </p>
               <p class="c2">
                 <span class="c1">The following fragment shows the expected gold output for the previous input file, that exactly matches what
                   the sample figure shows. Notice that the first entry is identified with </span>
@@ -223,9 +188,6 @@
                 <span class="c7 c1">START</span>
                 <span class="c3 c1">, although doing some might be convenient for manual inspection and easier debugging.</span>
               </p>
-              <p class="c2 c6">
-                <span class="c3 c1"></span>
-              </p>
               <p class="c2">
                 <span class="c1">Subtask A </span>
                 <span class="c7 c1">gold output</span>
@@ -237,11 +199,6 @@
                   <span class="c35 c1">output_A_asma.txt</span>
                 </li>
               </ul>
-              <p class="c2 c6">
-                <span class="c3 c1"></span>
-              </p>
-              <a id="t.6546a346774f9cdd7ae488f49c9d51e484c04b5e"></a>
-              <a id="t.1"></a>
               <table class="c85">
                 <tbody>
                   <tr class="c19">
@@ -361,15 +318,13 @@
                         <span class="c3">The headers for the columns in the first line of the example above are only displayed in this document
                           as a visual aid but the actual output files do not contain this first line. The output files start
                           directly with the first numeric entry. The same applies to the rest of the examples shown in this
-                          document.</span>
+                          document.
+                        </span>
                       </p>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <p class="c2 c6">
-                <span class="c8"></span>
-              </p>
             </div>
           </div>
         </section>
@@ -382,9 +337,9 @@
               <p class="c2">
                 <span>There are different issues to deal with in terms of evaluation when the </span>
                 <span class="c7">dev output</span>
-                <span>files are processed. To illustrate some of them the following fragment shows another possible output
-                  simulating a participant team (e.g. teamX), but this time some mistakes have been introduced. There are
-                  </span>
+                <span>files are processed. To illustrate some of them the following fragment shows another possible output simulating
+                  a participant team (e.g. teamX), but this time some mistakes have been introduced. There are
+                </span>
                 <span class="c7">some entries missing</span>
                 <span>while other </span>
                 <span class="c7">entries have been incorrectly added</span>
@@ -514,9 +469,9 @@
                 <span class="c35">example-gold </span>
                 <span>and </span>
                 <span class="c35">example-dev</span>
-                <span class="c3">are provided with the previous examples, to illustrate how to use the evaluation script. Running this
-                  script using these example folders produces the following result (only showing output that is relevant
-                  for the Subtask A):
+                <span class="c3">are provided with the previous examples, to illustrate how to use the evaluation script. Running this script
+                  using these example folders produces the following result (only showing output that is relevant for the
+                  Subtask A):
                 </span>
               </p>
               <p class="c21 c6 c26">
@@ -528,106 +483,103 @@
                 <tbody>
                   <tr class="c19">
                     <td class="c13" colspan="1" rowspan="1">
-                      <p class="c0">
-                        <span class="c9"># Subtask A (detecting phrases)</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9"> input file: ../example-gold/input_asma.txt</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9"> gold file: ../example-gold/output_A_asma.txt</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9"> dev file:  ../example-dev/output_teamX_A_asma.txt</span>
-                      </p>
-                      <p class="c0 c6">
-                        <span class="c9"></span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9">* Correct (13):</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9"> - &quot;asma&quot; from 3 to 7.</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9"> - &quot;v&iacute;as respiratorias&quot; from 19 to 37.</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9"> - &quot;pulmones&quot; from 43 to 51.</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9"> - &quot;asma&quot; from 67 to 71.</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9"> - &quot;enfermedad&quot; from 79 to 89.</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9"> - &quot;ataque de asma&quot; from 94 to 108.</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9"> - &quot;produce&quot; from 112 to 119.</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9"> - &quot;empeoran&quot; from 140 to 148.</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9"> - &quot;s&iacute;ntomas&quot; from 154 to 162.</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9"> - &quot;tratamiento&quot; from 168 to 179.</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9"> - &quot;dependen&quot; from 180 to 188.</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9"> - &quot;avanzada&quot; from 216 to 224.</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9"> - &quot;enfermedad&quot; from 237 to 247.</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9">* Partial (2):</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9"> - &quot;s&iacute;ntomas&quot; from 131 to 139 vs &quot;los s&iacute;ntomas&quot; from 127
-                          to 139.</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9"> - &quot;tipo&quot; from 193 to 197 vs &quot;tipo de c&aacute;ncer&quot; from 193 to 207.</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9">* Missing (3):</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9"> - &quot;afecta&quot; from 8 to 14.</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9"> - &quot;hinchan&quot; from 55 to 62.</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9"> - &quot;c&aacute;ncer&quot; from 201 to 207.</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9">* Spurious (1):</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9"> - &quot;est&eacute;&quot; from 229 to 233.</span>
-                      </p>
-                      <p class="c0 c6">
-                        <span class="c9"></span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9">Precision = 0.93</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9">Recall = 0.82</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9">F1 Score = 0.87</span>
-                      </p>
-                      <p class="c0">
-                        <span class="c9">...</span>
-                      </p>
+
+                      <span class="c9"># Subtask A (detecting phrases)</span>
+                      <br>
+
+                      <span class="c9"> input file: ../example/gold/input_example.txt</span>
+                      <br>
+
+                      <span class="c9"> gold file: ../example/gold/output_A_example.txt</span>
+                      <br>
+
+                      <span class="c9"> dev file: ../example/dev/output_A_example.txt</span>
+                      <br>
+                      <span class="c9"></span>
+                      <br>
+
+                      <span class="c9">* Correct (13):</span>
+                      <br>
+
+                      <span class="c9"> - &quot;asma&quot; from 3 to 7.</span>
+                      <br>
+
+                      <span class="c9"> - &quot;v&iacute;as respiratorias&quot; from 19 to 37.</span>
+                      <br>
+
+                      <span class="c9"> - &quot;pulmones&quot; from 43 to 51.</span>
+                      <br>
+
+                      <span class="c9"> - &quot;asma&quot; from 67 to 71.</span>
+                      <br>
+
+                      <span class="c9"> - &quot;enfermedad&quot; from 79 to 89.</span>
+                      <br>
+
+                      <span class="c9"> - &quot;ataque de asma&quot; from 94 to 108.</span>
+                      <br>
+
+                      <span class="c9"> - &quot;produce&quot; from 112 to 119.</span>
+                      <br>
+
+                      <span class="c9"> - &quot;empeoran&quot; from 140 to 148.</span>
+                      <br>
+
+                      <span class="c9"> - &quot;s&iacute;ntomas&quot; from 154 to 162.</span>
+                      <br>
+
+                      <span class="c9"> - &quot;tratamiento&quot; from 168 to 179.</span>
+                      <br>
+
+                      <span class="c9"> - &quot;dependen&quot; from 180 to 188.</span>
+                      <br>
+
+                      <span class="c9"> - &quot;avanzada&quot; from 216 to 224.</span>
+                      <br>
+
+                      <span class="c9"> - &quot;enfermedad&quot; from 237 to 247.</span>
+                      <br>
+
+                      <span class="c9">* Partial (2):</span>
+                      <br>
+
+                      <span class="c9"> - &quot;s&iacute;ntomas&quot; from 131 to 139 vs &quot;los s&iacute;ntomas&quot; from 127 to 139.</span>
+                      <br>
+
+                      <span class="c9"> - &quot;tipo&quot; from 193 to 197 vs &quot;tipo de c&aacute;ncer&quot; from 193 to 207.</span>
+                      <br>
+
+                      <span class="c9">* Missing (3):</span>
+                      <br>
+
+                      <span class="c9"> - &quot;afecta&quot; from 8 to 14.</span>
+                      <br>
+
+                      <span class="c9"> - &quot;hinchan&quot; from 55 to 62.</span>
+                      <br>
+
+                      <span class="c9"> - &quot;c&aacute;ncer&quot; from 201 to 207.</span>
+                      <br>
+
+                      <span class="c9">* Spurious (1):</span>
+                      <br>
+
+                      <span class="c9"> - &quot;est&eacute;&quot; from 229 to 233.</span>
+                      <br>
+                      <span class="c9"></span>
+                      <br>
+
+                      <span class="c9">Precision = 0.93</span>
+                      <br>
+
+                      <span class="c9">Recall = 0.82</span>
+                      <br>
+
+                      <span class="c9">F1 Score = 0.87</span>
+                      <br>
+
+                      <span class="c9">...</span>
+                      <br>
                     </td>
                   </tr>
                 </tbody>
@@ -691,7 +643,8 @@
                     The word &ldquo;cancer&rdquo; is counted then as </span>
                   <span class="c7">Missing</span>
                   <span class="c3">. This aims to discourage a few large text spans that cover most of the document from getting a very high
-                    score.</span>
+                    score.
+                  </span>
                 </li>
                 <li class="c2 c11">
                   <span class="c7">Missing </span>
