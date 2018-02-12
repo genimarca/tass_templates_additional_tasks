@@ -769,7 +769,7 @@ table td, table th {
 
 /* .c5 {
     /* font-size: 10.5pt; */
-font-style: italic }
+/* font-style: italic } */
 
 */ .c93 {
     max-width: 425.2pt;
@@ -799,7 +799,7 @@ font-style: italic }
 
 /* .c71 {
     /* font-size: 10.5pt */
-}
+/* } */
 
 .c33 {
     /* font-size: 18pt */
@@ -811,7 +811,7 @@ font-style: italic }
 
 /* .c65 {
     /* font-size: 10pt */
-}
+/* } */
 
 */ .c76 {
     height: 18pt
@@ -836,7 +836,7 @@ font-style: italic }
 /*
 .c51 {
     /* font-size: 12pt */
-}
+/* } */
 
 */ .c45 {
     font-family: "Consolas"
@@ -865,9 +865,9 @@ font-style: italic }
 .title {
     padding-top: 24pt;
     /* color: #000000; */
-    font-weight: 700;
+    /* font-weight: 700; */
     /* font-size: 36pt; */
-padding-bottom: 6pt; /* font-family: "Calibri"; */
+/* padding-bottom: 6pt; font-family: "Calibri"; */
 /* line-height: 1.0791666666666666; page-break-after: avoid; orphans: 2; widows: 2; text-align: left } */
 
 .subtitle {
@@ -887,7 +887,7 @@ padding-bottom: 6pt; /* font-family: "Calibri"; */
 */ /* li {
     /* color: #000000; */
     /* font-size: 11pt; */
-font-family: "Calibri" }
+/* font-family: "Calibri" } */
 
 p {
     margin: 0;
@@ -902,7 +902,7 @@ h1 {
     padding-top: 12pt;
     color: #2f5496;
     /* font-size: 16pt; */
-padding-bottom: 0pt; /* font-family: "Calibri"; */
+/* padding-bottom: 0pt; font-family: "Calibri"; */
 /* line-height: 1.0791666666666666; page-break-after: avoid; orphans: 2; widows: 2; text-align: left } */
 
 h2 {
@@ -974,5 +974,3 @@ h6 {
     widows: 2;
     text-align: left
 }
-
-*/
