@@ -1,4 +1,4 @@
-#TASS Templeates for web pages of additional tasks
+#TASS Templates for web pages of additional tasks
 
 This project is a template for the webpages of the additional tasks of 
 **[TASS-2018](http://www.sepln.org/workshops/tass/2018/)**.
