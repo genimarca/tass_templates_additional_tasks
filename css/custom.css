@@ -39,9 +39,9 @@ table td, table th {
     background-color: #e6b8af;
     border-left-style: solid;
     border-bottom-width: 1pt;
-    width: 425.2pt;
+    /* width: 425.2pt; */
     border-top-color: #000000;
-    border-bottom-style: solid
+    border-bottom-style: solid;
 }
 
 .c58 {
@@ -58,9 +58,9 @@ table td, table th {
     background-color: #fff2cc;
     border-left-style: solid;
     border-bottom-width: 1pt;
-    width: 425.2pt;
+    /* width: 425.2pt; */
     border-top-color: #000000;
-    border-bottom-style: solid
+    border-bottom-style: solid;
 }
 
 .c13 {
@@ -727,7 +727,8 @@ table td, table th {
     margin-left: 1.5pt;
     border-spacing: 0;
     border-collapse: collapse;
-    margin-right: auto
+    margin-right: auto;
+    width: 400px;
 }
 
 .c68 {
