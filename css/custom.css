@@ -7,8 +7,7 @@ table td, table th {
 }
 
 .c87 {
-    border-right-style: solid;
-    padding: 5pt 5pt 5pt 5pt;
+    padding: 2pt 2pt 2pt 2pt;
     border-bottom-color: #999999;
     border-top-width: 1pt;
     border-right-width: 1pt;
@@ -16,13 +15,14 @@ table td, table th {
     vertical-align: top;
     border-right-color: #999999;
     border-left-width: 1pt;
-    border-top-style: solid;
     background-color: #d9d9d9;
-    border-left-style: solid;
     border-bottom-width: 1pt;
     width: 433.5pt;
     border-top-color: #999999;
-    border-bottom-style: solid
+    /* border-right-style: solid; */
+    /* border-top-style: solid; */
+    /* border-left-style: solid; */
+    /* border-bottom-style: solid */
 }
 
 .c81 {
@@ -723,6 +723,7 @@ table td, table th {
 }
 
 .c85 {
+    border: 1px solid #999999;
     margin-left: 1.5pt;
     border-spacing: 0;
     border-collapse: collapse;
