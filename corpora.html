@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <title>TASS 2018 @SEPLN - Task 3</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Workshop TASS 2018">
+  <meta name="keywords" content="">
+
+  <link rel="stylesheet" type="text/css" href="./css/tass_2017.css">
+  <link rel="stylesheet" type="text/css" href="./css/custom.css">
+  <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" media="screen">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono">
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="row">
+        <div class="col-3 header_logo">
+          <a class="logo" href="./">
+            "TASS"
+          </a>
+        </div>
+        <div class="col-9 header_title_wrapper">
+          <h1 class="head_title">TASS-2018-Task 3. eHealth Knowledge Discovery</h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <nav class="main_menu">
+        <div class="row main_menu_wrapper">
+          <div class="col-12">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="taskA.html">Subtask A</a>
+              </li>
+              <li>
+                <a href="taskB.html">Subtask B</a>
+              </li>
+              <li>
+                <a href="taskC.html">Subtask C</a>
+              </li>
+              <li>
+                <a href="corpora.html">Corpora</a>
+              </li>
+              <li>
+                <a href="evaluation.html">Evaluation</a>
+              </li>
+              <li>
+                <a href="index.html#important_dates">Important dates</a>
+              </li>
+              <li>
+                <a href="http://www.sepln.org/workshops/tass/2018">TASS-2018</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="main_content_wrapper">
+        <section>
+          <div class="row">
+            <div class="col-12">
+              <h2 class="c32" id="corpora">
+                <span class="c28 c7">Corpora description</span>
+              </h2>
+              <p class="c31">
+                <span class="c1">&ldquo;MedlinePlus is the National Institutes of Health&#39;s Website for patients and their families and
+                  friends. Produced by the National Library of Medicine, the world&rsquo;s largest medical library, it brings
+                  you information about diseases, conditions, and wellness issues in language you can understand. MedlinePlus
+                  offers reliable, up-to-date health information, anytime, anywhere, for free.&rdquo; [3] This platform freely
+                  provides large health textual data from which we have made a selection for constituting the eHealth-KD
+                  corpus. T</span>
+                <span class="c1">he selection has been made by sampling specific XML files from the collection available in </span>
+                <span class="c1 c43">
+                  <a class="c14" href="https://www.google.com/url?q=https://medlineplus.gov/xml.html&amp;sa=D&amp;ust=1518162663857000&amp;usg=AFQjCNE0yCrh2v6xamY9ND9ot3-bVB2cEQ">https://medlineplus.gov/xml.html</a>
+                </span>
+                <span class="c3 c1">.</span>
+              </p>
+              <p class="c31">
+                <span class="c3 c1">These files contain several entries related to health and medicine topics and have been processed to remove
+                  all XML markup to extract the textual content. Only Spanish language items were considered. Once cleaned,
+                  each individual item was converted to a plain text document, and some further post-processing is applied
+                  to remove unwanted sentences, such as headers, footers and similar elements, and to flatten HTML lists
+                  into plain sentences. The final documents are manually tagged using Brat by a group of annotators. After
+                  tagging, a post-processing was applied to Brat&rsquo;s output files (ANN format) to obtain the output files
+                  in the formats described in this document.</span>
+              </p>
+              <p class="c31">
+                <span class="c3 c1">The resulting documents and output files are distributed along with the Task. There is no need for participants
+                  to download extra data from MedlinePlus servers, since all the input is already distributed. </span>
+              </p>
+              <h3 class="c92">
+                <span class="c7 c54">Test data</span>
+              </h3>
+              <p class="c31">
+                <span class="c1">The corpus is split into two sets, one is distributed for the purpose of </span>
+                <span class="c7 c1">training </span>
+                <span class="c1">and </span>
+                <span class="c7 c1">development </span>
+                <span class="c1">and the remaining documents are kept for blind evaluation (</span>
+                <span class="c7 c1">test</span>
+                <span class="c3 c1">). This test evaluation set is further divided into three sets, one for each of the evaluation scenarios
+                  described below. Of these sets, only input files and the relevant output files are distributed (see below)
+                  and the rest of the output files are kept for evaluating participant&rsquo;s submissions.</span>
+              </p>
+              <p class="c31">
+                <span class="c3 c1">After the test evaluation is completed and results are disclosed, the full corpus will be provided, along
+                  with all the configuration files and utility scripts used to create the corpus and perform the annotation,
+                  to encourage future researchers to build upon these resources.</span>
+              </p>
+              <h2 class="c74" id="h.2s8eyo1">
+                <span class="c28 c7">Additional Resources</span>
+              </h2>
+              <p class="c15">
+                <span>Besides the training data, some additional resources will be provided, such as the evaluation script (i.e.
+                </span>
+                <span class="c62 c45">evaluateTask.py</span>
+                <span>) and the example files (ie. </span>
+                <span class="c7">trial</span>
+                <span>) shown in this document. Participants may use any other external resources as long as they are declared
+                  at the time of submission (e.g., WordNet, other corpora, software libraries). However, participants are
+                </span>
+                <span class="c7">not allowed</span>
+                <span>to manually annotate the test data prior to submission.</span>
+              </p>
+              <p>
+                All these resources (trian and training data, test files, scripts) are available on the following Github project
+                and will be updated accordingly as new resources become available:
+              </p>
+
+              <p>
+                <a href="https://github.com/tass18-task3/data">https://github.com/tass18-task3/data</a>
+              </p>
+            </div>
+          </div>
+      </div>
+    </main>
+    <footer>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <title>TASS 2018 @SEPLN - Task 3</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Workshop TASS 2018">
+  <meta name="keywords" content="">
+
+  <link rel="stylesheet" type="text/css" href="./css/tass_2017.css">
+  <link rel="stylesheet" type="text/css" href="./css/custom.css">
+  <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" media="screen">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono">
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="row">
+        <div class="col-3 header_logo">
+          <a class="logo" href="./">
+            "TASS"
+          </a>
+        </div>
+        <div class="col-9 header_title_wrapper">
+          <h1 class="head_title">TASS-2018-Task 3. eHealth Knowledge Discovery</h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <nav class="main_menu">
+        <div class="row main_menu_wrapper">
+          <div class="col-12">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="taskA.html">Subtask A</a>
+              </li>
+              <li>
+                <a href="taskB.html">Subtask B</a>
+              </li>
+              <li>
+                <a href="taskC.html">Subtask C</a>
+              </li>
+              <li>
+                <a href="corpora.html">Corpora</a>
+              </li>
+              <li>
+                <a href="evaluation.html">Evaluation</a>
+              </li>
+              <li>
+                <a href="index.html#important_dates">Important dates</a>
+              </li>
+              <li>
+                <a href="http://www.sepln.org/workshops/tass/2018">TASS-2018</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="main_content_wrapper">
+        <section>
+          <div class="row">
+            <div class="col-12">
+              <h2 class="c29" id="evaluation">
+                <span class="c28 c7">Overall evaluation </span>
+              </h2>
+              <p class="c52">
+                <span class="c51">There </span>
+                <span class="c3">will be three evaluation scenarios:</span>
+              </p>
+              <h3 class="c32" id="h.3rdcrjn">
+                <span>Scenario 1: </span>
+                <span class="c44">Only plain text is given (Subtasks A, B, C).</span>
+              </h3>
+              <p class="c34">
+                <span>In this first scenario, the participants will perform the three subtasks consecutively and provide the corresponding
+                  development output files. The only input provided are plain text files </span>
+                <span class="c35">input_&lt;topic&gt;.txt </span>
+                <span class="c3">for a particular list of topics that were not released with the training data.</span>
+              </p>
+              <p class="c34">
+                <span>Systems will be ranked according to an aggregated </span>
+                <span class="c7">F1</span>
+                <span>metric computed on the three tasks, by considering </span>
+                <span class="c7">precision</span>
+                <span>and </span>
+                <span class="c7">recall</span>
+                <span class="c3">as follows:</span>
+              </p>
+              <p class="c30">
+                <img src="images/image10.png">
+              </p>
+              <p class="c30">
+                <img src="images/image11.png">
+              </p>
+              <p class="c30">
+                <img src="images/image1.png">
+              </p>
+
+              <p class="c2">
+                <span class="c3">Besides this aggregated F1 score, individual F1 scores for each of the subtasks will also be reported.</span>
+              </p>
+
+              <h3 class="c23" id="h.26in1rg">
+                <span>Scenario 2: </span>
+                <span class="c44">Plain text and manually annotated key phrase boundaries are given (Subtasks B, C).</span>
+              </h3>
+              <p class="c2">
+                <span>In this second scenario participants will perform tasks B and C sequentially, and provide the corresponding
+                  output files. As input, they receive both plain text files (</span>
+                <span class="c35">input_&lt;topic&gt;.txt</span>
+                <span>), and the corresponding gold files for the task A (</span>
+                <span class="c35">output_A_&lt;topic&gt;.txt</span>
+                <span>). The purpose of this scenario is to evaluate the quality of tasks B and C independently from task A. As
+                  in the previous scenario, an aggregated </span>
+                <span class="c7">F1</span>
+                <span>metric is reported, based on the following </span>
+                <span class="c7">precision</span>
+                <span>and </span>
+                <span class="c7">recall</span>
+                <span class="c3">:</span>
+              </p>
+              <p class="c30">
+                <img src="images/image12.png">
+              </p>
+              <p class="c30">
+                <img src="images/image13.png">
+              </p>
+              <p class="c30">
+                <img src="images/image1.png">
+              </p>
+              <p class="c34">
+                <span class="c3">Besides the aggregated F1 metric, individual scores of F1 for each of the subtasks are also reported.</span>
+              </p>
+              <h3 class="c23" id="h.lnxbz9">
+                <span>Scenario 3: </span>
+                <span class="c44">Plain text with manually annotated key phrases and their types are given (Subtask C).</span>
+              </h3>
+
+              <p class="c34">
+                <span>In this scenario both the gold outputs for task A and task B are provided, and the participants must only
+                  perform the process to obtain task C output files. The purpose of this scenario is to evaluate only the
+                  quality of task C independently of the complexity of task A and B. As before, an aggregated F1 metric is
+                  reported, based on the following </span>
+                <span class="c7">precision</span>
+                <span>and </span>
+                <span class="c7">recall</span>
+                <span class="c3">:</span>
+              </p>
+              <p class="c30">
+                <img src="images/image14.png">
+              </p>
+              <p class="c30">
+                <img src="images/image15.png">
+              </p>
+              <p class="c30">
+                <img src="images/image1.png">
+              </p>
+            </div>
+          </div>
+
+        </section>
+      </div>
+    </main>
+    <footer>
+    </footer>
+  </div>
+</body>
+
+</html>
