@@ -67,9 +67,6 @@
           <div class="row">
             <div class="col-12">
               <h2>Subtask C: Setting semantic relations</h2>
-              <p class="c24 c6">
-                <span class="c3"></span>
-              </p>
               <p class="c15">
                 <span>Subtask C continues from the output of Subtask B, by linking the entities detected and labelled in each document.
                   Given an input file (i.e. </span>
@@ -88,22 +85,30 @@
               <p class="c24">
                 <span class="c3">This illustration represents the following gold files:</span>
               </p>
-              <ul class="c59 lst-kix_list_6-0">
-                <li class="c21 c11">
+              <ul>
+                <li>
                   <span>plain text: </span>
-                  <span class="c35">input_asma.txt</span>
+                  <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/input/input_example.txt">
+                    input_example.txt
+                  </a>
                 </li>
-                <li class="c21 c11">
+                <li>
                   <span>key phrases: </span>
-                  <span class="c35">output_A_asma.txt</span>
+                  <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/gold/output_A_example.txt">
+                    output_A_example.txt
+                  </a>
                 </li>
-                <li class="c21 c11">
+                <li>
                   <span>labels: </span>
-                  <span class="c35">output_B_asma.txt</span>
+                  <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/gold/output_B_example.txt">
+                    output_B_example.txt
+                  </a>
                 </li>
-                <li class="c21 c11">
+                <li>
                   <span>relationships: </span>
-                  <span class="c35">output_C_asma.txt</span>
+                  <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/gold/output_C_example.txt">
+                    output_C_example.txt
+                  </a>
                 </li>
               </ul>
               <p class="c24">
@@ -166,9 +171,6 @@
                   <span class="c3">&ldquo;NIH&rdquo;.</span>
                 </li>
               </ul>
-              <p class="c21 c6 c26">
-                <span class="c3"></span>
-              </p>
               <p class="c15 c26">
                 <span>Notice that these relationships are hinted at by some of the words that appear in the sentence, but it is
                   not necessary for these words to be reported for the purpose of the evaluation. For example, the expression
@@ -207,9 +209,6 @@
                   <span>It can be said a target plays the consumer role by establishing this relationship.</span>
                 </li>
               </ul>
-              <p class="c2 c6 c26">
-                <span class="c3"></span>
-              </p>
               <p class="c15 c60">
                 <span>Notice that </span>
                 <span class="c7">Actions</span>
@@ -309,11 +308,11 @@
                 <span class="c3">.</span>
               </p>
               <p class="c15">
-                <span>The expected output of the previous example is:</span>
+                <span>The expected output of the previous example is (gold file <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/gold/output_C_example.txt">output_C_example.txt</a> ):</span>
               </p>
-              <a id="t.c4ad4c15ee0a7a749cb3656fc7ec0217f8eab705"></a>
-              <a id="t.13"></a>
-              <table class="c20">
+              <script class="sample" src="http://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/gold/output_C_example.txt?footer=minimal"></script>
+
+              <!-- <table class="c20">
                 <tbody>
                   <tr class="c19">
                     <td class="c13">LABEL</td>
@@ -391,10 +390,7 @@
                     <td class="c13">13</td>
                   </tr>
                 </tbody>
-              </table>
-              <p class="c21 c6 c26">
-                <span class="c3"></span>
-              </p>
+              </table> -->
               <p class="c15">
                 <span>The label is one of the following linking axioms: </span>
                 <span class="c7">is-a</span>
@@ -487,7 +483,7 @@
             <div class="col-12">
               <h2>Development evaluation of Subtask C</h2>
               <p class="c24">
-                <span>An example of an incorrectly linked document could be as follows:</span>
+                <span>An example of an incorrectly linked document could be as follows (dev file: <a href="http://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/dev/output_C_example.txt?footer=minimal">output_C_example.txt</a>):</span>
               </p>
               <p class="c24">
                 <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 567.20px; height: 206.67px;">
@@ -495,9 +491,9 @@
                     title="">
                 </span>
               </p>
-              <a id="t.c24ffb0c834233311e473641ea90ff613bb628f6"></a>
-              <a id="t.14"></a>
-              <table class="c20">
+              <script class="sample" src="http://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/dev/output_C_example.txt?footer=minimal"></script>
+
+              <!-- <table class="c20">
                 <tbody>
                   <tr class="c19">
                     <td class="c13">LABEL</td>
@@ -555,23 +551,20 @@
                     <td class="c13">17</td>
                   </tr>
                 </tbody>
-              </table>
-              <p class="c21 c6 c26">
-                <span class="c3"></span>
-              </p>
+              </table> -->
               <p class="c24">
                 <span>Running the evaluation script produces the following output (showing only the relevant part for this Subtask):</span>
               </p>
-              <a id="t.b38b0df686f05c8f65a9ccda9ecf96ed58336817"></a>
-              <a id="t.15"></a>
-              <table class="c20">
+              <script class="sample" src="http://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/log.txt?footer=minimal&slice=67:"></script>
+
+              <!-- <table class="c20">
                 <tbody>
                   <tr class="c19">
                     <td class="c13" colspan="1" rowspan="1">
 
                       # Taks C (linking)
-                      <br> gold file: ../example-gold/output_C_asma.txt
-                      <br> dev file: ../example-dev/output_teamX_C_asma.txt
+                      <br> gold file: ../example-gold/output_C_example.txt
+                      <br> dev file: ../example-dev/output_teamX_C_example.txt
                       <br>
                       <br> * Correct (6):
                       <br> - subject involving &quot;produce&quot; and &quot;empeoran&quot;.
@@ -606,10 +599,7 @@
                     </td>
                   </tr>
                 </tbody>
-              </table>
-              <p class="c21 c6 c26">
-                <span class="c3"></span>
-              </p>
+              </table> -->
               <p class="c24">
                 <span class="c3">The script reports the correct, missing and spurious items, defined as follows:</span>
               </p>
