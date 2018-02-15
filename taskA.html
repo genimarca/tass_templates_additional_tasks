@@ -89,37 +89,6 @@
                   the text. All inputs are encoded into UTF-8. Each sentence appears on a new line.</span>
               </p>
               <p class="c2">
-                <span class="c3 c1">Subtask A input example:</span>
-              </p>
-              <ul class="c59 lst-kix_list_3-0 start">
-                <li class="c2 c11">
-                  <span class="c1">plain text document: file </span>
-                  <span class="c35 c1">
-                    <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/input/input_example.txt">
-                      input_example.txt
-                    </a>
-                  </span>
-                </li>
-              </ul>
-              <!-- <table class="c20">
-                <tbody>
-                  <tr class="c19">
-                    <td class="c13" colspan="1" rowspan="1">
-                      <p class="c0">
-                        El asma afecta las v&iacute;as respiratorias. Los pulmones se hinchan. El asma es una enfermedad.
-                          Un ataque de asma se produce cuando los s&iacute;ntomas empeoran. Los s&iacute;ntomas y el tratamiento
-                          dependen del tipo de c&aacute;ncer y de lo avanzada que est&eacute; la enfermedad.
-                      </p>
-
-                    </td>
-                  </tr>
-                </tbody>
-              </table> -->
-
-              <br>
-              <script class="sample" src="https://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/input/input_example.txt?footer=minimal"></script>
-
-              <p class="c2">
                 <span>The output consists of a list of documents, corresponding to the input files, in the following format: [
                   auto-increment identifier </span>
                 <span class="c7">(ID)</span>
@@ -160,31 +129,6 @@
                   tool). In this first subtask it is only important to detect the key phrases, i.e., the fragments of the
                   text that are highlighted in light blue.</span>
               </p>
-              <p class="c21">
-                <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 567.20px; height: 184.00px;">
-                  <img alt="" src="images/image16.png" style="width: 567.20px; height: 184.00px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                    title="">
-                </span>
-              </p>
-              <p class="c24">
-                <span class="c3">This illustration represents the following gold files:</span>
-              </p>
-              <ul class="c59 lst-kix_list_6-0 start">
-                <li class="c21 c11">
-                  <span class="c3">plain text:
-                    <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/input/input_example.txt">
-                      input_example.txt
-                    </a>
-                  </span>
-                </li>
-                <li class="c21 c11">
-                  <span class="c3">key phrases:
-                    <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/gold/output_A_example.txt">
-                      output_A_example.txt
-                    </a>
-                  </span>
-                </li>
-              </ul>
               <p class="c2">
                 <span class="c1">The following fragment shows the expected gold output for the previous input file, that exactly matches what
                   the sample figure shows. Notice that the first entry is identified with </span>
@@ -204,141 +148,38 @@
                 <span class="c7 c1">START</span>
                 <span class="c3 c1">, although doing some might be convenient for manual inspection and easier debugging.</span>
               </p>
-              <p class="c2">
-                <span class="c1">Subtask A </span>
-                <span class="c7 c1">gold output</span>
-                <span class="c3 c1">example:</span>
-              </p>
-              <ul class="c59 lst-kix_list_3-0">
-                <li class="c2 c11">
-                  <span class="c1">structured data regarding the key phrases&rsquo; offsets: file </span>
-                  <span class="c35 c1">output_A_example.txt</span>
-                </li>
-              </ul>
-              <br>
-              <script class="sample" src="https://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/gold/output_A_example.txt?footer=minimal"></script>
-
-              <!-- <table class="c85">
-                <tbody>
-                  <tr class="c19">
-                    <td class="c87" colspan="1" rowspan="1">
-                      <span class="c9">ID</span>
-                    </td>
-                    <td class="c87" colspan="1" rowspan="1">
-                      <span class="c9">START</span>
-                    </td>
-                    <td class="c87" colspan="1" rowspan="1">
-                      <span class="c9">END</span>
-                    </td>
-                  </tr>
-                  <tr class="c19">
-                    <td class="c87">1</td>
-                    <td class="c87">3</td>
-                    <td class="c87">7</td>
-                  </tr>
-                  <tr class="c19">
-                    <td class="c87">2</td>
-                    <td class="c87">8</td>
-                    <td class="c87">14</td>
-                  </tr>
-                  <tr class="c19">
-                    <td class="c87">3</td>
-                    <td class="c87">19</td>
-                    <td class="c87">37</td>
-                  </tr>
-                  <tr class="c19">
-                    <td class="c87">4</td>
-                    <td class="c87">43</td>
-                    <td class="c87">51</td>
-                  </tr>
-                  <tr class="c19">
-                    <td class="c87">5</td>
-                    <td class="c87">67</td>
-                    <td class="c87">71</td>
-                  </tr>
-                  <tr class="c19">
-                    <td class="c87">6</td>
-                    <td class="c87">55</td>
-                    <td class="c87">62</td>
-                  </tr>
-                  <tr class="c19">
-                    <td class="c87">7</td>
-                    <td class="c87">79</td>
-                    <td class="c87">89</td>
-                  </tr>
-                  <tr class="c19">
-                    <td class="c87">8</td>
-                    <td class="c87">94</td>
-                    <td class="c87">108</td>
-                  </tr>
-                  <tr class="c19">
-                    <td class="c87">9</td>
-                    <td class="c87">112</td>
-                    <td class="c87">119</td>
-                  </tr>
-                  <tr class="c19">
-                    <td class="c87">10</td>
-                    <td class="c87">131</td>
-                    <td class="c87">139</td>
-                  </tr>
-                  <tr class="c19">
-                    <td class="c87">11</td>
-                    <td class="c87">140</td>
-                    <td class="c87">148</td>
-                  </tr>
-                  <tr class="c19">
-                    <td class="c87">12</td>
-                    <td class="c87">154</td>
-                    <td class="c87">162</td>
-                  </tr>
-                  <tr class="c19">
-                    <td class="c87">13</td>
-                    <td class="c87">168</td>
-                    <td class="c87">179</td>
-                  </tr>
-                  <tr class="c19">
-                    <td class="c87">14</td>
-                    <td class="c87">180</td>
-                    <td class="c87">188</td>
-                  </tr>
-                  <tr class="c19">
-                    <td class="c87">15</td>
-                    <td class="c87">193</td>
-                    <td class="c87">197</td>
-                  </tr>
-                  <tr class="c19">
-                    <td class="c87">16</td>
-                    <td class="c87">237</td>
-                    <td class="c87">247</td>
-                  </tr>
-                  <tr class="c19">
-                    <td class="c87">17</td>
-                    <td class="c87">216</td>
-                    <td class="c87">224</td>
-                  </tr>
-                  <tr class="c19">
-                    <td class="c87">18</td>
-                    <td class="c87">201</td>
-                    <td class="c87">207</td>
-                  </tr>
-                </tbody>
-              </table> -->
-              <!-- <table >
-                <tbody>
-                  <tr class="c19">
-                    <td class="c81" colspan="1" rowspan="1">
-                      <p class="c2">
-                        <span class="c7">NOTE: </span>
-                        <span class="c3">The headers for the columns in the first line of the example above are only displayed in this document
-                          as a visual aid but the actual output files do not contain this first line. The output files start
-                          directly with the first numeric entry. The same applies to the rest of the examples shown in this
-                          document.
-                        </span>
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table> -->
+              <div class="row">
+                <div class="col-6">
+                  <h4>Subtask A input example:</h4>
+                  <ul class="c59 lst-kix_list_3-0 start">
+                    <li class="c2 c11">
+                      <span class="c1">Plain text document: file </span>
+                        <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/input/input_example.txt">
+                          input/input_example.txt
+                        </a>
+                    </li>
+                  </ul>
+                  <br>
+                  <script class="sample" src="https://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/input/input_example.txt?footer=minimal"></script>
+                  <p class="c21">
+                    <img alt="" src="images/image16.png" style="width: 100%; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                      title="">
+                  </p>
+                </div>
+                <div class="col-6">
+                  <h4>Subtask A gold output example:</h4>
+                  <ul class="c59 lst-kix_list_3-0">
+                    <li class="c2 c11">
+                      <span class="c1">Structured data regarding the key phrases' offsets: file </span>
+                      <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/gold/output_A_example.txt">
+                        gold/output_A_example.txt
+                      </a>
+                    </li>
+                  </ul>
+                  <br>
+                  <script class="sample" src="https://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/gold/output_A_example.txt?footer=minimal"></script>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -359,135 +200,24 @@
                 <span class="c7">entries have been incorrectly added</span>
                 <span class="c3">, in contrast to the gold file.</span>
               </p>
-              <p class="c2">
-                <span>Example </span>
-                <span class="c7">dev file: </span>
-                <span class="c35">
-                  <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/dev/output_A_example.txt">
-                    output_A_example.txt
-                  </a>
-                </span>
-              </p>
-              <br>
-              <script class="sample" src="https://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/dev/output_A_example.txt?footer=minimal"></script>
-
-              <!-- <table class="c20">
-                <tbody>
-                  <tr class="c19">
-                    <td class="c13">ID</td>
-                    <td class="c13">START</td>
-                    <td class="c13">END</td>
-                    </td>
-                  </tr>
-                  <tr class="c19">
-                    <td class="c13">1</td>
-                    <td class="c13">3</td>
-                    <td class="c13">7</td>
-                  </tr>
-
-                  <tr class="c19">
-                    <td class="c13">3</td>
-                    <td class="c13">19</td>
-                    <td class="c13">37</td>
-                  </tr>
-
-                  <tr class="c19">
-                    <td class="c13">4</td>
-                    <td class="c13">43</td>
-                    <td class="c13">51</td>
-                  </tr>
-
-                  <tr class="c19">
-                    <td class="c13">5</td>
-                    <td class="c13">67</td>
-                    <td class="c13">71</td>
-                  </tr>
-
-                  <tr class="c19">
-                    <td class="c13">7</td>
-                    <td class="c13">79</td>
-                    <td class="c13">89</td>
-                  </tr>
-
-                  <tr class="c19">
-                    <td class="c13">8</td>
-                    <td class="c13">94</td>
-                    <td class="c13">108</td>
-                  </tr>
-
-                  <tr class="c19">
-                    <td class="c13">9</td>
-                    <td class="c13">112</td>
-                    <td class="c13">119</td>
-                  </tr>
-
-                  <tr class="c19">
-                    <td class="c13">10</td>
-                    <td class="c13">127</td>
-                    <td class="c13">139</td>
-                  </tr>
-
-                  <tr class="c19">
-                    <td class="c13">11</td>
-                    <td class="c13">140</td>
-                    <td class="c13">148</td>
-                  </tr>
-
-                  <tr class="c19">
-                    <td class="c13">12</td>
-                    <td class="c13">154</td>
-                    <td class="c13">162</td>
-                  </tr>
-
-                  <tr class="c19">
-                    <td class="c13">13</td>
-                    <td class="c13">168</td>
-                    <td class="c13">179</td>
-                  </tr>
-
-                  <tr class="c19">
-                    <td class="c13">14</td>
-                    <td class="c13">180</td>
-                    <td class="c13">188</td>
-                  </tr>
-
-                  <tr class="c19">
-                    <td class="c13">16</td>
-                    <td class="c13">237</td>
-                    <td class="c13">247</td>
-                  </tr>
-
-                  <tr class="c19">
-                    <td class="c13">17</td>
-                    <td class="c13">216</td>
-                    <td class="c13">224</td>
-                  </tr>
-
-                  <tr class="c19">
-                    <td class="c13">15</td>
-                    <td class="c13">193</td>
-                    <td class="c13">207</td>
-                  </tr>
-
-                  <tr class="c19">
-                    <td class="c13">19</td>
-                    <td class="c13">229</td>
-                    <td class="c13">233</td>
-                  </tr>
-
-                </tbody>
-              </table> -->
-              <p class="c2">
-                <span>The above </span>
-                <span class="c7">dev output </span>
-                <span class="c3">is equivalent to the following tagged document viewed in Brat:</span>
-              </p>
-              <p class="c2">
-                <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 567.20px; height: 184.00px;">
-                  <img alt="" src="images/image18.png" style="width: 567.20px; height: 184.00px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+              <div class="row">
+                <div class="col-6">
+                  <h4>Example dev output illustration:</h4>
+                  <ul>
+                    <li> Key phrases offset file:
+                      <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/dev/output_A_example.txt">
+                        dev/output_A_example.txt
+                      </a>
+                    </li>
+                  </ul>
+                  <img alt="" src="images/image18.png" style="width: 100%; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
                     title="">
-                </span>
-              </p>
+                </div>
+                <div class="col-6">
+                  <h4>Example dev ouput file:</h4>
+                  <script class="sample" src="https://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/dev/output_A_example.txt?footer=minimal"></script>
+                </div>
+              </div>
               <p class="c2">
                 <span>An evaluation script (</span>
                 <span class="c45 c62">
@@ -521,50 +251,6 @@
               </p>
               <br>
               <script class="sample" src="https://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/log.txt?footer=minimal&slice=0:33"></script>
-              <!-- <table class="c20">
-                <tbody>
-                  <tr class="c19">
-                    <td class="c13" colspan="1" rowspan="1">
-                      # Subtask A (detecting phrases)
-                      <br> input file: ../example/gold/input_example.txt
-                      <br> gold file: ../example/gold/output_A_example.txt
-                      <br> dev file: ../example/dev/output_A_example.txt
-                      <br>
-
-                      <br> * Correct (13):
-                      <br> - &quot;asma&quot; from 3 to 7.
-                      <br> - &quot;v&iacute;as respiratorias&quot; from 19 to 37.
-                      <br> - &quot;pulmones&quot; from 43 to 51.
-                      <br> - &quot;asma&quot; from 67 to 71.
-                      <br> - &quot;enfermedad&quot; from 79 to 89.
-                      <br> - &quot;ataque de asma&quot; from 94 to 108.
-                      <br> - &quot;produce&quot; from 112 to 119.
-                      <br> - &quot;empeoran&quot; from 140 to 148.
-                      <br> - &quot;s&iacute;ntomas&quot; from 154 to 162.
-                      <br> - &quot;tratamiento&quot; from 168 to 179.
-                      <br> - &quot;dependen&quot; from 180 to 188.
-                      <br> - &quot;avanzada&quot; from 216 to 224.
-                      <br> - &quot;enfermedad&quot; from 237 to 247.
-                      <br> * Partial (2):
-                      <br> - &quot;s&iacute;ntomas&quot; from 131 to 139 vs &quot;los s&iacute;ntomas&quot; from 127 to 139.
-                      <br> - &quot;tipo&quot; from 193 to 197 vs &quot;tipo de c&aacute;ncer&quot; from 193 to 207.
-                      <br> * Missing (3):
-                      <br> - &quot;afecta&quot; from 8 to 14.
-                      <br> - &quot;hinchan&quot; from 55 to 62.
-                      <br> - &quot;c&aacute;ncer&quot; from 201 to 207.
-                      <br> * Spurious (1):
-                      <br> - &quot;est&eacute;&quot; from 229 to 233.
-                      <br>
-
-                      <br> Precision = 0.93
-                      <br> Recall = 0.82
-                      <br> F1 Score = 0.87
-                      <br> ...
-                      <br>
-                    </td>
-                  </tr>
-                </tbody>
-              </table> -->
               <p class="c2">
                 <span>The evaluation script reports </span>
                 <span class="c7">correct</span>
@@ -647,19 +333,13 @@
               <div class="row">
                 <div class="col-1"></div>
                 <div class="col-3">
-                  $$
-                    F_1 = 2 \cdot \frac{precision \cdot recall}{precision + recall}
-                  $$
+                  $$ F_1 = 2 \cdot \frac{precision \cdot recall}{precision + recall} $$
                 </div>
                 <div class="col-4">
-                  $$
-                    precision = \frac{correct + \frac{1}{2} partial}{correct + missing + partial}
-                  $$
+                  $$ precision = \frac{correct + \frac{1}{2} partial}{correct + missing + partial} $$
                 </div>
                 <div class="col-3">
-                  $$
-                    recall = \frac{correct + \frac{1}{2} partial}{correct + spurious + partial}
-                  $$
+                  $$ recall = \frac{correct + \frac{1}{2} partial}{correct + spurious + partial} $$
                 </div>
               </div>
               <!-- <tbody>
