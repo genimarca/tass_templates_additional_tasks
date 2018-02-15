@@ -73,8 +73,7 @@
                 </span>
               </p>
               <p class="c2">
-                <span class="c7">Input:</span>
-                <span>a list of documents in plain text is given. Each document is named </span>
+                <span>As input a list of documents in plain text is given. Each document is named </span>
                 <span class="c35 c7">input_&lt;topic&gt;.txt</span>
                 <span class="c7"></span>
                 <span>where </span>
@@ -84,8 +83,8 @@
                   for the corpus is provided which explains the source of each of the input files.</span>
               </p>
               <p class="c2">
-                <span class="c3 c1">An example input file containing plain text is given below. No preprocessing&mdash; tokenizing or splitting
-                  into sentences&mdash; is performed on the text. All inputs are encoded into UTF-8.</span>
+                <span class="c3 c1">An example input file containing plain text is given below. No preprocessing or tokenizing is performed on
+                  the text. All inputs are encoded into UTF-8. Each sentence appears on a new line.</span>
               </p>
               <p class="c2">
                 <span class="c3 c1">Subtask A input example:</span>
@@ -93,40 +92,47 @@
               <ul class="c59 lst-kix_list_3-0 start">
                 <li class="c2 c11">
                   <span class="c1">plain text document: file </span>
-                  <span class="c35 c1">input_asma.txt</span>
+                  <span class="c35 c1">
+                    <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/input/input_example.txt">
+                      input_example.txt
+                    </a>
+                  </span>
                 </li>
               </ul>
-              <table class="c20">
+              <!-- <table class="c20">
                 <tbody>
                   <tr class="c19">
                     <td class="c13" colspan="1" rowspan="1">
                       <p class="c0">
-                        <span class="c45 c50">El asma afecta las v&iacute;as respiratorias. Los pulmones se hinchan. El asma es una enfermedad.
+                        El asma afecta las v&iacute;as respiratorias. Los pulmones se hinchan. El asma es una enfermedad.
                           Un ataque de asma se produce cuando los s&iacute;ntomas empeoran. Los s&iacute;ntomas y el tratamiento
-                          dependen del tipo de c&aacute;ncer y de lo avanzada que est&eacute; la enfermedad.</span>
+                          dependen del tipo de c&aacute;ncer y de lo avanzada que est&eacute; la enfermedad.
                       </p>
+
                     </td>
                   </tr>
                 </tbody>
-              </table>
+              </table> -->
+
+              <br>
+              <script class="sample" src="http://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/input/input_example.txt?footer=minimal"></script>
+
               <p class="c2">
-                <span class="c7">Output</span>
-                <span>: a list of documents, corresponding to the input files, in the following format: [auto-increment identifier(</span>
-                <span class="c7">ID</span>
-                <span>), start offset (</span>
-                <span class="c7">START</span>
-                <span>), end offset (</span>
-                <span class="c7">END</span>
-                <span>)]. The files should be named </span>
-                <span class="c35 c7">output_&lt;team&gt;_A_&lt;topic&gt;.txt</span>
+                <span>The output consists of a list of documents, corresponding to the input files, in the following format: [
+                  auto-increment identifier </span>
+                <span class="c7">(ID)</span>
+                <span>, start offset</span>
+                <span class="c7">(START)</span>
+                <span>, end offset</span>
+                <span class="c7">(END)</span>
+                <span>]. The files should be named </span>
+                <span class="c35 c7">output_A_&lt;topic&gt;.txt</span>
                 <span class="c35">, </span>
                 <span>where </span>
                 <span class="c35">&lt;topic&gt; </span>
                 <span>matches with the corresponding input file. The </span>
                 <span class="c35">A</span>
-                <span>refers to subtask A applied and </span>
-                <span class="c35">team</span>
-                <span>refers to the participant team.</span>
+                <span>refers to subtask A applied.
               </p>
               <p class="c2">
                 <span>Each output document regarding the Subtask A will contain a line per entry. Each entry represents a span
@@ -163,10 +169,18 @@
               </p>
               <ul class="c59 lst-kix_list_6-0 start">
                 <li class="c21 c11">
-                  <span class="c3">plain text: input_asma.txt</span>
+                  <span class="c3">plain text:
+                    <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/input/input_example.txt">
+                      input_example.txt
+                    </a>
+                  </span>
                 </li>
                 <li class="c21 c11">
-                  <span class="c3">key phrases: output_A_asma.txt</span>
+                  <span class="c3">key phrases:
+                    <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/gold/output_A_example.txt">
+                      output_A_example.txt
+                    </a>
+                  </span>
                 </li>
               </ul>
               <p class="c2">
@@ -196,10 +210,13 @@
               <ul class="c59 lst-kix_list_3-0">
                 <li class="c2 c11">
                   <span class="c1">structured data regarding the key phrases&rsquo; offsets: file </span>
-                  <span class="c35 c1">output_A_asma.txt</span>
+                  <span class="c35 c1">output_A_example.txt</span>
                 </li>
               </ul>
-              <table class="c85">
+              <br>
+              <script class="sample" src="http://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/gold/output_A_example.txt?footer=minimal"></script>
+
+              <!-- <table class="c85">
                 <tbody>
                   <tr class="c19">
                     <td class="c87" colspan="1" rowspan="1">
@@ -303,13 +320,8 @@
                     <td class="c87">207</td>
                   </tr>
                 </tbody>
-              </table>
-              <p class="c21">
-                <span class="c8"></span>
-              </p>
-              <a id="t.402afcc44b51361a7cc03be7f44c0734363e4672"></a>
-              <a id="t.2"></a>
-              <table class="c20">
+              </table> -->
+              <!-- <table >
                 <tbody>
                   <tr class="c19">
                     <td class="c81" colspan="1" rowspan="1">
@@ -324,7 +336,7 @@
                     </td>
                   </tr>
                 </tbody>
-              </table>
+              </table> -->
             </div>
           </div>
         </section>
@@ -345,20 +357,19 @@
                 <span class="c7">entries have been incorrectly added</span>
                 <span class="c3">, in contrast to the gold file.</span>
               </p>
-              <p class="c2 c6">
-                <span class="c3"></span>
-              </p>
               <p class="c2">
-                <span>example </span>
-                <span class="c7">dev file</span>
-                <span></span>
-                <span class="c35">output_</span>
-                <span class="c1 c5">teamX_</span>
-                <span class="c35">A_asma.txt</span>
+                <span>Example </span>
+                <span class="c7">dev file: </span>
+                <span class="c35">
+                  <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/dev/output_A_example.txt">
+                    output_A_example.txt
+                  </a>
+                </span>
               </p>
-              <a id="t.d4e7aabdb775358a73884917d22da273079349d5"></a>
-              <a id="t.3"></a>
-              <table class="c20">
+              <br>
+              <script class="sample" src="http://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/dev/output_A_example.txt?footer=minimal"></script>
+
+              <!-- <table class="c20">
                 <tbody>
                   <tr class="c19">
                     <td class="c13">ID</td>
@@ -463,10 +474,7 @@
                   </tr>
 
                 </tbody>
-              </table>
-              <p class="c21 c6 c26">
-                <span class="c3"></span>
-              </p>
+              </table> -->
               <p class="c2">
                 <span>The above </span>
                 <span class="c7">dev output </span>
@@ -479,50 +487,39 @@
                 </span>
               </p>
               <p class="c2">
-                <span>An evaluation script (i.e. </span>
-                <span class="c45 c62">evaluateTasks.py</span>
-                <span>) is provided to help participants to easily detect mistakes. The evaluation script receives two arguments,
-                  the path of the </span>
-                <span class="c7">gold</span>
-                <span></span>
-                <span class="c7">folder </span>
-                <span>and the path of the </span>
-                <span class="c7">dev</span>
-                <span>folder. The </span>
-                <span class="c7">gold folder </span>
-                <span>contains the input files (</span>
+                <span>An evaluation script (</span>
+                <span class="c45 c62">
+                  <a href="https://github.com/TASS18-Task3/data/blob/master/score_training.py">
+                    score_training.py
+                  </a>
+                </span>
+                <span>) is provided to help participants to easily detect mistakes. The evaluation script receives an optional
+                  argument, the path of the </span>
+                <span class="c7">training</span>
+                <span>folder. The</span>
+                <span class="c7">training/input</span>
+                <span>folder contains the input files (</span>
                 <span class="c35">input_&lt;topic&gt;.txt</span>
-                <span>) and the expected </span>
+                <span>) while the
+                  <span class="c7">training/gold</span> folder contains and the expected </span>
                 <span class="c7">gold output</span>
-                <span>files (for Subtask A these are the files called </span>
+                <span>files ( for Subtask A these are the files called </span>
                 <span class="c35">output_A_&lt;topic&gt;.txt</span>
                 <span>), and the </span>
-                <span class="c7">dev folder </span>
-                <span>contains the output files to be evaluated (for Subtask A these are the files called </span>
-                <span class="c35">output_</span>
-                <span class="c35 c7">&lt;team&gt;</span>
-                <span class="c35">_A_&lt;topic&gt;.txt</span>
-                <span class="c3">).</span>
-              </p>
-              <p class="c2 c6">
-                <span class="c3"></span>
+                <span class="c7">training/dev</span> folder contains the output files to be evaluated (for Subtask A these are the files called
+                <span class="c35">output_A_&lt;topic&gt;.txt</span>).
               </p>
               <p class="c2">
-                <span>A set of folders </span>
-                <span class="c35">example-gold </span>
-                <span>and </span>
-                <span class="c35">example-dev</span>
-                <span class="c3">are provided with the previous examples, to illustrate how to use the evaluation script. Running this script
-                  using these example folders produces the following result (only showing output that is relevant for the
-                  Subtask A):
+                <span>An example folder </span>
+                <span class="c35">training_example</span>
+                <span class="c3">is provided with the previous examples, to illustrate how to use the evaluation script. Running this script
+                  using this example folder produces the following result (only showing output that is relevant for the Subtask
+                  A):
                 </span>
               </p>
-              <p class="c21 c6 c26">
-                <span class="c8"></span>
-              </p>
-              <a id="t.ab7609a3e5d8bd14769fa4c1981eab2f89603ffc"></a>
-              <a id="t.4"></a>
-              <table class="c20">
+              <br>
+              <script class="sample" src="http://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/log.txt?footer=minimal&slice=0:33"></script>
+              <!-- <table class="c20">
                 <tbody>
                   <tr class="c19">
                     <td class="c13" colspan="1" rowspan="1">
@@ -565,10 +562,7 @@
                     </td>
                   </tr>
                 </tbody>
-              </table>
-              <p class="c21 c6 c26">
-                <span class="c8"></span>
-              </p>
+              </table> -->
               <p class="c2">
                 <span>The evaluation script reports </span>
                 <span class="c7">correct</span>
@@ -588,14 +582,8 @@
                 <span class="c7">ID</span>
                 <span class="c3">s which will be used in the following Subtasks B and C.</span>
               </p>
-              <p class="c2 c6">
-                <span class="c3"></span>
-              </p>
               <p class="c2">
                 <span class="c3">A brief description about the metrics follows:</span>
-              </p>
-              <p class="c2 c6">
-                <span class="c3"></span>
               </p>
               <ul class="c59 lst-kix_list_1-0 start">
                 <li class="c2 c11">
@@ -645,9 +633,6 @@
                   <span class="c3">file.</span>
                 </li>
               </ul>
-              <p class="c2 c6">
-                <span class="c3"></span>
-              </p>
               <p class="c2">
                 <span>The evaluation script also reports </span>
                 <span class="c7">precision</span>
@@ -657,36 +642,28 @@
                 <span class="c7">F1</span>
                 <span class="c3">measure, calculated as follows:</span>
               </p>
-              <a id="t.40e72fd7799fe1566e4dc9bf8929d567b31393f2"></a>
-              <a id="t.5"></a>
-              <table class="c68">
-                <tbody>
-                  <tr class="c19">
-                    <td class="c25" colspan="1" rowspan="1">
-                      <p class="c30">
-                        <img src="images/image1.png">
-                      </p>
-                    </td>
-                    <td class="c69" colspan="1" rowspan="1">
-                      <p class="c30">
-                        <img src="images/image2.png">
-                      </p>
-                      <p class="c56 c6">
-                        <span class="c3"></span>
-                      </p>
-                      <p class="c30">
-                        <img src="images/image3.png">
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
+              <tbody>
+                <tr class="c19">
+                  <td class="c25" colspan="1" rowspan="1">
+                    <p class="c30">
+                      <img src="images/image1.png">
+                    </p>
+                  </td>
+                  <td class="c69" colspan="1" rowspan="1">
+                    <p class="c30">
+                      <img src="images/image2.png">
+                    </p>
+                    <p class="c56 c6">
+                      <span class="c3"></span>
+                    </p>
+                    <p class="c30">
+                      <img src="images/image3.png">
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
               </table>
-              <p class="c2 c6">
-                <span class="c39 c7"></span>
-              </p>
-              <a id="t.fffc1200b6428bfb36ec50b666022d841f68d204"></a>
-              <a id="t.6"></a>
-              <table class="c20">
+              <table>
                 <tbody>
                   <tr class="c19">
                     <td class="c58" colspan="1" rowspan="1">
@@ -699,9 +676,6 @@
                   </tr>
                 </tbody>
               </table>
-              <p class="c2 c6">
-                <span class="c3"></span>
-              </p>
               <p class="c2">
                 <span class="c3">A higher precision means that the number of spurious identifications is smaller compared to the number of
                   missing identifications, and a higher recall means the opposite. Partial matches are given half the score

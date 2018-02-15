@@ -631,7 +631,7 @@
     border-collapse: collapse;
     margin-right: auto;
     font-family: monospace;
-    width: 400px;
+    width: 800px;
     border: 1px solid #999999;
 }
 
@@ -648,7 +648,7 @@
     border-collapse: collapse;
     margin-right: auto;
     font-family: monospace;
-    width: 400px;
+    width: 600px;
 }
 
 .c68 {
@@ -742,4 +742,14 @@
 
 .c75 {
     height: 23pt
+}
+
+.no-padding {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+div.gist-it-gist {
+    width: 100%px;
+    font-size: 10pt;
 }

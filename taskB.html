@@ -67,9 +67,6 @@
           <div class="row">
             <div class="col-12">
               <h2>Subtask B: Classification of key phrases</h2>
-              <p class="c2 c6">
-                <span class="c3"></span>
-              </p>
               <p class="c2">
                 <span>Subtask B continues where Subtask A ends. Given an input file in plain text and the corresponding output
                   from Subtask A, where the text spans that appear in the input have been identified, the purpose of Subtask
@@ -85,19 +82,13 @@
                 <span>file created per document is named </span>
                 <span class="c35 c7">output_&lt;team&gt;_B_&lt;topic&gt;.txt</span>
                 <span>. For example </span>
-                <span class="c35">output_teamX_B_asma.txt</span>
+                <span class="c35">output_teamX_B_example.txt</span>
                 <span class="c3">.</span>
-              </p>
-              <p class="c2 c6">
-                <span class="c3"></span>
               </p>
               <p class="c2">
                 <span class="c3">The corresponding gold labels for the example document presented in the previous section are illustrated
                   in the following figure:
                 </span>
-              </p>
-              <p class="c2 c6">
-                <span class="c3"></span>
               </p>
               <p class="c2">
                 <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 567.20px; height: 184.00px;">
@@ -105,25 +96,28 @@
                     title="">
                 </span>
               </p>
-              <p class="c24 c6">
-                <span class="c3"></span>
-              </p>
               <p class="c24">
                 <span class="c3">This illustration represents the following gold files:</span>
-              </p>
-              <ul class="c59 lst-kix_list_6-0">
-                <li class="c21 c11">
-                  <span class="c3">plain text: input_asma.txt</span>
-                </li>
-                <li class="c21 c11">
-                  <span class="c3">key phrases: output_A_asma.txt</span>
-                </li>
-                <li class="c21 c11">
-                  <span class="c3">labels: output_B_asma.txt</span>
-                </li>
-              </ul>
-              <p class="c2 c6">
-                <span class="c3"></span>
+                <ul>
+                  <li>
+                    plain text:
+                    <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/input/input_example.txt">
+                      input_example.txt
+                    </a>
+                  </li>
+                  <li>
+                    key phrases:
+                    <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/gold/output_A_example.txt">
+                      output_A_example.txt
+                    </a>
+                  </li>
+                  <li>
+                    labels:
+                    <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/gold/output_B_example.txt">
+                      output_B_example.txt
+                    </a>
+                  </li>
+                </ul>
               </p>
               <p class="c2">
                 <span class="c3">A brief description of each label follows:</span>
@@ -153,16 +147,15 @@
               </ul>
               <p class="c2">
                 <span>Continuing with the example from the previous section, the expected output for Subtask B is shown in the
-                  following fragment (file </span>
-                <span class="c35">example-gold/output_B_asma.txt</span>
+                  following fragment (gold file </span>
+                <span class="c35">
+                  <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/gold/output_B_example.txt">
+                    output_B_example.txt
+                  </a>
+                </span>
                 <span class="c3">):</span>
               </p>
-              <p class="c21 c6">
-                <span class="c8"></span>
-              </p>
-              <a id="t.70a6b57549239b4b87ddfd00542843c027592158"></a>
-              <a id="t.7"></a>
-              <table class="c20">
+              <!-- <table class="c20">
                 <tbody>
                   <tr class="c19">
                     <td class="c13">ID</td>
@@ -241,10 +234,10 @@
                     <td class="c13">Concept</td>
                   </tr>
                 </tbody>
-              </table>
-              <p class="c21 c6 c26">
-                <span class="c3"></span>
-              </p>
+              </table> -->
+              <br>
+              <script class="sample" src="http://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/gold/output_B_example.txt?footer=minimal"></script>
+
               <p class="c2">
                 <span>For each keyphrase identified in Subtask A one of the aforementioned two labels is given. The format is one
                   entry per line, consisting of a number and a label separated by a single whitespace (or tab). The number
@@ -287,16 +280,9 @@
                   span.
                 </span>
               </p>
-              <p class="c2 c6">
-                <span class="c3"></span>
-              </p>
               <p class="c2">
-                <span>The following figure is a development example output (ie. output_</span>
-                <span class="c7">teamX</span>
-                <span class="c3">_B_asma.txt) which includes some incorrect labelling of the input_asma.txt:</span>
-              </p>
-              <p class="c21 c6">
-                <span class="c8"></span>
+                <span>The following figure is a development example output (
+                  <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/dev/output_B_example.txt">output_B_example.txt</a> ) which includes some incorrect labelling of the example input:</span>
               </p>
               <p class="c21">
                 <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 567.20px; height: 184.00px;">
@@ -307,13 +293,17 @@
               <p class="c21 c6">
                 <span class="c39 c7"></span>
               </p>
-              <p class="c21">
+              <p class="c21">Example
                 <span class="c7">dev file:</span>
-                <span class="c3">output_teamX_B_asma.txt</span>
+                <span class="c3">
+                  <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/dev/output_B_example.txt"></a>
+                  output_B_example.txt
+                </span>
               </p>
-              <a id="t.85c8db5e46eb380ee3d396abedd1c866b9562a32"></a>
-              <a id="t.8"></a>
-              <table class="c20">
+              <br>
+              <script class="sample" src="http://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/dev/output_B_example.txt?footer=minimal"></script>
+
+              <!-- <table class="c20">
                 <tbody>
                   <tr class="c19">
                     <td class="c13">ID</td>
@@ -384,19 +374,14 @@
                     <td class="c13">Action</td>
                   </tr>
                 </tbody>
-              </table>
-              <p class="c21 c6 c26">
-                <span class="c3"></span>
-              </p>
+              </table> -->
               <p class="c21">
-                <span class="c3">The dev output for the evaluation script relevant for this Subtask is the following:</span>
+                <span class="c3">The output is the evaluation script relevant for this Subtask is the following:</span>
               </p>
-              <p class="c21 c6">
-                <span class="c8"></span>
-              </p>
-              <a id="t.be9ef29895ba01256d85888bccbdf790c31a323f"></a>
-              <a id="t.9"></a>
-              <table class="c20">
+              <br>
+              <script class="sample" src="http://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/log.txt?footer=minimal&slice=33:66"></script>
+
+              <!-- <table class="c20">
                 <tbody>
                   <tr class="c19">
                     <td class="c13" colspan="1" rowspan="1">
@@ -404,9 +389,9 @@
                       <br> ...
                       <br>
                       <br> # Taks B (labeling phrases)
-                      <br> input file: ../example-gold/input_asma.txt
-                      <br> gold file: ../example-gold/output_B_asma.txt
-                      <br> dev file: ../example-dev/output_teamX_B_asma.txt
+                      <br> input file: ../example-gold/input_example.txt
+                      <br> gold file: ../example-gold/output_B_example.txt
+                      <br> dev file: ../example-dev/output_teamX_B_example.txt
                       <br>
                       <br>
                       * Correct (15):
@@ -453,7 +438,7 @@
                     </td>
                   </tr>
                 </tbody>
-              </table>
+              </table> -->
               <p class="c21 c6 c26">
                 <span class="c3"></span>
               </p>
@@ -492,9 +477,6 @@
                   <span>are the same as in Subtask A.</span>
                 </li>
               </ul>
-              <p class="c21 c6">
-                <span class="c3"></span>
-              </p>
               <p class="c2">
                 <span>The script reports two different </span>
                 <span class="c7">accuracy </span>
@@ -568,15 +550,13 @@
                   </tr>
                 </tbody>
               </table>
-              <a id="t.fffc1200b6428bfb36ec50b666022d841f68d204"></a>
-              <a id="t.12"></a>
               <table class="">
                 <tbody>
                   <tr class="c19">
                     <td class="c58" colspan="1" rowspan="1">
-                        <span class="c7">NOTE: </span>
-                        <span>These metrics are only reported for convenience here, to be used by the participants when developing
-                          their solutions. The actual score used for ranking participants will be presented later.</span>
+                      <span class="c7">NOTE: </span>
+                      <span>These metrics are only reported for convenience here, to be used by the participants when developing
+                        their solutions. The actual score used for ranking participants will be presented later.</span>
                     </td>
                   </tr>
                 </tbody>
