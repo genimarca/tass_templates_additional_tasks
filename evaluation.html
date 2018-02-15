@@ -102,7 +102,7 @@
                 + Correct(B) + Incorrect(B) + Missing(C) + Correct(C)} $$
               </p>
               <p class="c30">
-                $$ F_1 = 2 \cdot \frac{precision \cdot recall}{precision + recall} $$
+                $$ F_1(A,B,C) = 2 \cdot \frac{precision \cdot recall}{precision + recall} $$
               </p>
 
               <h3 class="c23" id="h.26in1rg">
@@ -131,7 +131,7 @@
                 $$ recall(B,C) = \frac{Correct(B) + Correct(C)}{Correct(B) + Incorrect(B) + Missing(C) + Correct(C)} $$
               </p>
               <p class="c30">
-                $$ F_1 = 2 \cdot \frac{precision \cdot recall}{precision + recall} $$
+                $$ F_1(B,C) = 2 \cdot \frac{precision \cdot recall}{precision + recall} $$
               </p>
               <h3 class="c23" id="h.lnxbz9">
                 <span>Scenario 3: </span>
@@ -155,7 +155,16 @@
                 $$ recall(C) = \frac{Correct(C)}{Missing(C) + Correct(C)} $$
               </p>
               <p class="c30">
-                $$ F_1 = 2 \cdot \frac{precision \cdot recall}{precision + recall} $$
+                $$ F_1(C) = 2 \cdot \frac{precision \cdot recall}{precision + recall} $$
+              </p>
+
+              <h3 class="c23" id="h.lnxbz9">
+                <span>Final Score: </span>
+                <span class="c44">A macro-average of all three scenarios is given as the final score:</span>
+              </h3>
+
+              <p>
+                 $$ F_{final} = \frac{1}{3} F_1(A,B,C) + \frac{1}{3} F_1(B,C) + \frac{1}{3} F_1(C) $$
               </p>
             </div>
           </div>
