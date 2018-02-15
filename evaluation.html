@@ -12,6 +12,8 @@
   <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" media="screen">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono">
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
 </head>
 
 <body>
@@ -92,17 +94,15 @@
                 <span class="c3">as follows:</span>
               </p>
               <p class="c30">
-                <img src="images/image10.png">
+                $$ precision(A,B,C) = \frac{Correct(A) + Correct(B) + Correct(C) + \frac{1}{2} Partial(A)}{Spurious(A) + Partial(A) + Correct(A)
+                + Correct(B) + Incorrect(B) + Spurious(C) + Correct(C)} $$
               </p>
               <p class="c30">
-                <img src="images/image11.png">
+                $$ recall(A,B,C) = \frac{Correct(A) + Correct(B) + Correct(C) + \frac{1}{2} Partial(A)}{Missing(A) + Partial(A) + Correct(A)
+                + Correct(B) + Incorrect(B) + Missing(C) + Correct(C)} $$
               </p>
               <p class="c30">
-                <img src="images/image1.png">
-              </p>
-
-              <p class="c2">
-                <span class="c3">Besides this aggregated F1 score, individual F1 scores for each of the subtasks will also be reported.</span>
+                $$ F_1 = 2 \cdot \frac{precision \cdot recall}{precision + recall} $$
               </p>
 
               <h3 class="c23" id="h.26in1rg">
@@ -125,16 +125,13 @@
                 <span class="c3">:</span>
               </p>
               <p class="c30">
-                <img src="images/image12.png">
+                $$ precision(B,C) = \frac{Correct(B) + Correct(C)}{Correct(B) + Incorrect(B) + Spurious(C) + Correct(C)} $$
               </p>
               <p class="c30">
-                <img src="images/image13.png">
+                $$ recall(B,C) = \frac{Correct(B) + Correct(C)}{Correct(B) + Incorrect(B) + Missing(C) + Correct(C)} $$
               </p>
               <p class="c30">
-                <img src="images/image1.png">
-              </p>
-              <p class="c34">
-                <span class="c3">Besides the aggregated F1 metric, individual scores of F1 for each of the subtasks are also reported.</span>
+                $$ F_1 = 2 \cdot \frac{precision \cdot recall}{precision + recall} $$
               </p>
               <h3 class="c23" id="h.lnxbz9">
                 <span>Scenario 3: </span>
@@ -152,13 +149,13 @@
                 <span class="c3">:</span>
               </p>
               <p class="c30">
-                <img src="images/image14.png">
+                $$ precision(C) = \frac{Correct(C)}{Spurious(C) + Correct(C)} $$
               </p>
               <p class="c30">
-                <img src="images/image15.png">
+                $$ recall(C) = \frac{Correct(C)}{Missing(C) + Correct(C)} $$
               </p>
               <p class="c30">
-                <img src="images/image1.png">
+                $$ F_1 = 2 \cdot \frac{precision \cdot recall}{precision + recall} $$
               </p>
             </div>
           </div>
