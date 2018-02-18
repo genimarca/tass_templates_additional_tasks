@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <title>TASS 2018 @SEPLN - Task 3</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Workshop TASS 2018">
+  <meta name="keywords" content="">
+
+  <link rel="stylesheet" type="text/css" href="./css/tass_2017.css">
+  <link rel="stylesheet" type="text/css" href="./css/custom.css">
+  <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" media="screen">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono">
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="row">
+        <div class="col-3 header_logo">
+          <a class="logo" href="./">
+            "TASS"
+          </a>
+        </div>
+        <div class="col-9 header_title_wrapper">
+          <h1 class="head_title">TASS-2018-Task 3. eHealth Knowledge Discovery</h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <nav class="main_menu">
+        <div class="row main_menu_wrapper">
+          <div class="col-12">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="taskA.html">Subtask A</a>
+              </li>
+              <li>
+                <a href="taskB.html">Subtask B</a>
+              </li>
+              <li>
+                <a href="taskC.html">Subtask C</a>
+              </li>
+              <li>
+                <a href="corpora.html">Corpora</a>
+              </li>
+              <li>
+                <a href="evaluation.html">Evaluation</a>
+              </li>
+              <li>
+                <a href="index.html#important_dates">Important dates</a>
+              </li>
+              <li>
+                <a href="http://www.sepln.org/workshops/tass/2018">TASS-2018</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="main_content_wrapper">
+        <section>
+          <a name="about"></a>
+          <div class="row">
+            <div class="col-12">
+              <h2>About</h2>
+              <p class="c15">
+                <span class="c3">Natural Language Processing (NLP) methods are increasingly being used to mine knowledge from unstructured
+                  health texts. Recent advances in health text processing techniques are encouraging researchers and medical
+                  domain experts to go beyond just reading the information included in published texts (e.g. academic manuscripts,
+                  clinical reports, etc.) and structured questionnaires, to discover new knowledge by mining health contents.
+                  This has allowed other perspectives to surface that were not previously available.</span>
+              </p>
+              <p class="c15">
+                <span class="c3">Over the years many eHealth challenges have taken place, which have attempted to identify, classify, extract
+                  and link knowledge, such as Semevals, CLEF campaigns and others [1]. </span>
+              </p>
+              <p class="c15">
+                <span>Inspired by previous NLP shared tasks like &ldquo;</span>
+                <span class="c43">
+                  <a class="c14" href="http://alt.qcri.org/semeval2017/task10/">Semeval-2017 Task 10: ScienceIE</a>
+                </span>
+                <sup class="c27">
+                  <a href="#ftnt1" id="ftnt_ref1">[1]</a>
+                </sup>
+                <span>&rdquo; and research lines like </span>
+                <span class="c1">Teleologies</span>
+                <span class="c65 c1"></span>
+                <span class="c3">[2], both not specifically focussed on the health area, eHealth-KD proposes modelling the human language
+                  in a scenario in which Spanish electronic health documents could be machine readable from a semantic point
+                  of view. With this task, we expect to encourage the development of software technologies to automatically
+                  extract a large variety of knowledge from eHealth documents written in the Spanish Language.</span>
+              </p>
+              <p class="c15">
+                <span>The documents used as corpus have been taken from </span>
+                <span class="c43">
+                  <a class="c14" href="https://medlineplus.gov/xml.html">MedlinePlus</a>
+                </span>
+                <span class="c3">and manually processed to make them fit for the task. Additional details are provided at the end of this
+                  document.
+                </span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <a name="tasks"></a>
+          <div class="row">
+            <div class="col-12">
+              <h2>Tasks</h2>
+              <p class="c24">
+                <span class="c3">To achieve this purpose, three subtasks are presented: </span>
+              </p>
+              <h3 class="c41" id="h.1fob9te">
+                <span class="c28 c7">Subtask A: Identification of keyphrases</span>
+              </h3>
+              <p class="c21 c6">
+                <span class="c3"></span>
+              </p>
+              <p class="c2">
+                <span class="c3">Given a list of eHealth documents written in Spanish, the goal of this subtask is to identify all the keyphrases
+                  per document.
+                </span>
+              </p>
+
+              <p>
+                <a href="taskA.html">Read further details for Subtask A.</a>
+              </p>
+
+              <div class="row">
+                <div class="col-6">
+                  <h4>Example input document:</h4>
+                  <script class="sample" src="https://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/input/input_example.txt?footer=minimal"></script>
+
+                  <!-- <table class="c20">
+                    <tbody>
+                      <tr class="c19">
+                        <td class="c13" colspan="1" rowspan="1">
+                          <p class="c0">
+                            <span class="c45 c50">El asma afecta las v&iacute;as respiratorias. Los pulmones se hinchan. El asma es una enfermedad.
+                              Un ataque de asma se produce cuando los s&iacute;ntomas empeoran. Los s&iacute;ntomas y el
+                              tratamiento dependen del tipo de c&aacute;ncer y de lo avanzada que est&eacute; la enfermedad.</span>
+                          </p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table> -->
+
+                  <h4>Visual representation of the output:</h4>
+                  <img alt="" src="images/image16.png" style="width: 100%;" title="">
+                </div>
+                <div class="col-6">
+                  <h4>Example output document:</h4>
+                  <script class="sample" src="https://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/gold/output_A_example.txt?footer=minimal"></script>
+
+                  <!-- <table class="c85">
+                    <tbody>
+                      <tr class="c19">
+                        <td class="c87" colspan="1" rowspan="1">
+                          <span class="c9">ID</span>
+                        </td>
+                        <td class="c87" colspan="1" rowspan="1">
+                          <span class="c9">START</span>
+                        </td>
+                        <td class="c87" colspan="1" rowspan="1">
+                          <span class="c9">END</span>
+                        </td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">1</td>
+                        <td class="c87">3</td>
+                        <td class="c87">7</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">2</td>
+                        <td class="c87">8</td>
+                        <td class="c87">14</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">3</td>
+                        <td class="c87">19</td>
+                        <td class="c87">37</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">4</td>
+                        <td class="c87">43</td>
+                        <td class="c87">51</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">5</td>
+                        <td class="c87">67</td>
+                        <td class="c87">71</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">6</td>
+                        <td class="c87">55</td>
+                        <td class="c87">62</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">7</td>
+                        <td class="c87">79</td>
+                        <td class="c87">89</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">8</td>
+                        <td class="c87">94</td>
+                        <td class="c87">108</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">9</td>
+                        <td class="c87">112</td>
+                        <td class="c87">119</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">10</td>
+                        <td class="c87">131</td>
+                        <td class="c87">139</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">11</td>
+                        <td class="c87">140</td>
+                        <td class="c87">148</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">12</td>
+                        <td class="c87">154</td>
+                        <td class="c87">162</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">13</td>
+                        <td class="c87">168</td>
+                        <td class="c87">179</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">14</td>
+                        <td class="c87">180</td>
+                        <td class="c87">188</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">15</td>
+                        <td class="c87">193</td>
+                        <td class="c87">197</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">16</td>
+                        <td class="c87">237</td>
+                        <td class="c87">247</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">17</td>
+                        <td class="c87">216</td>
+                        <td class="c87">224</td>
+                      </tr>
+                      <tr class="c19">
+                        <td class="c87">18</td>
+                        <td class="c87">201</td>
+                        <td class="c87">207</td>
+                      </tr>
+                    </tbody>
+                  </table> -->
+                </div>
+              </div>
+
+              <h3 class="c72" id="h.2et92p0">
+                <span class="c28 c7">Subtask B: Classification of key phrases</span>
+              </h3>
+              <p class="c2 c6">
+                <span class="c3"></span>
+              </p>
+              <p class="c2">
+                <span>Subtask B continues where Subtask A ends. Given an input file in plain text and the corresponding output
+                  from Subtask A, where the text spans that appear in the input have been identified, the purpose of Subtask
+                  B is to assign a label to each of these text spans.</span>
+              </p>
+              <p>
+                <a href="taskB.html">Read further details for Subtask B.</a>
+              </p>
+
+              <div class="row">
+                <div class="col-6">
+                  <h4>Visual representation of the output:</h4>
+                  <img alt="" src="images/image19.png" style="width: 100%;" title="">
+                </div>
+                <div class="col-6">
+                  <h4>Example output document:</h4>
+                  <script class="sample" src="https://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/gold/output_B_example.txt?footer=minimal"></script>
+
+                  <!-- <table class="c20">
+                    <tbody>
+                      <tr class="c19">
+                        <td class="c13">ID</td>
+                        <td class="c13">LABEL</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">1</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">2</td>
+                        <td class="c13">Action</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">3</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">4</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">6</td>
+                        <td class="c13">Action</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">5</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">7</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">8</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">9</td>
+                        <td class="c13">Action</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">10</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">11</td>
+                        <td class="c13">Action</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">12</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">13</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">14</td>
+                        <td class="c13">Action</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">16</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">17</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">15</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">18</td>
+                        <td class="c13">Concept</td>
+                      </tr>
+                    </tbody>
+                  </table> -->
+                </div>
+              </div>
+
+              <h3 class="c41" id="h.3dy6vkm">
+                <span class="c28 c7">Subtask C: Setting semantic relationships</span>
+              </h3>
+              <p class="c15">
+                <span>Subtask C continues from the output of Subtask B, by linking the entities detected and labelled in each document.
+                  Given an input file (i.e. </span>
+                <span class="c35">input_&lt;topic&gt;.txt</span>
+                <span>) and the outputs from both Subtasks A and B, the purpose of this Subtask is to recognize all relevant semantic
+                  relationships between the entities recognized. The semantic relationships found in the gold example of
+                  the previous sections are illustrated in the following figure:</span>
+              </p>
+              <p>
+                <a href="taskC.html">Read further details for Subtask C.</a>
+              </p>
+
+              <div class="row">
+                <div class="col-6">
+                  <h4>Visual representation of the output:</h4>
+                  <img alt="" src="images/image20.png" style="width: 100%;" title="">
+                </div>
+                <div class="col-6">
+                  <h4>Example output document:</h4>
+                  <script class="sample" src="https://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/gold/output_C_example.txt?footer=minimal"></script>
+
+                  <!-- <table class="c20">
+                    <tbody>
+                      <tr class="c19">
+                        <td class="c13">LABEL</td>
+                        <td class="c13">SOURCE</td>
+                        <td class="c13">DESTINATION</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">is-a</td>
+                        <td class="c13">5</td>
+                        <td class="c13">7</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">property-of</td>
+                        <td class="c13">17</td>
+                        <td class="c13">16</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">property-of</td>
+                        <td class="c13">15</td>
+                        <td class="c13">18</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">subject</td>
+                        <td class="c13">2</td>
+                        <td class="c13">1</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">target</td>
+                        <td class="c13">2</td>
+                        <td class="c13">3</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">subject</td>
+                        <td class="c13">6</td>
+                        <td class="c13">4</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">target</td>
+                        <td class="c13">6</td>
+                        <td class="c13">4</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">subject</td>
+                        <td class="c13">9</td>
+                        <td class="c13">11</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">target</td>
+                        <td class="c13">9</td>
+                        <td class="c13">8</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">target</td>
+                        <td class="c13">11</td>
+                        <td class="c13">10</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">subject</td>
+                        <td class="c13">14</td>
+                        <td class="c13">12</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">target</td>
+                        <td class="c13">14</td>
+                        <td class="c13">15</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">target</td>
+                        <td class="c13">14</td>
+                        <td class="c13">17</td>
+                      </tr>
+                      <tr>
+                        <td class="c13">subject</td>
+                        <td class="c13">14</td>
+                        <td class="c13">13</td>
+                      </tr>
+                    </tbody>
+                  </table> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="row">
+            <div class="col-12">
+              <h2 class="c32" id="corpora">
+                <span class="c28 c7">Corpora description</span>
+              </h2>
+              <p class="c31">
+                The corpora used is based on a set of Spanish health electronic documents collected from
+                <a href="https://medlineplus.gov/">
+                  MedlinePlus.
+                </a>
+                <a href="corpora.html">Click here</a> to read further details about the corpora and other resources.
+              </p>
+              <h2 class="c29" id="evaluation">
+                <span class="c28 c7">Overall evaluation </span>
+              </h2>
+              <p class="c52">
+                The evaluation is based on the standard information extraction metrics of precision and recall. Further details
+                <a href="evaluation.html">are providedin this link</a>.
+              </p>
+
+              <h2>Instructions for participating</h2>
+              <p>
+                The competition is managed and run in the
+                <a href="https://competitions.codalab.org/">
+                  Codalab Competitions platform.
+                </a>
+                For participation, please register on the platform and follow the instructions detailed there. The following pages provide
+                a detailed description of the problem to be solved and the evaluation. In Codalab you will find details about
+                how to submit a solution, as well as all relevant links.
+              </p>
+              <p>
+                <a href="https://competitions.codalab.org/competitions/18188?secret_key=c28edae3-d98b-412f-850f-12293b9cbfac">Click here to enter the competition.</a>
+              </p>
+
+              <p class="c52">
+                To download the relevant data, please visit:
+                <a href="https://github.com/TASS18-Task3/data">https://github.com/TASS18-Task3/data</a>.
+              </p>
+
+              <h2>Publication instructions</h2>
+              <p>
+                <strong>
+                  Please review the official TASS 2018 proceedings publication instructions. The following instructions are subject to change
+                  to adapt to the official TASS 2018 requirements.
+                </strong>
+              </p>
+              <p>
+                The Organization Committee of eHealth-KD encourages participants to submit a description paper of their systems. Submitted
+                papers will be reviewed by a scientific committee, and only accepted papers will be published at CEUR. The
+                proceedings of eHealth-KD will be jointly published with the proceedings of all the tasks of TASS-2018. The
+                submitted papers will be peer-reviewed by a Program Commitee which is composed by all the participants in
+                Task 3 and the Organization Commitee.
+              </p>
+              <p>
+                The manuscripts must satisfy the following rules:
+              </p>
+              <ul>
+                <li>
+                  Up to 6 pages plus references formatted according to the SEPLN template.
+                </li>
+                <li>
+                  Articles can be written in English or Spanish. The title, abstract and keywords must be written in both languages.
+                </li>
+                <li>
+                  The document format must be Word or Latex, but the submission must be in PDF format.
+                </li>
+                <li>
+                  Instead of describing the task and/or the corpus, you should focus on the description of your experiments and the analysis
+                  of your results, and include a citation to the Overview paper. Indications for this citation will be provided
+                  in due time.
+                </li>
+              </ul>
+              <p>
+                Depending on the final number of participants and the time allocated for the workshop, all or a selected group of papers
+                will be presented and discussed in the Workshop session.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="row">
+            <div class="col-12">
+              <h2>
+                <span class="c7 c33">Discussion group</span>
+              </h2>
+              <p class="c2 c61">
+                A Google Group has been set up for this TASS &ldquo; eHealth Shared Task&rdquo; where announcements will be made. Do send
+                your questions and feedback to
+                <a href="mailto:tass2018_ehealth-kd@googlegroups.com">tass2018_ehealth-kd@googlegroups.com</a>
+                or visit
+                <a href="https://groups.google.com/forum/#!forum/tass2018_ehealth-kd">the Google Groups page</a>
+                to participate in the discussion.
+              </p>
+
+              <h2 class="c29" id="h.z337ya">
+                <span class="c28 c7">Contact person</span>
+              </h2>
+              <p class="c38">
+                <span class="c3">Yoan Guti&eacute;rrez V&aacute;zquez
+                  <a href="mailto:ygutierrez@dlsi.ua.es">ygutierrez@dlsi.ua.es</a>
+                </span>
+              </p>
+
+            </div>
+          </div>
+
+        </section>
+        <section>
+          <a name="important_dates"></a>
+          <div class="row">
+            <div class="col-12">
+              <h2>Important dates</h2>
+              <div class="important_dates">
+                <div class="row dark">
+                  <div class="col-6">
+                    <p>
+                      Trial data ready
+                    </p>
+                  </div>
+                  <div class="col-2">
+                    <p>
+                      12 Feb 2018
+                    </p>
+                  </div>
+                  <div class="col-4">
+                    <ul class="no-padding">
+                      <li>
+                        <a href="https://github.com/tass18-task3/data">
+                          Trial data has been released in Github.
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://competitions.codalab.org/competitions/18188?secret_key=c28edae3-d98b-412f-850f-12293b9cbfac">
+                          A trial competition phase is open on Codalab.
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <p>
+                      Release of training and development data
+                    </p>
+                  </div>
+                  <div class="col-2">
+                    <p>
+                      02 Apr 2018
+                    </p>
+                  </div>
+                  <div class="col-4">
+
+                  </div>
+                </div>
+                <div class="row dark">
+                  <div class="col-6">
+                    <p>
+                      Registration deadline due by 23:59 GMT -12:00
+                    </p>
+                  </div>
+                  <div class="col-2">
+                    <p>
+                      06 May 2018
+                    </p>
+                  </div>
+                  <div class="col-4">
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <p>
+                      <strong>
+                        Evaluation start
+                      </strong>
+                      - Release of test data
+                    </p>
+                  </div>
+                  <div class="col-2">
+                    <p>
+                      07 May 2018
+                    </p>
+                  </div>
+                  <div class="col-4">
+
+                  </div>
+                </div>
+                <div class="row dark">
+                  <div class="col-6">
+                    <p>
+                      <strong>
+                        Evaluation end
+                      </strong>
+                      - Submissions due by 23:59 GMT -12:00
+                    </p>
+                  </div>
+                  <div class="col-2">
+                    <p>
+                      21 May 2018
+                    </p>
+                  </div>
+                  <div class="col-4">
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <p>
+                      Publication of competition results
+                    </p>
+                  </div>
+                  <div class="col-2">
+                    <p>
+                      28 May 2018
+                    </p>
+                  </div>
+                  <div class="col-4">
+
+                  </div>
+                </div>
+                <div class="row dark">
+                  <div class="col-6">
+                    <p>
+                      Submission of system description paper's due by 23:59 GMT -12:00
+                    </p>
+                  </div>
+                  <div class="col-2">
+                    <p>
+                      02 Jul 2018
+                    </p>
+                  </div>
+                  <div class="col-4">
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <p>
+                      Peer-review of system paper's due
+                    </p>
+                  </div>
+                  <div class="col-2">
+                    <p>
+                      23 Jul 2018
+                    </p>
+                  </div>
+                  <div class="col-4">
+
+                  </div>
+                </div>
+                <div class="row dark">
+                  <div class="col-6">
+                    <p>
+                      Author notifications
+                    </p>
+                  </div>
+                  <div class="col-2">
+                    <p>
+                      31 Jul 2018
+                    </p>
+                  </div>
+                  <div class="col-4">
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <p>
+                      Camera ready submissions due
+                    </p>
+                  </div>
+                  <div class="col-2">
+                    <p>
+                      31 Aug 2018
+                    </p>
+                  </div>
+                  <div class="col-4">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <a name="organization"></a>
+          <div class="row">
+            <div class="col-12">
+              <h2>Organizing Committee</h2>
+            </div>
+          </div>
+          <div class="committees">
+            <ul>
+              <li>
+                <div class="row">
+                  <span class="col-6">
+                    <a href="mailto:ygutierrez@dlsi.ua.es">Yoan Guti&eacute;rrez V&aacute;zquez</a>
+                  </span>
+                  <span class="col-6">
+                    <a href="https://www.ua.es" target="_blank">University of Alicante</a>, Spain
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="row">
+                  <span class="col-6">
+                    <a href="mailto:sestevez@matcom.uh.cu" target="_blank">Suilan Est&eacute;vez Velarde</a>
+                  </span>
+                  <span class="col-6">
+                    <a href="http://www.uh.cu" target="_blank">University of Havana</a>, Cuba
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="row">
+                  <span class="col-6">
+                    <a href="mailto:yudy@matcom.uh.cu" target="_blank">Yudivi&aacute;n Almeida Cruz</a>
+                  </span>
+                  <span class="col-6">
+                    <a href="http://www.uh.cu" target="_blank">University of Havana</a>, Cuba
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="row">
+                  <span class="col-6">
+                    <a href="mailto:apiad@matcom.uh.cu" target="_blank">Alejandro Piad Morffis</a>
+                  </span>
+                  <span class="col-6">
+                    <a href="http://www.uh.cu" target="_blank">University of Havana</a>, Cuba
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="row">
+                  <span class="col-6">
+                    <a href="mailto:montoyo@dlsi.ua.es" target="_blank">Andr&eacute;s Montoyo Guijarro</a>
+                  </span>
+                  <span class="col-6">
+                    <a href="https://www.ua.es" target="_blank">University of Alicante</a>, Spain
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="row">
+                  <span class="col-6">
+                    <a href="mailto:rafael@dlsi.ua.es" target="_blank">Rafael Mu&ntilde;oz Guillena</a>
+                  </span>
+                  <span class="col-6">
+                    <a href="https://www.ua.es" target="_blank">University of Alicante</a>, Spain
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+
+
+
+              <h2 class="c70" id="h.3j2qqm3">
+                <span class="c28 c7">Acknowledgments</span>
+              </h2>
+              <p class="c42">
+                <span class="c3">This research task is partially funded by the University of Alicante, Generalitat Valenciana, Spanish Government
+                  (&ldquo;Ministerio de Econom&iacute;a y Competitividad&rdquo;) through the projects REDES (TIN2015-65136-
+                  C2-2-R) and &ldquo;Plataforma inteligente para recuperaci&oacute;n, an&aacute;lisis y representaci&oacute;n
+                  de la informaci&oacute;n generada por usuarios en Internet&rdquo; (GRE16-01).</span>
+              </p>
+              <p class="c42">
+                <span class="c3">Both projects have partially designed their evaluation stages over this shared task. </span>
+              </p>
+              <p class="c6 c52">
+                <span class="c4"></span>
+              </p>
+
+              <h2 class="c29" id="h.1y810tw">
+                <span class="c7 c28">References</span>
+              </h2>
+              <p class="c52">
+                <span class="c47 c62 c1">[1] Gonzalez-Hernandez, G. and Sarker, A. and O&rsquo;Connor, K. and Savova, G. Capturing the Patient&rsquo;s
+                  Perspective: a Review of Advances in Natural Language Processing of Health-Related Text. Yearbook of medical
+                  informatics; 26(01), p 214--227. 2017</span>
+              </p>
+              <p class="c52">
+                <span class="c65 c1">[2] Giunchiglia, F., &amp; Fumagalli, M. (2017, November). Teleologies: Objects, Actions and Functions. In
+                </span>
+                <span class="c35 c65 c1">International Conference on Conceptual Modeling</span>
+                <span class="c48 c1 c63">(pp. 520-534). Springer, Cham.</span>
+              </p>
+              <p class="c52">
+                <span class="c1 c65">[3]</span>
+                <span class="c1 c57"> </span>
+                <span class="c1 c71">MedlinePlus [Internet]. Bethesda (MD): National Library of Medicine (US). Available from: </span>
+                <span class="c43 c71 c1">
+                  <a class="c14" href="https://www.google.com/url?q=https://medlineplus.gov/&amp;sa=D&amp;ust=1518162663881000&amp;usg=AFQjCNHl4UM4g4glSYzxvg2LW_Y_QbGdkg">https://medlineplus.gov/</a>
+                </span>
+                <span class="c47 c62 c1">.</span>
+              </p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="row">
+            <div class="col-12">
+              <h2>Organized by:</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 img_organizers_wrapper">
+              <a href="https://www.ua.es/" target="_blank">
+                <img class="" src="images/logo_dlsi_ua.png" alt="" width="85%">
+              </a>
+            </div>
+            <div class="col-6 img_organizers_wrapper">
+              <a href="http://www.uh.cu" target="_blank">
+                <img class="" src="images/logoUH.png" alt="" width="50%">
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+    </footer>
+  </div>
+</body>
+
+</html>

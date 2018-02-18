@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <title>TASS 2018 @SEPLN</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Workshop TASS 2018">
+  <meta name="keywords" content="<FEEL FREE>">
+
+  <link rel="stylesheet" type="text/css" href="./css/tass_2017.css">
+  <link rel="stylesheet" type="text/css" href="./css/custom.css">
+  <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" media="screen">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono">
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="row">
+        <div class="col-3 header_logo">
+          <a class="logo" href="./">
+            "TASS"
+          </a>
+        </div>
+        <div class="col-9 header_title_wrapper">
+          <h1 class="head_title">TASS-2018-Task 3. eHealth Knowledge Discovery</h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <nav class="main_menu">
+        <div class="row main_menu_wrapper">
+          <div class="col-12">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="taskA.html">Subtask A</a>
+              </li>
+              <li>
+                <a href="taskB.html">Subtask B</a>
+              </li>
+              <li>
+                <a href="taskC.html">Subtask C</a>
+              </li>
+              <li>
+                <a href="corpora.html">Corpora</a>
+              </li>
+              <li>
+                <a href="evaluation.html">Evaluation</a>
+              </li>
+              <li>
+                <a href="index.html#important_dates">Important dates</a>
+              </li>
+              <li>
+                <a href="http://www.sepln.org/workshops/tass/2018">TASS-2018</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="main_content_wrapper">
+        <section>
+          <a name="about"></a>
+          <div class="row">
+            <div class="col-12">
+              <h2>Subtask B: Classification of key phrases</h2>
+              <p class="c2">
+                <span>Subtask B continues where Subtask A ends. Given an input file in plain text and the corresponding output
+                  from Subtask A, where the text spans that appear in the input have been identified, the purpose of Subtask
+                  B is to assign a label to each of these text spans. The labels considered have been inspired by the research
+                  in </span>
+                <span class="c1">Teleologies</span>
+                <span>, and can be </span>
+                <span class="c7">Concept</span>
+                <span>, or </span>
+                <span class="c7">Action</span>
+                <span>. The </span>
+                <span class="c7">dev output</span>
+                <span>file created per document is named </span>
+                <span class="c35 c7">output_B_&lt;topic&gt;.txt</span>
+                <span>. For example </span>
+                <span class="c35">output_B_example.txt</span>
+                <span class="c3">.</span>
+              </p>
+              <p class="c2">
+                The corresponding gold labels for the example document presented in the previous section are illustrated
+                in the following figure. The corresponding output file is presented below.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <h4>Example gold output illustration:</h4>
+                  <span class="c3">This illustration represents the following gold files:</span>
+                  <ul>
+                    <li>
+                      plain text:
+                      <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/input/input_example.txt">
+                        input/input_example.txt
+                      </a>
+                    </li>
+                    <li>
+                      key phrases:
+                      <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/gold/output_A_example.txt">
+                        gold/output_A_example.txt
+                      </a>
+                    </li>
+                    <li>
+                      labels:
+                      <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/gold/output_B_example.txt">
+                        gold/output_B_example.txt
+                      </a>
+                    </li>
+                  </ul>
+                  <img alt="" src="images/image17.png" style="width: 100%; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title="">
+                </div>
+                <div class="col-6">
+                  <h4>Example gold output file:</h4>
+                  <script class="sample" src="https://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/gold/output_B_example.txt?footer=minimal"></script>
+                </div>
+              </div>
+              <p class="c2">
+                <span class="c3">A brief description of each label follows:</span>
+              </p>
+              <ul class="c59 lst-kix_list_4-0 start">
+                <li class="c2 c11">
+                  <span class="c7">Concept: </span>
+                  <span>the concepts are those key phrases that are</span>
+                  <span class="c7"></span>
+                  <span class="c3">able to represent objects and other entities presumed to be of interest for some particular purpose. It
+                    is possible to represent simple and complex concepts. Simple concepts just represent singular entries
+                    like &ldquo;asma&rdquo; or multi-words like &ldquo;v&iacute;as respiratorias&rdquo;, etc. Complex concepts
+                    are out scope for this Subtask B because they consist of a group of different concepts.</span>
+                </li>
+                <li class="c2 c11">
+                  <span class="c7">Action</span>
+                  <span>: is a type of </span>
+                  <span class="c7">Concept</span>
+                  <span>which provokes a modification of another </span>
+                  <span class="c7">Concept</span>
+                  <span>, commonly represented by verbs or phrases that include verbs, but in some cases it can be represented
+                    by a non-verb. This Subtask only requires the recognition of actions and it is not necessary to detect
+                  </span>
+                  <span>who performs the action</span>
+                  <span class="c3">. That problem is tackled in Subtask C.</span>
+                </li>
+              </ul>
+              <p class="c2">
+                <span>For each keyphrase identified in Subtask A one of the aforementioned two labels is given. The format is one
+                  entry per line, consisting of a number and a label separated by a single whitespace (or tab). The number
+                  matches the
+                </span>
+                <span class="c7">ID </span>
+                <span>of one of the text spans identified in Subtask A. It is not necessary for the entries to appear in order,
+                  since the matching between a </span>
+                <span class="c7">LABEL </span>
+                <span>and the corresponding text is done by the </span>
+                <span class="c7">ID</span>
+                <span class="c3">field. </span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <a name="datasets"></a>
+          <div class="row">
+            <div class="col-12">
+              <h2>Development evaluation of Subtask B</h2>
+              <p class="c2">
+                <span>When the evaluation process is carried out the </span>
+                <span class="c7">gold </span>
+                <span>and </span>
+                <span class="c7">dev</span>
+                <span>files do not need to assign the same </span>
+                <span class="c7">ID</span>
+                <span>to the same text spans. When processing the Subtask A, the evaluator builds a mapping between the corresponding
+                </span>
+                <span class="c7">IDs</span>
+                <span>in each file, where matching </span>
+                <span class="c7">Correct </span>
+                <span>or </span>
+                <span class="c7">Partial </span>
+                <span>items are mapped together. The </span>
+                <span class="c7">LABEL </span>
+                <span class="c3">comparisons in Subtask B will use this mapping to find out the corresponding expected label for each text
+                  span.
+                </span>
+              </p>
+              <p class="c2">
+                <span>The following figure and file output represent a development example output (
+                  <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/dev/output_B_example.txt">output_B_example.txt</a> ) which includes some incorrect labelling of the example input:</span>
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <h4>Example dev output illustration:</h4>
+                  Example dev file:
+                  <ul>
+                    <li>
+                      plain text:
+                      <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/input/input_example.txt">
+                        input/input_example.txt
+                      </a>
+                    </li>
+                    <li>
+                      key phrases:
+                      <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/dev/output_A_example.txt">
+                        dev/output_A_example.txt
+                      </a>
+                    </li>
+                    <li>
+                      labels:
+                      <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/dev/output_B_example.txt">
+                        dev/output_B_example.txt
+                      </a>
+                    </li>
+                  </ul>
+                  <img alt="" src="images/image19.png" style="width: 100%; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title="">
+                </div>
+                <div class="col-6">
+                  <h4>Example dev file output:</h4>
+                  <script class="sample" src="https://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/dev/output_B_example.txt?footer=minimal"></script>
+
+                </div>
+              </div>
+
+              <br>
+              <p class="c21">
+                <span class="c3">The output is the evaluation script relevant for this Subtask is the following:</span>
+              </p>
+              <br>
+              <script class="sample" src="https://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/log.txt?footer=minimal&slice=33:66"></script>
+              <p class="c21 c6 c26">
+                <span class="c3"></span>
+              </p>
+              <p class="c21">
+                <span>The script reports </span>
+                <span class="c7">Correct</span>
+                <span>, </span>
+                <span class="c7">Incorrect</span>
+                <span>, </span>
+                <span class="c7">Missing</span>
+                <span>, and </span>
+                <span class="c7">Spurious</span>
+                <span class="c3">labels:</span>
+              </p>
+              <ul class="c59 lst-kix_list_5-0 start">
+                <li class="c21 c11">
+                  <span class="c7">Correct</span>
+                  <span>are those phrases labelled with the same label in both the </span>
+                  <span class="c7">gold </span>
+                  <span>and the </span>
+                  <span class="c7">dev </span>
+                  <span>files. These are necessarily phrases which were either correctly or partially matched in Subtask A.</span>
+                </li>
+                <li class="c21 c11">
+                  <span class="c7">Incorrect </span>
+                  <span>are those with different labels. Also, these are phrases which were either correctly or partially matched
+                    in Subtask A.
+                  </span>
+                </li>
+                <li class="c21 c11">
+                  <span class="c7">Missing </span>
+                  <span>are the same as in Subtask A.</span>
+                </li>
+                <li class="c21 c11">
+                  <span class="c7">Spurious </span>
+                  <span>are the same as in Subtask A.</span>
+                </li>
+              </ul>
+              <p class="c2">
+                <span>The script reports two different </span>
+                <span class="c7">accuracy </span>
+                <span>metrics: </span>
+                <span class="c7">micro-accuracy,</span>
+                <span>which considers only the labels involving </span>
+                <span class="c7">correct </span>
+                <span>or</span>
+                <span class="c7">partial </span>
+                <span>matches in Subtask A; and, </span>
+                <span class="c7">macro-accuracy, </span>
+                <span>which considers</span>
+                <span class="c7"></span>
+                <span class="c3">all the elements:</span>
+              </p>
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-3">
+                  $$ micro = \frac{correct}{correct + incorrect} $$
+                </div>
+                <div class="col-3">
+                  $$ macro = \frac{correct}{correct + incorrect + spurious + missing} $$
+                </div>
+              </div>
+              <p class="c2">
+                <span>Hence, the </span>
+                <span class="c7">micro</span>
+                <span>accuracy is always greater or equal to the </span>
+                <span class="c7">macro</span>
+                <span>. The </span>
+                <span class="c7">micro</span>
+                <span>accuracy is a measure of the quality of Subtask B independent of mistakes made in Subtask A, while the </span>
+                <span class="c7">macro</span>
+                <span class="c3">accuracy is a measure of the quality of the whole process.</span>
+              </p>
+              <p class="c2">
+                <span>The script also reports standard </span>
+                <span class="c7">precision</span>
+                <span>, </span>
+                <span class="c7">recall</span>
+                <span>, and </span>
+                <span class="c7">F1</span>
+                <span class="c3">computed as follows:</span>
+              </p>
+              <div class="row">
+                <div class="col-3">
+                  $$ F_1 = 2 \cdot \frac{precision \cdot recall}{precision + recall} $$
+                </div>
+                <div class="col-5">
+                  $$ precision = \frac{correct + \frac{1}{2} partial}{correct + incorrect + missing + partial} $$
+                </div>
+                <div class="col-4">
+                  $$ recall = \frac{correct + \frac{1}{2} partial}{correct + incorrect + spurious + partial} $$
+                </div>
+              </div>
+              <table class="">
+                <tbody>
+                  <tr class="c19">
+                    <td class="c58" colspan="1" rowspan="1">
+                      <span class="c7">NOTE: </span>
+                      <span>These metrics are only reported for convenience here, to be used by the participants when developing
+                        their solutions. The actual score used for ranking participants will be presented later.</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+      </div>
+    </main>
+    <footer>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <title>TASS 2018 @SEPLN</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Workshop TASS 2018">
+  <meta name="keywords" content="<FEEL FREE>">
+
+  <link rel="stylesheet" type="text/css" href="./css/tass_2017.css">
+  <link rel="stylesheet" type="text/css" href="./css/custom.css">
+  <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" media="screen">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono">
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="row">
+        <div class="col-3 header_logo">
+          <a class="logo" href="./">
+            "TASS"
+          </a>
+        </div>
+        <div class="col-9 header_title_wrapper">
+          <h1 class="head_title">TASS-2018-Task 3. eHealth Knowledge Discovery</h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <nav class="main_menu">
+        <div class="row main_menu_wrapper">
+          <div class="col-12">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="taskA.html">Subtask A</a>
+              </li>
+              <li>
+                <a href="taskB.html">Subtask B</a>
+              </li>
+              <li>
+                <a href="taskC.html">Subtask C</a>
+              </li>
+              <li>
+                <a href="corpora.html">Corpora</a>
+              </li>
+              <li>
+                <a href="evaluation.html">Evaluation</a>
+              </li>
+              <li>
+                <a href="index.html#important_dates">Important dates</a>
+              </li>
+              <li>
+                <a href="http://www.sepln.org/workshops/tass/2018">TASS-2018</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="main_content_wrapper">
+        <section>
+          <a name="task"></a>
+          <div class="row">
+            <div class="col-12">
+              <h2>Subtask A: Identification of Key Phrases</h2>
+              <p class="c2">
+                <span class="c3">Given a list of eHealth documents written in Spanish, the goal of this subtask is to identify all the keyphrases
+                  per document.
+                </span>
+              </p>
+              <p class="c2">
+                <span>As input a list of documents in plain text is given. Each document is named </span>
+                <span class="c35 c7">input_&lt;topic&gt;.txt</span>
+                <span class="c7"></span>
+                <span>where </span>
+                <span class="c35">topic</span>
+                <span class="c3">is a keyword such as &ldquo;asma&rdquo;, &ldquo;cancer&rdquo;, etc., related to the topic of the document.
+                  These topic labels are only used in this subtask to relate input files to output files. A description document
+                  for the corpus is provided which explains the source of each of the input files.</span>
+              </p>
+              <p class="c2">
+                <span class="c3 c1">An example input file containing plain text is given below. No preprocessing or tokenizing is performed on
+                  the text. All inputs are encoded into UTF-8. Each sentence appears on a new line.</span>
+              </p>
+              <p class="c2">
+                <span>The output consists of a list of documents, corresponding to the input files, in the following format: [
+                  auto-increment identifier </span>
+                <span class="c7">(ID)</span>
+                <span>, start offset</span>
+                <span class="c7">(START)</span>
+                <span>, end offset</span>
+                <span class="c7">(END)</span>
+                <span>]. The files should be named </span>
+                <span class="c35 c7">output_A_&lt;topic&gt;.txt</span>
+                <span class="c35">, </span>
+                <span>where </span>
+                <span class="c35">&lt;topic&gt; </span>
+                <span>matches with the corresponding input file. The </span>
+                <span class="c35">A</span>
+                <span>refers to subtask A applied.
+              </p>
+              <p class="c2">
+                <span>Each output document regarding the Subtask A will contain a line per entry. Each entry represents a span
+                  of text that has been identified, i.e. a key phrase. Each entry contains three numbers separated by a single
+                  whitespace (or tab). The first number indicates an </span>
+                <span class="c7">ID</span>
+                <span>, and should be an auto incremented integer that will be used in later subtasks to reference the corresponding
+                  text span. The second number is an integer indicating the </span>
+                <span class="c7">START</span>
+                <span>of the text span, that is, the </span>
+                <span class="c7">zero-based index</span>
+                <span>with respect to the whole document of the first character of the text span. The third number is an integer
+                  that indicates the </span>
+                <span class="c7">END </span>
+                <span>of the text phrase, that is, the </span>
+                <span class="c7">zero-based index </span>
+                <span>with respect to the whole document of the first character after the span. This means that </span>
+                <span class="c7">END minus START</span>
+                <span class="c3">is equal to the length in characters of the text span.</span>
+              </p>
+              <p class="c2">
+                <span class="c3">For example, the following figure shows the annotation of the previous example (as seen in the Brat annotation
+                  tool). In this first subtask it is only important to detect the key phrases, i.e., the fragments of the
+                  text that are highlighted in light blue.</span>
+              </p>
+              <p class="c2">
+                <span class="c1">The following fragment shows the expected gold output for the previous input file, that exactly matches what
+                  the sample figure shows. Notice that the first entry is identified with </span>
+                <span class="c7 c1">ID=1</span>
+                <span class="c1">and </span>
+                <span class="c7 c1">START=3, END=7</span>
+                <span class="c1">. It represents the phrase &ldquo;asma&rdquo; seen in the first sentence, which spans from character </span>
+                <span class="c7 c1">3 </span>
+                <span class="c1">to character </span>
+                <span class="c7 c1">6 </span>
+                <span class="c1">in the document, for a total of </span>
+                <span class="c7 c1">4 </span>
+                <span class="c1">characters, hence </span>
+                <span class="c7 c1">7-3=4</span>
+                <span class="c1">. The next entry represents the text &ldquo;afecta&rdquo;, and so on. It is not necessary for this file to
+                  list all text spans in increasing order of </span>
+                <span class="c7 c1">START</span>
+                <span class="c3 c1">, although doing some might be convenient for manual inspection and easier debugging.</span>
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <h4>Subtask A input example:</h4>
+                  <ul class="c59 lst-kix_list_3-0 start">
+                    <li class="c2 c11">
+                      <span class="c1">Plain text document: file </span>
+                      <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/input/input_example.txt">
+                        input/input_example.txt
+                      </a>
+                    </li>
+                  </ul>
+                  <br>
+                  <script class="sample" src="https://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/input/input_example.txt?footer=minimal"></script>
+                  <p class="c21">
+                    <!-- <object type="image/svg+xml" data="images/output_A.svg" style="width: 100%; height: 250px;">
+                    </object> -->
+                    <img alt="" src="images/image16.png" style="width: 100%">
+                  </p>
+                </div>
+                <div class="col-6">
+                  <h4>Subtask A gold output example:</h4>
+                  <ul class="c59 lst-kix_list_3-0">
+                    <li class="c2 c11">
+                      <span class="c1">Structured data regarding the key phrases' offsets: file </span>
+                      <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/gold/output_A_example.txt">
+                        gold/output_A_example.txt
+                      </a>
+                    </li>
+                  </ul>
+                  <br>
+                  <script class="sample" src="https://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/gold/output_A_example.txt?footer=minimal"></script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <a name="eval"></a>
+          <div class="row">
+            <div class="col-12">
+              <h2>Development evaluation for Subtask A</h2>
+              <p class="c2">
+                <span>There are different issues to deal with in terms of evaluation when the </span>
+                <span class="c7">dev output</span>
+                <span>files are processed. To illustrate some of them the following fragment shows another possible output simulating
+                  a participant team (e.g. teamX), but this time some mistakes have been introduced. There are
+                </span>
+                <span class="c7">some entries missing</span>
+                <span>while other </span>
+                <span class="c7">entries have been incorrectly added</span>
+                <span class="c3">, in contrast to the gold file.</span>
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <h4>Example dev output illustration:</h4>
+                  <ul>
+                    <li> Key phrases offset file:
+                      <a href="https://github.com/TASS18-Task3/data/blob/master/training_example/dev/output_A_example.txt">
+                        dev/output_A_example.txt
+                      </a>
+                    </li>
+                  </ul>
+                  <img alt="" src="images/image18.png" style="width: 100%; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title="">
+                </div>
+                <div class="col-6">
+                  <h4>Example dev ouput file:</h4>
+                  <script class="sample" src="https://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/dev/output_A_example.txt?footer=minimal"></script>
+                </div>
+              </div>
+              <p class="c2">
+                <span>An evaluation script (</span>
+                <span class="c45 c62">
+                  <a href="https://github.com/TASS18-Task3/data/blob/master/score_training.py">
+                    score_training.py
+                  </a>
+                </span>
+                <span>) is provided to help participants to easily detect mistakes. The evaluation script receives an optional
+                  argument, the path of the </span>
+                <span class="c7">training</span>
+                <span>folder. The</span>
+                <span class="c7">training/input</span>
+                <span>folder contains the input files (</span>
+                <span class="c35">input_&lt;topic&gt;.txt</span>
+                <span>) while the
+                  <span class="c7">training/gold</span> folder contains and the expected </span>
+                <span class="c7">gold output</span>
+                <span>files ( for Subtask A these are the files called </span>
+                <span class="c35">output_A_&lt;topic&gt;.txt</span>
+                <span>), and the </span>
+                <span class="c7">training/dev</span> folder contains the output files to be evaluated (for Subtask A these are the files called
+                <span class="c35">output_A_&lt;topic&gt;.txt</span>).
+              </p>
+              <p class="c2">
+                <span>An example folder </span>
+                <span class="c35">training_example</span>
+                <span class="c3">is provided with the previous examples, to illustrate how to use the evaluation script. Running this script
+                  using this example folder produces the following result (only showing output that is relevant for the Subtask
+                  A):
+                </span>
+              </p>
+              <br>
+              <script class="sample" src="https://gist-it.appspot.com/github/TASS18-Task3/data/blob/master/training_example/log.txt?footer=minimal&slice=0:33"></script>
+              <p class="c2">
+                <span>The evaluation script reports </span>
+                <span class="c7">correct</span>
+                <span>, </span>
+                <span class="c7">partial</span>
+                <span>, </span>
+                <span class="c7">missing </span>
+                <span>and </span>
+                <span class="c7">spurious </span>
+                <span>matches. The expected and actual output files do not need to agree on the </span>
+                <span class="c7">ID</span>
+                <span>for each phrase, nor on their order. The evaluator matches are based on the </span>
+                <span class="c7">START</span>
+                <span>and </span>
+                <span class="c7">END</span>
+                <span>values. However, it is important to pay attention to the </span>
+                <span class="c7">ID</span>
+                <span class="c3">s which will be used in the following Subtasks B and C.</span>
+              </p>
+              <p class="c2">
+                <span class="c3">A brief description about the metrics follows:</span>
+              </p>
+              <ul class="c59 lst-kix_list_1-0 start">
+                <li class="c2 c11">
+                  <span class="c7">Correct</span>
+                  <span>matches are reported when a text in the </span>
+                  <span class="c7">dev</span>
+                  <span>file matches exactly with a corresponding text span in the </span>
+                  <span class="c7">gold </span>
+                  <span>file in </span>
+                  <span class="c7">START </span>
+                  <span>and </span>
+                  <span class="c7">END </span>
+                  <span>values. Only one correct match per entry in the </span>
+                  <span class="c7">gold</span>
+                  <span>file can be matched. Hence, duplicated entries will count as </span>
+                  <span class="c7">Spurious</span>
+                  <span class="c3">.</span>
+                </li>
+                <li class="c2 c11">
+                  <span class="c7">Partial </span>
+                  <span>matches are reported when two intervals </span>
+                  <span class="c7">[START, END]</span>
+                  <span>have a non-empty intersection, such as the case of &ldquo;s&iacute;ntomas&rdquo; and &ldquo;los s&iacute;ntomas&rdquo;
+                    in the previous example. Notice that a partial phrase will only be matched against a single correct phrase.
+                    For example, &ldquo;tipo de c&aacute;ncer&rdquo; could be a partial match for both &ldquo;tipo&rdquo;
+                    and &ldquo;c&aacute;ncer&rdquo;, but it is only counted once as a partial match with the word &ldquo;tipo&rdquo;.
+                    The word &ldquo;cancer&rdquo; is counted then as </span>
+                  <span class="c7">Missing</span>
+                  <span class="c3">. This aims to discourage a few large text spans that cover most of the document from getting a very high
+                    score.
+                  </span>
+                </li>
+                <li class="c2 c11">
+                  <span class="c7">Missing </span>
+                  <span>matches are those that appear in the </span>
+                  <span class="c7">gold </span>
+                  <span>file but not in the </span>
+                  <span class="c7">dev </span>
+                  <span class="c3">file.</span>
+                </li>
+                <li class="c2 c11">
+                  <span class="c7">Spurious </span>
+                  <span>matches are those that appear in the </span>
+                  <span class="c7">dev </span>
+                  <span>file but not in the </span>
+                  <span class="c7">gold </span>
+                  <span class="c3">file.</span>
+                </li>
+              </ul>
+              <p class="c2">
+                <span>The evaluation script also reports </span>
+                <span class="c7">precision</span>
+                <span>, </span>
+                <span class="c7">recall</span>
+                <span>, and a standard </span>
+                <span class="c7">F1</span>
+                <span class="c3">measure, calculated as follows:</span>
+              </p>
+              <div class="row">
+                <div class="col-1"></div>
+                <div class="col-3">
+                  $$ F_1 = 2 \cdot \frac{precision \cdot recall}{precision + recall} $$
+                </div>
+                <div class="col-4">
+                  $$ precision = \frac{correct + \frac{1}{2} partial}{correct + missing + partial} $$
+                </div>
+                <div class="col-3">
+                  $$ recall = \frac{correct + \frac{1}{2} partial}{correct + spurious + partial} $$
+                </div>
+              </div>
+              <!-- <tbody>
+                <tr class="c19">
+                  <td class="c25" colspan="1" rowspan="1">
+                    <p class="c30">
+                      <img src="images/image1.png">
+                    </p>
+                  </td>
+                  <td class="c69" colspan="1" rowspan="1">
+                    <p class="c30">
+                      <img src="images/image2.png">
+                    </p>
+                    <p class="c56 c6">
+                      <span class="c3"></span>
+                    </p>
+                    <p class="c30">
+                      <img src="images/image3.png">
+                    </p>
+                  </td>
+                </tr>
+              </tbody> -->
+              <table>
+                <tbody>
+                  <tr class="c19">
+                    <td class="c58" colspan="1" rowspan="1">
+                      <p class="c2">
+                        <span class="c7">NOTE: </span>
+                        <span>These metrics are only reported for convenience here, to be used by the participants when developing
+                          their solutions. The actual score used for ranking participants will be presented later.</span>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="c2">
+                <span class="c3">A higher precision means that the number of spurious identifications is smaller compared to the number of
+                  missing identifications, and a higher recall means the opposite. Partial matches are given half the score
+                  of correct matches, while missing and spurious identifications are given no score.</span>
+              </p>
+            </div>
+          </div>
+      </div>
+    </main>
+    <footer>
+    </footer>
+  </div>
+</body>
+
+</html>
