@@ -326,6 +326,51 @@ main code.label {
 	margin:0;
 }
 
+.corpus_example_first {
+	margin-bottom:0;
+	padding-bottom:0;
+}
+
+.corpus_example_next {
+	padding-top:0;
+}
+
+.corpus_example_title_text{
+	background: #dfdfdf;
+	border: 1px solid #f1f1f1;
+	border-radius:2px 0px 0px 2px;
+}
+
+.corpus_example_title_text p{
+	margin-bottom:0.2em;
+}
+
+.corpus_example_title_text .trans_example{
+	margin-top:0em;
+	font-size:0.8em;
+	font-family:'Roboto Mono', monospace;
+}
+
+.dataset_statistics{
+	padding:0;
+}
+
+.dataset_statistics_last{
+	padding-top:0;
+	padding-left:0;
+	padding-right:0;
+}
+
+.dataset_dark{
+	background: #dfdfdf;
+	border: 1px solid #f1f1f1;
+	border-radius:2px;
+}
+
+.dataset_number{
+	text-align:right;
+}
+
 .committees ul {
 	display:block;
 	list-style:none;
@@ -372,11 +417,12 @@ main code.label {
 	margin:0;
 	list-style:none;
 	padding: 0;
+	counter-reset: references_counter;
 }
 
 .references ol > li::before{
-	content: "[" counter(list, decimal) "] ";
-	counter-increment: list;
+	counter-increment: references_counter;
+	content: "[" counter(references_counter, decimal) "] ";
 }
 
 footer{

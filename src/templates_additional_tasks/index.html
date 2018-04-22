@@ -39,14 +39,12 @@
             <li>
               <a href="#datasets">Datasets</a>
             </li>
-<!--
             <li>
               <a href="#shared_task">Shared Task</a>
             </li>
             <li>
               <a href="#important_dates">Important dates</a>
             </li>
--->
             <li>
               <a href="#organization">Organization</a>
             </li>
@@ -74,7 +72,37 @@
         <div class="row">
           <div class="col-12">
             <h2>Tasks</h2>
-            <p>We will provide a training corpus labeled in the different varieties of Spanish, and several subtasks will be proposed (still to be defined) using one or several test corpus, for instance: train only with Spanish from Spain and evaluate each variety; train with the variety of each country and specifically evaluate the test of each country, train with everything and evaluate everything, etc.</p>
+            <p>
+				Two subtasks are proposed, the first one aims at evaluating the performance of the systems without taking into account the varieties of the Spanish language. 
+				On the other hand, the second task is a local multilingual challenge, because the training set is composed of texts written in the Spanish language spoken in Spain 
+				and the test sets are texts written in the Spanish language spoken in different countries of America.
+            </p>
+            <a name="subtask1"></a>
+            <h3>Subtask-1: Monolingual classification</h3>
+            <p>
+				The aim of the task is the classification of the title of a news in <code class="label">safe</code> or <code class="label">unsafe</code> for 
+				incorporating an ad. If a news arises a positive or a neutral emotion, it is safe for incorporating ads, but if it arises a negative emotion,
+				the news is unsafe for adding ads. The submitted systems will have to face up the following challenges:
+            </p>
+			<ol>
+				<li>Lack of context. The participants will work with title of news, that are usually very short and without any contextual information.</li>
+				<li>Genearalization. The topics of the titles of news are very diverse, so it makes more difficult the classification task.</li>
+				<li>Lexical diversity. The training and the test data include utterances written in the Spanish language spoken in Spain and in different coutries of America.</li>
+			</ol>
+            <p>
+				The participants will be provided with a training and development sets of the SANSE corpus (see <a href="#datasets">Dataset section</a>), and the test set
+				for the evaluation. In this task, the three sets are composed of titles of news written in different version of the Spanish language, but the country of the 
+				text is not relevant for this task. The three sets are annotated with two levels of safety: <code class="label">safe</code> and <code class="label">unsafe</code>. 
+				Therefore, the task is a binary classification task.
+            </p>
+            <a name="subtask2"></a>
+            <h3>Subtask-2: Multilingual classification</h3>
+            <p>
+				The aim is similar to the Subtask-1, but in this case the aim is to evaluate the generalization capacity of the submitted systems. The participants will be 
+				provided with a training and development set of SANSE with titles of news only written in the Spanish language spoken in Spain. Several test sets will be provided, 
+				and they will be composed of title of news written in the Spanish language spoken in different countries of America. 
+            </p>
+            <h3>Evaluation</h3>
             <p>The systems presented will be evaluated using the measures of Macro-Precision, Macro-Recall, Macro-F1 and Accuracy.</p>
           </div>
         </div>
@@ -84,10 +112,324 @@
         <div class="row">
           <div class="col-12">
             <h2>Datasets</h2>
-            <p><i>(under construction)</i></p>
-          </div>
-        </div>
+            <p>The participants will use the Spanish brANd Safe Emotion corpus (SANSE).</p>
+            <h3>SANSE corpus</h3>
+            <p>
+				The SANSE corpus is composed of 2,000 titles of news writen in the Spanish language spoken in Spain and in several Amaerican countries, specifically Mexico, Cuba, Chile, 
+				Colombia, Argentina, Venezuela, Peur and U.S.A. Therefore, SENSE is a representative corpus of title of news written in Spanish all over the Spnish speaking world. 
+            </p>
+            <p>
+				The annotation was carried out by two human annotators, namelly the two organizers of the task. A safe title of a news was defined as an utterance that arises a positive or
+				neutral emotion in the reader, or it is not related to a controversial topics: religion, extreme wing political topic, topics that may arise strong positive emotions to some 
+				readers but strong negative emotions to other ones. An unsafe title was defined as an utterance that arises negative emotions on the reader. Some examples:
+            </p>
+            <div class="row corpus_example_first">
+	            <div class="col-10 corpus_example_title_text">
+					<p>Así será el nuevo pan integral en España, según una nueva ley en marcha.</p>
+					<p class="trans_example">According to a new law in progress, the new wholemeal bread will be in what follows.</p>
+	            </div>
+	            <div class="col-2 corpus_example_label">
+	            		<p><code class="label">SAFE</code></p>
+	            </div>
+	        </div>
+	        <div class="row corpus_example_next">
+	            <div class="col-10 corpus_example_title_text">
+					<p>Casi 300 municipios de Colombia en riesgo electoral.</p>
+					<p class="trans_example">Almost 300 Colombian towns are in electoral risk.</p>
+	            </div>
+	            <div class="col-2 corpus_example_label">
+	            		<p><code class="label">UNSAFE</code></p>
+	            </div>
+	        </div>
+            <p>
+				The agreement of the annotation was 0,58 according to &Pi; <a href="#ref_1">[1]</a> and &Kappa; <a href="#ref_2">[2]</a>, which may consider moderate according to Landis and Koch <a href="#ref_3">[3]</a>.
+				Although the agreement is moderate, it is close to be considered substantial, and we have also take into account that it is a new classification task that works with
+				a strong subjective content. All those cases with no agreement between the two annotators, a third annotator undid the tie. We will work in making more precise the
+				annotation guidelines in order to improve the agreement of the annotators. Besides, we hope that the participants will give us insights with the aim of improving the 
+				annotation of the data.
+            </p>
+            <p>
+				The SANSE corpus is divided in three subsest for <a href="#subtask1">Substask-1</a>, specifically: training, development and test. The statistics of the three subsets are in the following table.
+            </p>
+            <div class="row dataset_statistics">
+				<div class="col-2"></div>
+				<div class="col-5 dataset_dark">
+					Training
+				</div>
+				<div class="col-3 dataset_dark dataset_number">
+					1250
+				</div>
+				<div class="col-2 dataset_number"></div>
+			</div>
+			<div class="row dataset_statistics">
+				<div class="col-2"></div>
+				<div class="col-5">
+					Development
+				</div>
+				<div class="col-3 dataset_number">
+					250
+				</div>
+				<div class="col-2"></div>
+			</div>
+			<div class="row dataset_statistics_last">
+				<div class="col-2"></div>
+				<div class="col-5 dataset_dark">
+					Test
+				</div>
+				<div class="col-3 dataset_dark dataset_number">
+					500
+				</div>
+				<div class="col-2"></div>
+			</div>
+			<p>The statistics of SENSE corpus for <a href="#subtask2">Subtask-2</a> are the following:</p>
+			<div class="row dataset_statistics">
+				<div class="col-2"></div>
+				<div class="col-5 dataset_dark">
+					Training (Spain)
+				</div>
+				<div class="col-3 dataset_dark dataset_number">
+					300
+				</div>
+				<div class="col-2 dataset_number"></div>
+			</div>
+			<div class="row dataset_statistics">
+				<div class="col-2"></div>
+				<div class="col-5">
+					Development (Spain)
+				</div>
+				<div class="col-3 dataset_number">
+					48
+				</div>
+				<div class="col-2"></div>
+			</div>
+			<div class="row dataset_statistics">
+				<div class="col-2"></div>
+				<div class="col-5 dataset_dark">
+					Test (Mexico)
+				</div>
+				<div class="col-3 dataset_dark dataset_number">
+					144
+				</div>
+				<div class="col-2"></div>
+			</div>
+			<div class="row dataset_statistics">
+				<div class="col-2"></div>
+				<div class="col-5">
+					Test (Cuba)
+				</div>
+				<div class="col-3 dataset_number">
+					194
+				</div>
+				<div class="col-2"></div>
+			</div>
+			<div class="row dataset_statistics">
+				<div class="col-2"></div>
+				<div class="col-5 dataset_dark">
+					Test (Chile)
+				</div>
+				<div class="col-3 dataset_dark dataset_number">
+					194
+				</div>
+				<div class="col-2"></div>
+			</div>
+			<div class="row dataset_statistics">
+				<div class="col-2"></div>
+				<div class="col-5">
+					Test (Colombia)
+				</div>
+				<div class="col-3 dataset_number">
+					195
+				</div>
+				<div class="col-2"></div>
+			</div>
+			<div class="row dataset_statistics">
+				<div class="col-2"></div>
+				<div class="col-5 dataset_dark">
+					Test (Argentina)
+				</div>
+				<div class="col-3 dataset_dark dataset_number">
+					198
+				</div>
+				<div class="col-2"></div>
+			</div>
+			<div class="row dataset_statistics">
+				<div class="col-2"></div>
+				<div class="col-5">
+					Test (Venezuela)
+				</div>
+				<div class="col-3 dataset_number">
+					233
+				</div>
+				<div class="col-2"></div>
+			</div>
+			<div class="row dataset_statistics">
+				<div class="col-2"></div>
+				<div class="col-5 dataset_dark">
+					Test (Peru)
+				</div>
+				<div class="col-3 dataset_dark dataset_number">
+					234
+				</div>
+				<div class="col-2"></div>
+			</div>
+			<div class="row dataset_statistics_last">
+				<div class="col-2"></div>
+				<div class="col-5">
+					Test (USA)
+				</div>
+				<div class="col-3 dataset_number">
+					260
+				</div>
+				<div class="col-2"></div>
+			</div>
+		</div>
       </section>
+	<section>
+		<a name="shared_task"></a>
+			<div class="row">
+				<div class="col-12">
+					<h2>Shared Task</h2>
+					<h3>Evaluation</h3>
+					<p>The evaluation will be done in <a href="http://codalab.org/">Codalab</a>, and the submission instructions will be announced soon.</p>
+					<h3>Datasets downloads</h3>
+					<p>
+						The use of SANSE corpus requires of agreeing the terms of use of the data through the signment of the <a href="http://www.sepln.org/workshops/tass/tass_data/download.php">TASS Data License</a>.
+					</p>
+					<h3>Proceedings</h3>
+					<p>
+						The same as for Task-1 and Task-2. See main webpage of <a href="../" target="_blank">TASS-2018</a>.
+					</p>
+					<h3>Program</h3>
+					<p>
+						<i>To be announced.</i>
+					</p>
+					<h4>Presentation instructions</h4>
+					<p>
+						<i>To be announced.</i>
+					</p>
+				</div>
+			</div>
+			<div class="row">
+					<div class="col-12">
+						<h2>Important dates</h2>
+						<p>
+							In this section, the dates only related to TASS-2018, task-1 and task-2 are noted. The dates of the other two tasks
+							(<a href="#s_ehealth_task">task-3</a> and <a href="#s_badgoodnews_task">task-4</a>) are in their webpages. 
+						</p>
+						<div class="important_dates">
+							<div class="row dark">
+								<div class="col-6">
+									<p>
+										Release of training and development corpora
+									</p>
+								</div>
+								<div class="col-6">
+									<p>
+										May 2, 2018
+									</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									<p>
+										Release of test corpora
+									</p>
+								</div>
+								<div class="col-6">
+									<p>
+										June 11, 2018
+									</p>
+								</div>
+							</div>
+							<!-- <div class="row dark">
+								<div class="col-6">
+									<p>
+										Registration deadline 
+									</p>
+								</div>
+								<div class="col-6">
+									<p>
+										July 2, 2018
+									</p>
+								</div>
+							</div>
+							 -->
+							<div class="row dark">
+								<div class="col-6">
+									<p>
+										Deadline for evaluation 
+									</p>
+								</div>
+								<div class="col-6">
+									<p>
+										June 13,  2018
+									</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									<p>
+										Paper submission
+									</p>
+								</div>
+								<div class="col-6">
+									<p>
+										July 6, 2018
+									</p>
+								</div>
+							</div>
+							<div class="row dark">
+								<div class="col-6">
+									<p>
+										Review notification
+									</p>
+								</div>
+								<div class="col-6">
+									<p>
+										July 20, 2018
+									</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									<p>
+										Camera ready submission
+									</p>
+								</div>
+								<div class="col-6">
+									<p>
+										September 5, 2018
+									</p>
+								</div>
+							</div>
+							<div class="row dark">
+								<div class="col-6">
+									<p>
+										Publication
+									</p>
+								</div>
+								<div class="col-6">
+									<p>
+										September 17, 2018
+									</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									<p>
+										Workshop
+									</p>
+								</div>
+								<div class="col-6">
+									<p>
+										September 18, 2018
+									</p>
+								</div>
+							</div>		
+						</div>
+					</div>
+				</div>
+</section>
 <!--
       <section>
         <a name="shared_task"></a>
@@ -183,8 +525,40 @@
           <div class="col-3 img_organizers_wrapper">
             <a href="https://www.meaningcloud.com/" target="_blank"><img class="img_organizers img_organizers_resize" src="./images/meaningcloudBig.png" alt="MeaningCloud"></a>
           </div>
-        </div>
+          <div class="col-3 img_organizers_wrapper">
+			<a href="http://www.ugr.es" target="_blank">
+				<img class="img_organizers" src="./images/ugr_logo.png" alt="University of Granada">
+			</a>
+		  </div>
+       </div>
       </section>
+      <section>
+				<div class="row">
+					<div class="col-12">
+							<h2>References</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class=references>
+							<ol>
+								<a name="ref_1"></a>
+								<li>
+									Scott, William A. 1955. Reliability of content analysis: The case of nominal scale coding. Public Opinion Quarterly, 19(3):321–325.
+								</li>
+								<a name="ref_2"></a>
+								<li>
+									Cohen, Jacob. 1960. A coefficient of agree-ment for nominal scales. Educational and Psychological Measurement, 20(1):37–46.
+								</li>
+								<a name="ref_3"></a>
+								<li>
+									Landis, J. Richard and Gary G. Koch. 1977. The measurement of observer agreement for categorical data. Biometrics, 33(1):159–174.
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
     </div>
   </main>
 </div>
