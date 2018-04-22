@@ -94,12 +94,12 @@
                 <span class="c3">as follows:</span>
               </p>
               <p class="c30">
-                $$ precision(A,B,C) = \frac{Correct(A) + Correct(B) + Correct(C) + \frac{1}{2} Partial(A) + \frac{1}{2} Partial(C)}{Spurious(A) + Partial(A) + Correct(A)
-                + Correct(B) + Incorrect(B) + Spurious(C) + Correct(C) + Partial(C)} $$
+                $$ precision(A,B,C) = \frac{Correct(A) + Correct(B) + Correct(C) + \frac{1}{2} Partial(A) + \frac{1}{2} Partial(C)}{Spurious(A)
+                + Partial(A) + Correct(A) + Correct(B) + Incorrect(B) + Spurious(C) + Correct(C) + Partial(C)} $$
               </p>
               <p class="c30">
-                $$ recall(A,B,C) = \frac{Correct(A) + Correct(B) + Correct(C) + \frac{1}{2} Partial(A) + \frac{1}{2} Partial(C)}{Missing(A) + Partial(A) + Correct(A)
-                + Correct(B) + Incorrect(B) + Missing(C) + Correct(C) + Partial(C)} $$
+                $$ recall(A,B,C) = \frac{Correct(A) + Correct(B) + Correct(C) + \frac{1}{2} Partial(A) + \frac{1}{2} Partial(C)}{Missing(A)
+                + Partial(A) + Correct(A) + Correct(B) + Incorrect(B) + Missing(C) + Correct(C) + Partial(C)} $$
               </p>
               <p class="c30">
                 $$ F_1(A,B,C) = 2 \cdot \frac{precision \cdot recall}{precision + recall} $$
@@ -125,10 +125,12 @@
                 <span class="c3">:</span>
               </p>
               <p class="c30">
-                $$ precision(B,C) = \frac{Correct(B) + Correct(C) + \frac{1}{2} Partial(C)}{Correct(B) + Incorrect(B) + Spurious(C) + Correct(C) + Partial(C)} $$
+                $$ precision(B,C) = \frac{Correct(B) + Correct(C) + \frac{1}{2} Partial(C)}{Correct(B) + Incorrect(B) + Spurious(C) + Correct(C)
+                + Partial(C)} $$
               </p>
               <p class="c30">
-                $$ recall(B,C) = \frac{Correct(B) + Correct(C) + \frac{1}{2} Partial(C)}{Correct(B) + Incorrect(B) + Missing(C) + Correct(C) + Partial(C)} $$
+                $$ recall(B,C) = \frac{Correct(B) + Correct(C) + \frac{1}{2} Partial(C)}{Correct(B) + Incorrect(B) + Missing(C) + Correct(C)
+                + Partial(C)} $$
               </p>
               <p class="c30">
                 $$ F_1(B,C) = 2 \cdot \frac{precision \cdot recall}{precision + recall} $$
@@ -164,8 +166,55 @@
               </h3>
 
               <p>
-                 $$ F_{final} = \frac{1}{3} F_1(A,B,C) + \frac{1}{3} F_1(B,C) + \frac{1}{3} F_1(C) $$
+                $$ F_{final} = \frac{1}{3} F_1(A,B,C) + \frac{1}{3} F_1(B,C) + \frac{1}{3} F_1(C) $$
               </p>
+
+              <br>
+              <br>
+
+              <h2>Baseline implementation</h2>
+
+              <p>
+                A baseline implementation is provided in
+                <a href="https://github.com/TASS18-Task3/data/tree/master/baseline">https://github.com/TASS18-Task3/data/tree/master/baseline</a>. This implementation simply counts the number
+                of occurrences of all concepts, actions and relations, and uses these statistics to match the exact same
+                occurrences. Hence, it can be used as a minimal baseline of the expected score in each evaluation scenario.
+              </p>
+
+              <p>
+                Feel free to use and modify this baseline implementation, both for testing the submission process in Codalab and as a template
+                for developing your own implementation if necessary.
+              </p>
+
+              <h2>Evaluation scripts</h2>
+
+              <p>
+                There are three differents ways of obtaining an evaluation. The first option is to use the script
+                <a href="https://github.com/TASS18-Task3/data/blob/master/score_training.py">score_training.py</a>
+                which provides a detailed evaluation including a report of each of the mistakes (i.e., spurious or missing items) for each
+                of the training files. This script will be mostly useful for the development of the models.
+              </p>
+
+              <p>
+                The second option is to use the script
+                <a href="https://github.com/TASS18-Task3/data/blob/master/score_test.py">score_test.py</a> is
+                which provides a summarized report of the evaluations metrics described in this page.
+                The script reports precission, recall and F1 for each scenario, and the macro average of all the F1 metrics.
+              </p>
+
+              <p>
+                The final option is to submit the results to Codalab, either in the training or the testing phase.
+                In this submission, the results will be exactly the same as those output by the <i>score_test.py</i>
+                script. The only difference with option 2 is that during the testing phase, participants will
+                not have access to the testing gold outputs, hence, the only way to obtain a testing score is to submit
+                to Codalab.
+              </p>
+
+              <p>
+                More information can be found in
+                <a href="https://github.com/TASS18-Task3/data/blob/master/Readme.md">the Readme file</a>.
+              </p>
+
             </div>
           </div>
 
