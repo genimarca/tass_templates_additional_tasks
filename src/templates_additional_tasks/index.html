@@ -61,8 +61,22 @@
         <div class="row">
           <div class="col-12">
             <h2>About</h2>
-            <p>This task is focused on an emotional categorization in the domain of news articles. A corpus is currently being built from RSS feeds of different online newspapers written in different varieties of Spanish (in particular, Argentina, Chile, Colombia, Cuba, Spain, USA, Mexico, Peru and Venezuela). Then the plan is to tag the information provided by each feed (at least, a headline, and in many cases, a brief summary of the article) into an emotional categorization of <strong>good</strong>, <strong>bad</strong>, <strong>neutral</strong> or <strong>controversial</strong> news, from the point of view of the general public of each corresponding country. The controversial mark is intended to indicate a discrepancy in the different consideration of good or bad news by one part or another of the citizenship, which is frequent in political news. Additionally, a mark will be added to indicate if the article is <strong>ironic</strong> in the sense that the headline is confusing or ambiguous about the position of the article editor, which can only be determined by reading the full content of the article.</p>
-            <p>This task could be considered as a kind of <em>stance classification</em>, on the positioning of the editor or the public of an article on a news content. The task supposes a high level challenge because it has to deal with not only a dimension of polarity of feeling (good vs bad) but it has to be decides in combination with a (pseudo) thematic classification to be able to determine the meaning of the news. For example, the reduction of traffic accidents has a negative feeling because of the accidents, but the context of reducing the numbers makes that these are finally good news.</p>
+            <p>
+	            This task is focused on an emotional categorization in the domain of news articles. 
+	            A corpus is currently being built from RSS feeds of different online newspapers written 
+	            in different varieties of Spanish, namelly Argentina, Chile, Colombia, Cuba, 
+	            Spain, USA, Mexico, Peru and Venezuela. Then the plan is to classify the information 
+	            provided by each feed (at least, a headline, and in many cases, a brief summary of 
+	            the article) into an emotional categorization of <code class="label">SAFE</code> or <code class="label">UNSAFE</code>, from the point of view of 
+	            the general public of each corresponding country.
+            </p>
+            <p>
+				This task could be considered as a kind of <em>stance classification</em>, on the 
+				positioning of the editor or the public of an article on a news content. The task 
+				is a strong challenge because it has to deal with the polarity of feeling (safe vs unsafe) and
+				to work in combination with a (pseudo) thematic classification to be able to determine the meaning of the news. 
+				For example, the reduction of traffic accidents has a negative feeling because of 
+				the accidents, but the context of reducing the numbers makes that these are finally good news.</p>
           </div>
         </div>
       </section>
@@ -80,7 +94,7 @@
             <a name="subtask1"></a>
             <h3>Subtask-1: Monolingual classification</h3>
             <p>
-				The aim of the task is the classification of the title of a news in <code class="label">safe</code> or <code class="label">unsafe</code> for 
+				The aim of the task is the classification of the title of a news in <code class="label">SAFE</code> or <code class="label">UNSAFE</code> for 
 				incorporating an ad. If a news arises a positive or a neutral emotion, it is safe for incorporating ads, but if it arises a negative emotion,
 				the news is unsafe for adding ads. The submitted systems will have to face up the following challenges:
             </p>
@@ -92,7 +106,7 @@
             <p>
 				The participants will be provided with a training and development sets of the SANSE corpus (see <a href="#datasets">Dataset section</a>), and the test set
 				for the evaluation. In this task, the three sets are composed of titles of news written in different version of the Spanish language, but the country of the 
-				text is not relevant for this task. The three sets are annotated with two levels of safety: <code class="label">safe</code> and <code class="label">unsafe</code>. 
+				text is not relevant for this task. The three sets are annotated with two levels of safety: <code class="label">SAFE</code> and <code class="label">UNSAFE</code>. 
 				Therefore, the task is a binary classification task.
             </p>
             <a name="subtask2"></a>
