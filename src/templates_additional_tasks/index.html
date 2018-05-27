@@ -83,7 +83,7 @@
       
       <section>
         <a name="tasks"></a>
-        <div class="row">
+        <div class="row tasks">
           <div class="col-12">
             <h2>Tasks</h2>
             <p>
@@ -91,31 +91,48 @@
 				On the other hand, the second task is a local multilingual challenge, because the training set is composed of texts written in the Spanish language spoken in Spain 
 				and the test sets are texts written in the Spanish language spoken in different countries of America.
             </p>
-            <a name="subtask1"></a>
-            <h3>Subtask-1: Monolingual classification</h3>
-            <p>
-				The aim of the task is the classification of the title of a news in <code class="label">SAFE</code> or <code class="label">UNSAFE</code> for 
-				incorporating an ad. If a news arises a positive or a neutral emotion, it is safe for incorporating ads, but if it arises a negative emotion,
-				the news is unsafe for adding ads. The submitted systems will have to face up the following challenges:
-            </p>
-			<ol>
-				<li>Lack of context. The participants will work with title of news, that are usually very short and without any contextual information.</li>
-				<li>Genearalization. The topics of the titles of news are very diverse, so it makes more difficult the classification task.</li>
-				<li>Lexical diversity. The training and the test data include utterances written in the Spanish language spoken in Spain and in different coutries of America.</li>
-			</ol>
-            <p>
-				The participants will be provided with a training and development sets of the SANSE corpus (see <a href="#datasets">Dataset section</a>), and the test set
-				for the evaluation. In this task, the three sets are composed of titles of news written in different version of the Spanish language, but the country of the 
-				text is not relevant for this task. The three sets are annotated with two levels of safety: <code class="label">SAFE</code> and <code class="label">UNSAFE</code>. 
-				Therefore, the task is a binary classification task.
-            </p>
-            <a name="subtask2"></a>
-            <h3>Subtask-2: Multilingual classification</h3>
-            <p>
-				The aim is similar to the Subtask-1, but in this case the aim is to evaluate the generalization capacity of the submitted systems. The participants will be 
-				provided with a training and development set of SANSE with titles of news only written in the Spanish language spoken in Spain. Several test sets will be provided, 
-				and they will be composed of title of news written in the Spanish language spoken in different countries of America. 
-            </p>
+            <div id="subtask-1">
+	            <a name="subtask1"></a>
+	            <h3>Subtask-1: Monolingual classification</h3>
+	            <p>
+					The aim of the task is the classification of the title of a news in <code class="label">SAFE</code> or <code class="label">UNSAFE</code> for 
+					incorporating an ad. If a news arises a positive or a neutral emotion, it is safe for incorporating ads, but if it arises a negative emotion,
+					the news is unsafe for adding ads. The submitted systems will have to face up the following challenges:
+	            </p>
+				<ol>
+					<li>Lack of context. The participants will work with title of news, that are usually very short and without any contextual information.</li>
+					<li>Genearalization. The topics of the titles of news are very diverse, so it makes more difficult the classification task.</li>
+					<li>Lexical diversity. The training and the test data include utterances written in the Spanish language spoken in Spain and in different coutries of America.</li>
+				</ol>
+	            <p>
+					The participants will be provided with a training and development sets of the SANSE corpus (see <a href="#datasets">Dataset section</a>), and the test set
+					for the evaluation. In this task, the three sets are composed of titles of news written in different version of the Spanish language, but the country of the 
+					text is not relevant for this task. The three sets are annotated with two levels of safety: <code class="label">SAFE</code> and <code class="label">UNSAFE</code>. 
+					Therefore, the task is a binary classification task.
+	            </p>
+	        </div>
+	        <div id="subtask-2">
+	            <a name="subtask2"></a>
+	            <h3>Subtask-2: Multilingual classification</h3>
+	            <p>
+					The aim is similar to the Subtask-1, but in this case the aim is to evaluate the generalization capacity of the submitted systems. The participants will be 
+					provided with a training and development set of SANSE with titles of news only written in the Spanish language spoken in Spain. Several test sets will be provided, 
+					and they will be composed of title of news written in the Spanish language spoken in different countries of America. 
+	            </p>
+	            <p>
+					The evaluation of Subtask-2 is organized in two levels:
+	            </p>
+	            <ol>
+					<li>
+						The test data will be composed of the the titles of the test set of Subtask-1 that are not written
+						in the Spanish language spoken in Spain.
+					</li>
+					<li>
+						The test set will be larger than in the previous evaluation level, about 13,000 titles, and the titles
+						are written in all varieties of the Spanish language.
+					</li>
+	            </ol>
+	        </div>
             <h3>Evaluation</h3>
             <p>The systems presented will be evaluated using the measures of Macro-Precision, Macro-Recall, Macro-F1 and Accuracy.</p>
           </div>
@@ -222,7 +239,7 @@
 					Test (Mexico)
 				</div>
 				<div class="col-3 dataset_dark dataset_number">
-					144
+					(L1) 144; (L2) 1011
 				</div>
 				<div class="col-2"></div>
 			</div>
@@ -232,7 +249,7 @@
 					Test (Cuba)
 				</div>
 				<div class="col-3 dataset_number">
-					194
+					(L1) 194; (L2) 1164
 				</div>
 				<div class="col-2"></div>
 			</div>
@@ -242,7 +259,7 @@
 					Test (Chile)
 				</div>
 				<div class="col-3 dataset_dark dataset_number">
-					194
+					(L1) 194; (L2) 1306
 				</div>
 				<div class="col-2"></div>
 			</div>
@@ -252,7 +269,7 @@
 					Test (Colombia)
 				</div>
 				<div class="col-3 dataset_number">
-					195
+					(L1) 195; (L2) 1378
 				</div>
 				<div class="col-2"></div>
 			</div>
@@ -262,7 +279,7 @@
 					Test (Argentina)
 				</div>
 				<div class="col-3 dataset_dark dataset_number">
-					198
+					(L1) 198; (L2) 1411
 				</div>
 				<div class="col-2"></div>
 			</div>
@@ -272,7 +289,7 @@
 					Test (Venezuela)
 				</div>
 				<div class="col-3 dataset_number">
-					233
+					(L1) 233; (L2) 1437
 				</div>
 				<div class="col-2"></div>
 			</div>
@@ -282,7 +299,7 @@
 					Test (Peru)
 				</div>
 				<div class="col-3 dataset_dark dataset_number">
-					234
+					(L1) 234; (L2) 1465
 				</div>
 				<div class="col-2"></div>
 			</div>
@@ -292,7 +309,7 @@
 					Test (USA)
 				</div>
 				<div class="col-3 dataset_number">
-					260
+					(L1) 260; (L2) 1701
 				</div>
 				<div class="col-2"></div>
 			</div>
@@ -304,7 +321,7 @@
 				<div class="col-12">
 					<h2>Shared Task</h2>
 					<h3>Evaluation</h3>
-					<p>The evaluation will be done in <a href="http://codalab.org/">Codalab</a>, and the submission instructions will be announced soon.</p>
+					<p>The evaluation will be done online, and the submission instructions will be announced soon.</p>
 					<h3>Datasets downloads</h3>
 					<p>
 						The use of SANSE corpus requires of agreeing the terms of use of the data through the signment of the <a href="http://www.sepln.org/workshops/tass/tass_data/download.php">TASS Data License</a>.
@@ -312,7 +329,7 @@
 					<h4>Subtask-1</h4>
 					<ul>
 						<li>
-							Training &amp; Development: You must sign the License of terms of use in ordeer to download it. The license is at: <a href="http://www.sepln.org/workshops/tass/tass_data/download.php">http://www.sepln.org/workshops/tass/tass_data/download.php</a>
+							Training &amp; Development: You must sign the License of terms of use in order to download it. The license is at: <a href="http://www.sepln.org/workshops/tass/tass_data/download.php">http://www.sepln.org/workshops/tass/tass_data/download.php</a>
 						</li>
 						<li>
 							Test: It will be released in the download section of TASS. You must use the same URL that you used for downloading the Training and Development datasets.
@@ -366,7 +383,7 @@
 								</div>
 								<div class="col-6">
 									<p>
-										June 11, 2018
+										June 25, 2018
 									</p>
 								</div>
 							</div>
@@ -391,7 +408,7 @@
 								</div>
 								<div class="col-6">
 									<p>
-										June 13,  2018
+										June 27,  2018
 									</p>
 								</div>
 							</div>
@@ -403,7 +420,7 @@
 								</div>
 								<div class="col-6">
 									<p>
-										July 6, 2018
+										July 16, 2018
 									</p>
 								</div>
 							</div>
@@ -415,7 +432,7 @@
 								</div>
 								<div class="col-6">
 									<p>
-										July 20, 2018
+										July 27, 2018
 									</p>
 								</div>
 							</div>

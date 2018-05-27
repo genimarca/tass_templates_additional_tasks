@@ -412,6 +412,16 @@ main code.label {
 	opacity:1;
 }
 
+#subtask-2 ol {
+	list-style:none;
+	counter-reset: tasks2_counter;
+}
+
+#subtask-2 ol > li::before{
+	counter-increment: tasks2_counter;
+	content: "L" counter(tasks2_counter, decimal) ": ";
+}
+
 
 .references ol {
 	margin:0;
