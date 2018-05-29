@@ -412,12 +412,13 @@ main code.label {
 	opacity:1;
 }
 
-#subtask-2 ol {
+#subtask-1 #s1_levels_evaluation ol {
 	list-style:none;
+	padding-left: 22px;
 	counter-reset: tasks2_counter;
 }
 
-#subtask-2 ol > li::before{
+#subtask-1 #s1_levels_evaluation ol > li::before{
 	counter-increment: tasks2_counter;
 	content: "L" counter(tasks2_counter, decimal) ": ";
 }

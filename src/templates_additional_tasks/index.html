@@ -95,43 +95,44 @@
 	            <a name="subtask1"></a>
 	            <h3>Subtask-1: Monolingual classification</h3>
 	            <p>
-					The aim of the task is the classification of the title of a news in <code class="label">SAFE</code> or <code class="label">UNSAFE</code> for 
+					The aim of the task is the classification of the headline of a news in <code class="label">SAFE</code> or <code class="label">UNSAFE</code> for 
 					incorporating an ad. If a news arises a positive or a neutral emotion, it is safe for incorporating ads, but if it arises a negative emotion,
 					the news is unsafe for adding ads. The submitted systems will have to face up the following challenges:
 	            </p>
 				<ol>
-					<li>Lack of context. The participants will work with title of news, that are usually very short and without any contextual information.</li>
-					<li>Genearalization. The topics of the titles of news are very diverse, so it makes more difficult the classification task.</li>
+					<li>Lack of context. The participants will work with headline of news, that are usually very short and without any contextual information.</li>
+					<li>Genearalization. The topics of the headlines of news are very diverse, so it makes more difficult the classification task.</li>
 					<li>Lexical diversity. The training and the test data include utterances written in the Spanish language spoken in Spain and in different coutries of America.</li>
 				</ol>
 	            <p>
 					The participants will be provided with a training and development sets of the SANSE corpus (see <a href="#datasets">Dataset section</a>), and the test set
-					for the evaluation. In this task, the three sets are composed of titles of news written in different version of the Spanish language, but the country of the 
+					for the evaluation. In this task, the three sets are composed of headlines of news written in different version of the Spanish language, but the country of the 
 					text is not relevant for this task. The three sets are annotated with two levels of safety: <code class="label">SAFE</code> and <code class="label">UNSAFE</code>. 
 					Therefore, the task is a binary classification task.
 	            </p>
+	            <p>
+					The evaluation of Subtask-1 is organized in two levels:
+	            </p>
+	            <div id="s1_levels_evaluation">
+		            <ol>
+						<li>
+							The test data will be composed of the headlines of the test subset of the SANSE corpus.
+						</li>
+						<li>
+							The test set will be larger than in L1, about 13,000 headlines, and the headlines
+							are written in all varieties of the Spanish language.
+						</li>
+		            </ol>
+		        </div>
 	        </div>
 	        <div id="subtask-2">
 	            <a name="subtask2"></a>
 	            <h3>Subtask-2: Multilingual classification</h3>
 	            <p>
 					The aim is similar to the Subtask-1, but in this case the aim is to evaluate the generalization capacity of the submitted systems. The participants will be 
-					provided with a training and development set of SANSE with titles of news only written in the Spanish language spoken in Spain. Several test sets will be provided, 
-					and they will be composed of title of news written in the Spanish language spoken in different countries of America. 
+					provided with a training and development set of SANSE with headlines of news only written in the Spanish language spoken in Spain. Several test sets will be provided, 
+					and they will be composed of headline of news written in the Spanish language spoken in different countries of America. 
 	            </p>
-	            <p>
-					The evaluation of Subtask-2 is organized in two levels:
-	            </p>
-	            <ol>
-					<li>
-						The test data will be composed of the the titles of the test set of Subtask-1 that are not written
-						in the Spanish language spoken in Spain.
-					</li>
-					<li>
-						The test set will be larger than in the previous evaluation level, about 13,000 titles, and the titles
-						are written in all varieties of the Spanish language.
-					</li>
-	            </ol>
 	        </div>
             <h3>Evaluation</h3>
             <p>The systems presented will be evaluated using the measures of Macro-Precision, Macro-Recall, Macro-F1 and Accuracy.</p>
@@ -146,13 +147,13 @@
             <p>The participants will use the Spanish brANd Safe Emotion corpus (SANSE).</p>
             <h3>SANSE corpus</h3>
             <p>
-				The SANSE corpus is composed of 2,000 titles of news writen in the Spanish language spoken in Spain and in several Amaerican countries, specifically Mexico, Cuba, Chile, 
-				Colombia, Argentina, Venezuela, Peur and U.S.A. Therefore, SENSE is a representative corpus of title of news written in Spanish all over the Spnish speaking world. 
+				The SANSE corpus is composed of 2,000 headlines of news writen in the Spanish language spoken in Spain and in several Amaerican countries, specifically Mexico, Cuba, Chile, 
+				Colombia, Argentina, Venezuela, Peru and U.S.A. Therefore, SENSE is a representative corpus of headline of news written in Spanish all over the Spanish speaking world. 
             </p>
             <p>
-				The annotation was carried out by two human annotators, namelly the two organizers of the task. A safe title of a news was defined as an utterance that arises a positive or
+				The annotation was carried out by two human annotators, namelly the two organizers of the task. A safe headline of a news was defined as an utterance that arises a positive or
 				neutral emotion in the reader, or it is not related to a controversial topics: religion, extreme wing political topic, topics that may arise strong positive emotions to some 
-				readers but strong negative emotions to other ones. An unsafe title was defined as an utterance that arises negative emotions on the reader. Some examples:
+				readers but strong negative emotions to other ones. An unsafe headline was defined as an utterance that arises negative emotions on the reader. Some examples:
             </p>
             <div class="row corpus_example_first">
 	            <div class="col-10 corpus_example_title_text">
@@ -174,9 +175,9 @@
 	        </div>
             <p>
 				The agreement of the annotation was 0,58 according to &Pi; <a href="#ref_1">[1]</a> and &Kappa; <a href="#ref_2">[2]</a>, which may consider moderate according to Landis and Koch <a href="#ref_3">[3]</a>.
-				Although the agreement is moderate, it is close to be considered substantial, and we have also take into account that it is a new classification task that works with
-				a strong subjective content. All those cases with no agreement between the two annotators, a third annotator undid the tie. We will work in making more precise the
-				annotation guidelines in order to improve the agreement of the annotators. Besides, we hope that the participants will give us insights with the aim of improving the 
+				Although the agreement is moderate, it is close to be considered substantial, and we have also to take into account that it is a new classification task that works with
+				a strong subjective content. All those cases with no agreement between the two annotators, a third annotator undid the tie. We will work in making the annotations guidelines 
+				more precise in order to improve the agreement of the annotators. Besides, we hope that the participants will give us insights with the aim of improving the 
 				annotation of the data.
             </p>
             <p>
@@ -208,7 +209,7 @@
 					Test
 				</div>
 				<div class="col-3 dataset_dark dataset_number">
-					500
+					(L1) 500; (L2) 13,152
 				</div>
 				<div class="col-2"></div>
 			</div>
@@ -239,7 +240,7 @@
 					Test (Mexico)
 				</div>
 				<div class="col-3 dataset_dark dataset_number">
-					(L1) 144; (L2) 1011
+					144
 				</div>
 				<div class="col-2"></div>
 			</div>
@@ -249,7 +250,7 @@
 					Test (Cuba)
 				</div>
 				<div class="col-3 dataset_number">
-					(L1) 194; (L2) 1164
+					194
 				</div>
 				<div class="col-2"></div>
 			</div>
@@ -259,7 +260,7 @@
 					Test (Chile)
 				</div>
 				<div class="col-3 dataset_dark dataset_number">
-					(L1) 194; (L2) 1306
+					194
 				</div>
 				<div class="col-2"></div>
 			</div>
@@ -269,7 +270,7 @@
 					Test (Colombia)
 				</div>
 				<div class="col-3 dataset_number">
-					(L1) 195; (L2) 1378
+					195
 				</div>
 				<div class="col-2"></div>
 			</div>
@@ -279,7 +280,7 @@
 					Test (Argentina)
 				</div>
 				<div class="col-3 dataset_dark dataset_number">
-					(L1) 198; (L2) 1411
+					198
 				</div>
 				<div class="col-2"></div>
 			</div>
@@ -289,7 +290,7 @@
 					Test (Venezuela)
 				</div>
 				<div class="col-3 dataset_number">
-					(L1) 233; (L2) 1437
+					233
 				</div>
 				<div class="col-2"></div>
 			</div>
@@ -299,7 +300,7 @@
 					Test (Peru)
 				</div>
 				<div class="col-3 dataset_dark dataset_number">
-					(L1) 234; (L2) 1465
+					234
 				</div>
 				<div class="col-2"></div>
 			</div>
@@ -309,7 +310,7 @@
 					Test (USA)
 				</div>
 				<div class="col-3 dataset_number">
-					(L1) 260; (L2) 1701
+					260
 				</div>
 				<div class="col-2"></div>
 			</div>
@@ -322,6 +323,11 @@
 					<h2>Shared Task</h2>
 					<h3>Evaluation</h3>
 					<p>The evaluation will be done online, and the submission instructions will be announced soon.</p>
+					<h3>Award</h3>
+					<p>
+						The best system of Subtask-1 will receive the best system award that is a cash prize of 100&euro;, 
+						which is sponsored by <a href="https://www.meaningcloud.com/" target="_blank">MeaningCloud</a>.
+					</p>
 					<h3>Datasets downloads</h3>
 					<p>
 						The use of SANSE corpus requires of agreeing the terms of use of the data through the signment of the <a href="http://www.sepln.org/workshops/tass/tass_data/download.php">TASS Data License</a>.
