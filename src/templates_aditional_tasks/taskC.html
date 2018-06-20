@@ -625,7 +625,7 @@
                   <span>s for each of the participants.</span>
                   <span class="c39 c7"></span>
                 </li>
-                <li class="c11 c21">
+                <!-- <li class="c11 c21">
                   <span class="c7">Partial</span>
                   <span>: when a relationship is matched as an</span>
                   <span class="c7">is-a</span> in the <span class="c7">gold</span> file
@@ -638,7 +638,7 @@
                   relation entities <span class="c7">A</span> and <span class="c7">B</span>; i.e,
                   when a relation matches not exactly against the expected entity, but matches
                   a "parent" or a "child" in terms of the <span class="c7">is-a</span> hierarchy.
-                 </li>
+                 </li> -->
                 <li class="c21 c11">
                   <span class="c7">Missing</span>
                   <span>: relationships that are in the </span>
@@ -679,10 +679,10 @@
                   $$ F_1 = 2 \cdot \frac{precision \cdot recall}{precision + recall} $$
                 </div>
                 <div class="col-4">
-                  $$ precision = \frac{correct + \frac{1}{2} partial}{correct + partial + missing} $$
+                  $$ precision = \frac{correct}{correct + spurious} $$
                 </div>
                 <div class="col-3">
-                  $$ recall = \frac{correct + \frac{1}{2} partial}{correct + partial + spurious} $$
+                  $$ recall = \frac{correct}{correct + missing} $$
                 </div>
               </div>
               <table class="">
