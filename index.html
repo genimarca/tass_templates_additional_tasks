@@ -632,10 +632,58 @@
                 </div>
               </div>
 
-              <p class="c31">
-                <strong>N/A*:</strong> Not Available. The corresponding participant did not submit for a given scenario. In the overall
-                ranking it is counted as if obtaining zero F1 for that scenario, and averaged with the remaining scenarios.
-              </p>
+              <div class="row">
+                <p class="c31">
+                  <strong>N/A*:</strong> Not Available. The corresponding participant did not submit for a given scenario. In the
+                  overall ranking it is counted as if obtaining zero F1 for that scenario, and averaged with the remaining
+                  scenarios.
+                </p>
+
+                <p class="c31">
+                  <strong>NOTE</strong> After receiving indications that some system's output contained duplicated entries, the evaluation
+                  scripts were executed again after eliminating all duplicated lines from all participant's submissions.
+                  The next table shows the results that change taking that consideration into account. Participants are encouraged
+                  to use these results and discuss them as they fit in their respective papers. However, for competition
+                  purposes, the previous results are the official ones. Results which differ from the original score are
+                  highlighted in
+                  <span style="color: red">red color</span>.
+                </p>
+
+                <p class="c31">
+                  <strong>These modified results do not alter the overal ranking of participants neither in scenarios nor individual tasks.</strong>
+                </p>
+
+                <div class="col-6">
+                  <h3>General results for participants that change:</h3>
+                  <table class="table">
+                    <tr>
+                      <th>Name</th>
+                      <td>upf_upc</td>
+                      <td>VSP</td>
+                    </tr>
+                    <tr>
+                      <th>S1 Micro F1</th>
+                      <td>0.681</td>
+                      <td style="color: red">0.310</td>
+                    </tr>
+                    <tr>
+                      <th>S2 Micro F1</th>
+                      <td style="color: red">0.626</td>
+                      <td style="color: red">0.294</td>
+                    </tr>
+                    <tr>
+                      <th>S3 Micro F1</th>
+                      <td>0.036</td>
+                      <td style="color: red">0.444</td>
+                    </tr>
+                    <tr>
+                      <th>Average F1</th>
+                      <td style="color: red">0.448</td>
+                      <td style="color: red">0.349</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
 
             </div>
           </div>
@@ -881,7 +929,7 @@
                 <div class="row">
                   <div class="col-6">
                     <p>
-                        Evaluation start
+                      Evaluation start
                     </p>
                   </div>
                   <div class="col-2">
@@ -907,7 +955,7 @@
                 <div class="row dark">
                   <div class="col-6">
                     <p>
-                        Evaluation end
+                      Evaluation end
                     </p>
                   </div>
                   <div class="col-2">
