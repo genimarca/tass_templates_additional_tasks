@@ -351,6 +351,15 @@ main code.label {
 	font-family:'Roboto Mono', monospace;
 }
 
+.submission_example {
+	border: 1px solid #f1f1f1;
+	border-radius:2px 0px 0px 2px;
+	background: #dfdfdf;
+	color:#000;
+	font-family:'Roboto Mono', monospace;
+	font-size: 1.1em;
+}
+
 .dataset_statistics{
 	padding:0;
 }
